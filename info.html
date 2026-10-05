@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cast & Crew Info | Remoti</title>
+    <link rel="icon" type="image/jpeg" href="imagenes/logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +20,7 @@
                 <a href="info.html" class="dropbtn">Cast & Crew Info</a>
                 <div class="dropdown-content">
                     <a href="#overview">Company Overview</a>
-                    <a href="#services">Core Services</a>
+                    <a href="#ecosystem">Core Services & Ecosystem</a>
                     <a href="#culture">Cultural Fit</a>
                     <a href="#executives">Executive Leadership</a>
                 </div>
@@ -29,6 +30,10 @@
             </div>
             <div class="dropdown">
                 <a href="jobs.html" class="dropbtn">Jobs</a>
+                <div class="dropdown-content">
+                    <a href="jobs.html#developers">Developers</a>
+                    <a href="jobs.html#qa">Quality Assurance</a>
+                </div>
             </div>
             <div class="dropdown">
                 <a href="preps.html" class="dropbtn">Preps</a>
@@ -40,6 +45,7 @@
         <h2 class="section-title">Cast & Crew Information</h2>
         <p class="section-subtitle">Understanding the business, culture, and leadership.</p>
 
+        <!-- Company Overview original -->
         <section id="overview" class="text-section">
             <h3>Company Overview</h3>
             <p><strong>Founded:</strong> 1976 | <strong>Headquarters:</strong> Burbank, California</p>
@@ -48,77 +54,282 @@
             <p>Cast & Crew is a leading entertainment technology and services company that supports film, television, streaming, live events, and other productions behind the scenes. The company manages many of the administrative and operational processes required to keep productions running smoothly, including payroll, production accounting, onboarding, contracts, time tracking, labor compliance, and tax incentives. Its goal is to simplify production operations so studios, production companies, and creative teams can focus on creating content.</p>
         </section>
 
-        <section id="culture" class="pillars-section">
-            <h3>Value Proposition & Culture</h3>
-            <div class="card-container">
-                <div class="card pillar">
-                    <span class="pillar-number">01</span>
-                    <h3>Mission</h3>
-                    <p>Cast & Crew aims to empower creativity by helping its customers succeed. The company works as a production partner, developing technology and workflows that make production processes more efficient and allow creative teams to focus on their work.</p>
+        <!-- NUEVA SECCIÓN: CORE SERVICES & ECOSYSTEM -->
+        <section id="ecosystem" class="text-section" style="background-color: transparent; padding: 0; box-shadow: none;">
+            
+            <!-- 1. Platform Overview -->
+            <div class="text-section">
+                <h3>Cast & Crew Unified Platform</h3>
+                <p>An integrated operating ecosystem for the entertainment industry that connects production workforce, financial, accounting, reporting, and document-management workflows in one environment.</p>
+                <p style="text-align: center; color: var(--tech-blue); font-weight: 600; margin-top: 20px;">
+                    Onboard Crew &rarr; Track Time &rarr; Manage Payroll & Accounting &rarr; Analyze Data &rarr; Manage Production Files
+                </p>
+            </div>
+
+            <!-- 2. Core Platform Solutions -->
+            <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Core Platform Solutions</h3>
+            <div class="card-container three-columns">
+                
+                <!-- MyCast&Crew -->
+                <div class="card product-card">
+                    <h3>MyCast&Crew</h3>
+                    <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Crew Self-Service Portal</p>
+                    <p>A centralized portal where crew members can manage payroll-related information and employment documentation across Cast & Crew productions.</p>
+                    <div class="tags-container">
+                        <span class="tag tag-gray">Payroll</span>
+                        <span class="tag tag-gray">Tax Documents</span>
+                        <span class="tag tag-gray">Crew Self-Service</span>
+                    </div>
+                    <details>
+                        <summary>Learn More &rarr;</summary>
+                        <div class="product-details">
+                            <h4>Key Capabilities</h4>
+                            <ul>
+                                <li>Access paystubs and payment history</li>
+                                <li>Download tax documents such as W-2 forms</li>
+                                <li>Update federal and state tax withholding information</li>
+                                <li>Manage direct deposit across productions</li>
+                                <li>Access training and support resources</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Why It Matters:</strong> Gives crew members direct access to their payroll and employment information without depending on production administrators for every request.</p>
+                            </div>
+                        </div>
+                    </details>
                 </div>
-                <div class="card pillar">
-                    <span class="pillar-number">02</span>
-                    <h3>DEI Commitment</h3>
-                    <p>Cast & Crew promotes a workplace built around respect, fairness, inclusion, and diverse perspectives.</p>
+
+                <!-- Start+ -->
+                <div class="card product-card">
+                    <h3>Start+</h3>
+                    <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Digital Onboarding</p>
+                    <p>Digitizes crew hiring and onboarding by replacing paper-based workflows with digital start packets that can be completed, signed, reviewed, and approved online.</p>
+                    <div class="tags-container">
+                        <span class="tag tag-blue">Onboarding</span>
+                        <span class="tag tag-blue">Contracts</span>
+                        <span class="tag tag-blue">Compliance</span>
+                    </div>
+                    <details>
+                        <summary>Learn More &rarr;</summary>
+                        <div class="product-details">
+                            <h4>Key Capabilities</h4>
+                            <ul>
+                                <li>Customized digital start packets</li>
+                                <li>Mobile and web signing</li>
+                                <li>Tax forms, contracts, and authorizations</li>
+                                <li>Union and compliance support</li>
+                                <li>Role-based permissions and encrypted document storage</li>
+                                <li>Faster rehiring using previously completed information</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Why It Matters:</strong> Helps productions onboard crew faster while keeping employment documentation secure, organized, and compliant.</p>
+                            </div>
+                        </div>
+                    </details>
                 </div>
-                <div class="card pillar">
-                    <span class="pillar-number">03</span>
-                    <h3>Cultural Fit</h3>
-                    <p>Promotes a collaborative, client-focused environment. Key attributes: Proactive, Accountable, Collaborative, Resilient, Flexible, Agile, and Innovative.</p>
+
+                <!-- Hours+ -->
+                <div class="card product-card">
+                    <h3>Hours+</h3>
+                    <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Timekeeping</p>
+                    <p>Manages digital timecards and workforce time tracking while connecting crew hours directly with payroll workflows.</p>
+                    <div class="tags-container">
+                        <span class="tag tag-blue">Timecards</span>
+                        <span class="tag tag-blue">Payroll</span>
+                        <span class="tag tag-blue">Workforce</span>
+                    </div>
+                    <details>
+                        <summary>Learn More &rarr;</summary>
+                        <div class="product-details">
+                            <h4>Key Capabilities</h4>
+                            <ul>
+                                <li>Digital timecards from mobile or web</li>
+                                <li>Automated calculation of hours and gross pay</li>
+                                <li>Union and state-rule compliance</li>
+                                <li>Configurable approval workflows</li>
+                                <li>Bulk approvals</li>
+                                <li>Integration with Cast & Crew payroll and financial systems</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Why It Matters:</strong> Connects what happens on set with payroll, reducing manual processing and helping ensure accurate, audit-ready time records.</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Reporting+ -->
+                <div class="card product-card">
+                    <h3>Reporting+</h3>
+                    <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Reporting & Data Insights</p>
+                    <p>Transforms payroll and HR data into reports, analytics, and business intelligence for production teams.</p>
+                    <div class="tags-container">
+                        <span class="tag tag-blue">Analytics</span>
+                        <span class="tag tag-blue">Reporting</span>
+                        <span class="tag tag-blue">BI</span>
+                    </div>
+                    <details>
+                        <summary>Learn More &rarr;</summary>
+                        <div class="product-details">
+                            <h4>Key Capabilities</h4>
+                            <ul>
+                                <li>Scheduled automated reports</li>
+                                <li>Payroll and HR data feeds into BI tools</li>
+                                <li>Customizable reporting templates</li>
+                                <li>Payroll, tax, diversity and workers’ compensation reporting</li>
+                                <li>Role-based access, SSO and two-factor authentication</li>
+                                <li>Real-time cost visibility</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Why It Matters:</strong> Gives production teams faster visibility into workforce and financial data so they can monitor costs, identify trends, and support audits or tax-incentive processes.</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Studio+ -->
+                <div class="card product-card">
+                    <h3>Studio+</h3>
+                    <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Secure File Transfer</p>
+                    <p>A cloud-based system for securely storing, organizing, searching, and transferring production documents across teams.</p>
+                    <div class="tags-container">
+                        <span class="tag tag-gray">Documents</span>
+                        <span class="tag tag-gray">Security</span>
+                        <span class="tag tag-gray">Production Files</span>
+                    </div>
+                    <details>
+                        <summary>Learn More &rarr;</summary>
+                        <div class="product-details">
+                            <h4>Key Capabilities</h4>
+                            <ul>
+                                <li>OCR-powered document search</li>
+                                <li>Secure file distribution</li>
+                                <li>Watermarked script sides</li>
+                                <li>Role-based permissions</li>
+                                <li>End-to-end encryption and SSO</li>
+                                <li>Centralized production file organization</li>
+                                <li>Real-time upload notifications</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Why It Matters:</strong> Provides productions with a secure alternative to sharing sensitive material through email, USB drives, or disconnected storage systems.</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- PSL+ & DPO -->
+                <div class="card product-card">
+                    <h3>PSL+ & DPO</h3>
+                    <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Production Accounting</p>
+                    <p>Supports production accounting, budgeting, purchasing, approvals, payments, and financial reporting.</p>
+                    <div class="tags-container">
+                        <span class="tag tag-blue">Accounting</span>
+                        <span class="tag tag-blue">Budgeting</span>
+                        <span class="tag tag-blue">Finance</span>
+                    </div>
+                    <details>
+                        <summary>Learn More &rarr;</summary>
+                        <div class="product-details">
+                            <h4>Key Capabilities</h4>
+                            <ul>
+                                <li>Budget and cost tracking</li>
+                                <li>Purchase-order and approval workflows</li>
+                                <li>Financial reporting</li>
+                                <li>Multi-production management</li>
+                                <li>Multi-currency support</li>
+                                <li>Secure financial data management</li>
+                                <li>Reusable project templates</li>
+                                <li>Integration with payroll and purchasing tools</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Why It Matters:</strong> Gives production finance teams a centralized way to manage costs and financial workflows from project setup through ongoing accounting operations.</p>
+                            </div>
+                        </div>
+                    </details>
                 </div>
             </div>
-        </section>
 
-        <section id="services" class="text-section">
-            <h3>Core Services & Ecosystem</h3>
+            <!-- 3. How the Ecosystem Connects -->
+            <h3 style="color: var(--petrol-blue); margin-top: 40px;">How the Ecosystem Connects</h3>
+            <div class="flow-diagram">
+                <div class="main-flow">
+                    <div class="flow-step">Start+ <br><small>Hire & onboard crew</small></div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-step">Hours+ <br><small>Capture time worked</small></div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-step">Payroll Services <br><small>Process compensation</small></div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-step">PSL+ / DPO <br><small>Manage accounting</small></div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-step">Reporting+ <br><small>Analyze data</small></div>
+                </div>
+                <div class="supporting-flow">
+                    <div class="flow-step supporting">MyCast&Crew <br><small>Crew self-service access</small></div>
+                    <div class="flow-step supporting">Studio+ <br><small>Secure production workflows</small></div>
+                </div>
+            </div>
+
+            <!-- 4 & 5. Additional Services & Planning Tools -->
             <div class="card-container two-columns">
-                <div class="card">
-                    <h3>What Cast & Crew does</h3>
-                    <ul>
-                        <li><strong>Payroll:</strong> Union and non-union payroll processing.</li>
-                        <li><strong>Production Accounting:</strong> Financial management, accounting tools, and reporting.</li>
-                        <li><strong>Onboarding & Compliance:</strong> Digital onboarding, tax documentation, and contracts.</li>
-                        <li><strong>Tax Incentives:</strong> Support identifying regional production incentives.</li>
-                        <li><strong>Labor Relations:</strong> Union compliance and contract interpretation.</li>
-                    </ul>
+                <div class="card" style="border-top: none; padding: 0; box-shadow: none;">
+                    <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Beyond the Platform</h3>
+                    <p style="margin-bottom: 20px;">Cast & Crew also provides specialized production services that complement its technology ecosystem.</p>
+                    <div class="card-container" style="gap: 15px;">
+                        <div class="card compact-card">
+                            <h4>Entertainment Payroll</h4>
+                            <p>Payroll administration for production workforces.</p>
+                        </div>
+                        <div class="card compact-card">
+                            <h4>Tax Incentives</h4>
+                            <p>Support identifying and maximizing production incentives across regions.</p>
+                        </div>
+                        <div class="card compact-card">
+                            <h4>Workers’ Compensation</h4>
+                            <p>Coverage and workforce risk-management support.</p>
+                        </div>
+                        <div class="card compact-card">
+                            <h4>Residuals Management</h4>
+                            <p>Administration of residual payments.</p>
+                        </div>
+                        <div class="card compact-card">
+                            <h4>Talent & Workforce Services</h4>
+                            <p>Support related to production staffing and workforce operations.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Key Technology Products</h3>
-                    <ul>
-                        <li>Start+</li>
-                        <li>Hours+</li>
-                        <li>CAPS Payroll</li>
-                        <li>Final Draft</li>
-                        <li>Backlot</li>
-                        <li>Media Services</li>
-                    </ul>
+
+                <div class="card" style="border-top: none; padding: 0; box-shadow: none;">
+                    <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Planning Tools</h3>
+                    <div class="tags-container" style="margin-bottom: 40px;">
+                        <span class="tag tag-blue">Tax Incentive Calculator</span>
+                        <span class="tag tag-blue">Interactive Incentive Map</span>
+                        <span class="tag tag-blue">Payroll Cost Estimator</span>
+                    </div>
+
+                    <!-- 6. Industries Served -->
+                    <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Built for Entertainment Production</h3>
+                    <div class="chip-container">
+                        <span class="chip">Film & Television</span>
+                        <span class="chip">Streaming</span>
+                        <span class="chip">Independent Film</span>
+                        <span class="chip">Commercials & Advertising</span>
+                        <span class="chip">Sports & Live Events</span>
+                        <span class="chip">Live Theatre</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="remoti" class="text-section">
-            <h3>Cast & Crew + Remoti Partnership</h3>
-            <p>Remoti supports Cast & Crew by recruiting talent for multiple teams across the organization. The partnership allows Cast & Crew to expand its workforce by hiring professionals in Colombia (mainly Bogotá and Medellín) through Remoti.</p>
-            <ul>
-                <li><strong>Employment Model:</strong> Payroll through Remoti.</li>
-                <li><strong>Working Hours:</strong> Must be available to work aligned with Pacific Time.</li>
-                <li><strong>English Requirement:</strong> Advanced English (C1).</li>
-                <li><strong>Benefits:</strong> 15 PTO days + most Colombian holidays.</li>
-            </ul>
-        </section>
-        
+        <!-- Sourcing Restriction -->
         <section class="text-section" style="border-left: 5px solid #D73535;">
             <h3 style="color: #D73535;">Sourcing Restriction</h3>
             <p><strong>Do not source candidates currently working for Cast & Crew family companies:</strong></p>
             <p>Backstage, CAPS, Checks & Balances, Final Draft, Media Services, Sargent-Disc, The TEAM Companies.</p>
         </section>
 
-        <!-- LIDERAZGO EJECUTIVO -->
+        <!-- Executive Leadership -->
         <section id="executives" class="text-section">
             <h3>Executive Leadership</h3>
             
             <div class="card-container two-columns">
-                <!-- Jen -->
                 <div class="card">
                     <div class="exec-profile">
                         <img src="imagenes/jen.jpg" alt="Jen Hollingsworth" class="exec-photo">
@@ -132,7 +343,6 @@
                     <a href="https://www.linkedin.com/in/jen-hollingsworth/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
                 </div>
 
-                <!-- Tanya -->
                 <div class="card">
                     <div class="exec-profile">
                         <img src="imagenes/tanya.jpg" alt="Tanya Alfonso" class="exec-photo">
@@ -146,7 +356,6 @@
                     <a href="https://www.linkedin.com/in/tanyaalfonso/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
                 </div>
 
-                <!-- William -->
                 <div class="card">
                     <div class="exec-profile">
                         <img src="imagenes/william.jpg" alt="William Moxley" class="exec-photo">
@@ -160,7 +369,6 @@
                     <a href="https://www.linkedin.com/in/williammoxley/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
                 </div>
 
-                <!-- Brent -->
                 <div class="card">
                     <div class="exec-profile">
                         <img src="imagenes/brent.jpg" alt="Brent Glover" class="exec-photo">
