@@ -117,7 +117,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .card p, .card ul li { font-size: 15px; line-height: 1.6; color: var(--petrol-blue); }
 .card ul { padding-left: 20px; margin-bottom: 15px; }
 
-/* ELEMENTOS DE CAST & CREW INFO (Para que no se dañe de nuevo) */
+/* ELEMENTOS DE CAST & CREW INFO */
 .product-card { display: flex; flex-direction: column; min-height: 380px; }
 .compact-card { background-color: var(--white); padding: 20px; border-radius: 12px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); border-top: 4px solid var(--tech-blue); }
 .compact-card h4 { color: var(--petrol-blue); margin-bottom: 8px; font-size: 16px; }
@@ -144,7 +144,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .flow-step.supporting { border-color: #A0B3C6; border-style: dashed; }
 .flow-arrow { color: var(--tech-blue); font-size: 20px; font-weight: bold; }
 
-/* RECUADROS DESTACADOS */
+/* RECUADROS DESTACADOS Y ETIQUETAS */
 .highlight-box { background-color: var(--baby-blue); border-left: 4px solid var(--tech-blue); padding: 20px; margin: 15px 0; border-radius: 6px; }
 .highlight-box p { margin-bottom: 8px; font-size: 15px; color: var(--petrol-blue); }
 .highlight-box strong { font-weight: 700; }
@@ -156,7 +156,6 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .internal-note { background-color: #F0F0F0; border-left: 4px solid #888; padding: 15px; border-radius: 6px; margin: 15px 0; font-size: 14px; font-style: italic; color: #444; }
 .internal-note h4 { color: #555; margin-bottom: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-/* ETIQUETAS (TAGS) */
 .tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; justify-content: center; }
 .tag { display: inline-block; background-color: var(--baby-blue); color: var(--tech-blue); padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; border: none; }
 .tag-gray { background-color: #F0F0F0; color: #555; }
