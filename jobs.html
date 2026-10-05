@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Roles | Remoti</title>
+    <link rel="icon" type="image/jpeg" href="imagenes/logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,417 +24,70 @@
             </div>
             <div class="dropdown">
                 <a href="jobs.html" class="dropbtn">Jobs</a>
-                <div class="dropdown-content">
-                    <a href="#developers">Developers</a>
-                    <a href="#qa">Quality Assurance</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="preps.html" class="dropbtn">Preps</a>
             </div>
         </nav>
     </header>
 
     <main class="main-content">
-        <h2 class="section-title">Open Roles at Cast & Crew</h2>
-        <p class="section-subtitle">Updated job descriptions, requirements, and hiring processes.</p>
+        
+        <!-- SECCIÓN 1: DIRECTORIO DE TRABAJOS (Visible al inicio) -->
+        <div id="jobsDirectorySection">
+            <h2 class="section-title">Jobs & Vacancies Directory</h2>
+            <p class="section-subtitle">Select a role to view requirements and interview preparation guides.</p>
 
-        <!-- VERTICAL: DEVELOPERS -->
-        <h3 id="developers" style="font-size: 28px; color: var(--petrol-blue); margin: 50px 0 20px 0; border-bottom: 2px solid var(--baby-blue); padding-bottom: 10px;">Vertical: Developers</h3>
-
-        <!-- Java Developer -->
-        <div class="job-card">
-            <h3>Java Developer</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Roman Smolgovsky</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month (Up to USD 6,000 for strong profiles)</p>
-                <p><strong>Process:</strong> Skill Panel → Live Coding (1h) → Interview with Roman (1h)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Backend engineering role focused on building and maintaining scalable Java applications for business-critical systems. Works with distributed applications, APIs, databases, and production infrastructure.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Java backend development (17+)</li>
-                        <li>SQL</li>
-                        <li>Concurrency</li>
-                        <li>Idempotency</li>
-                        <li>Kafka</li>
-                        <li>AWS Messaging</li>
-                        <li>Infrastructure knowledge</li>
-                    </ul>
-
-                    <h4>Responsibilities</h4>
-                    <ul>
-                        <li>Develop and maintain scalable Java backend services.</li>
-                        <li>Build REST APIs and microservices.</li>
-                        <li>Troubleshoot production issues and implement long-term solutions.</li>
-                        <li>Optimize SQL queries and database performance.</li>
-                    </ul>
-
-                    <h4>Additional Tools & Knowledge</h4>
-                    <p>Relational Databases, Distributed Systems, OOP, Git, Debugging, Spring Boot, Redis, Docker, Kubernetes, CI/CD, Monitoring/Observability.</p>
-                    
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> Do not screen strictly by years of experience. Roman prioritizes actual technical knowledge and the ability to explain it.</p>
-                    </div>
+            <section class="controls-section">
+                <input type="text" id="jobSearchInput" class="search-bar" placeholder="Search by role, manager, technology...">
+                
+                <div class="filters-container" id="jobFiltersContainer">
+                    <button class="filter-btn active" data-filter="All">All</button>
+                    <button class="filter-btn" data-filter="Engineering">Engineering</button>
+                    <button class="filter-btn" data-filter="QA">Quality Assurance</button>
+                    <button class="filter-btn" data-filter="Senior">Senior</button>
+                    <button class="filter-btn" data-filter="Mid-Level">Mid-Level</button>
                 </div>
-            </details>
+            </section>
+
+            <div id="jobsGrid" class="card-container three-columns">
+                <!-- JavaScript inyectará las tarjetas aquí -->
+            </div>
         </div>
 
-        <!-- .NET Developer -->
-        <div class="job-card">
-            <h3>.NET Developer</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Senior / Lead</p>
+        <!-- SECCIÓN 2: DETALLE DEL TRABAJO (Oculto al inicio) -->
+        <div id="jobDetailSection" class="hidden">
+            <button class="back-btn" onclick="hideJobDetail()">&larr; Back to Directory</button>
             
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Roman Smolgovsky / Quynh Vo</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month (Up to USD 6,000 for strong profiles)</p>
-                <p><strong>Process:</strong> Skill Panel → Live Coding (1h) → Interview with Roman (1h)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Senior backend engineering role focused on building and improving Cast & Crew's payroll processing systems using C# and .NET. Works on distributed and event-driven applications.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>C# / .NET</li>
-                        <li>SQL</li>
-                        <li>Concurrency</li>
-                        <li>Idempotency</li>
-                        <li>Kafka</li>
-                        <li>AWS Messaging</li>
-                        <li>Infrastructure knowledge</li>
-                    </ul>
-
-                    <h4>Responsibilities</h4>
-                    <ul>
-                        <li>Build and enhance payroll processing applications.</li>
-                        <li>Own features end-to-end, from requirements and system design through deployment.</li>
-                        <li>Design event-driven and distributed systems using Kafka and .NET.</li>
-                    </ul>
-
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> Do not screen strictly by years of experience. Focus on technical knowledge and problem-solving explanation.</p>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- PSL Webification -->
-        <div class="job-card">
-            <h3>Senior Software Engineer - PSL Webification</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid → Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Shrikrushna Garad</p>
-                <p><strong>Salary Range:</strong> USD 5,800 - 6,000/month</p>
-                <p><strong>Process:</strong> Krushna (1h) → Andrés & Leo (1h live coding) → Product Managers (30 min)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Full-stack engineering role with a strong frontend focus. Transforming legacy desktop workflows into a modern web application using React and .NET.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>React</li>
-                        <li>.NET / C#</li>
-                        <li>Performance</li>
-                        <li>Reliability</li>
-                    </ul>
-
-                    <h4>Responsibilities</h4>
-                    <ul>
-                        <li>Build and maintain modern web applications using React.</li>
-                        <li>Integrate frontend applications with APIs and .NET backend services.</li>
-                        <li>Ensure new web functionality preserves existing PSL behavior.</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-
-        <!-- Platform Team -->
-        <div class="job-card">
-            <h3>Full Stack Developer - Platform Team</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid / Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Jan Sevilla</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month</p>
-                <p><strong>Process:</strong> 2 interviews (30 min each) → Jan (conversational) → Josh (technical)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Full-stack role focused on building a unified technology experience across the company. Works across frontend and backend technologies.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>React</li>
-                        <li>Micro-frontends</li>
-                        <li>REST APIs or GraphQL</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-
-        <!-- OAT Onboarding -->
-        <div class="job-card">
-            <h3>Full-Stack Software Engineer - OAT Onboarding</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid / Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Roja Kamireddy</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month</p>
-                <p><strong>Process:</strong> Live Coding with Sam & John-Luke (1h) → Roja (30 min conversational)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Focused on building crew-facing onboarding flows, document packages, and company-level configuration tools from database design to React interfaces.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>PostgreSQL</li>
-                        <li>.NET (Intermediate knowledge)</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-
-        <!-- Start+ -->
-        <div class="job-card">
-            <h3>Full-Stack Engineer - Start+</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid / Senior (3-5 years)</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Maggie Reddy</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month</p>
-                <p><strong>Process:</strong> 2 interviews → Maggie & Shankar (1h technical) → Second stage TBD</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Working across both React frontend and .NET backend. A key purpose is to reduce single-point-of-failure risk by increasing shared knowledge of the codebase.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>.NET</li>
-                        <li>React</li>
-                        <li>PostgreSQL</li>
-                        <li>Modular Architecture</li>
-                        <li>Distributed Systems / Microservices</li>
-                    </ul>
-
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> Requires someone who can ramp up quickly on an existing codebase and work with limited hand-holding.</p>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Final Draft -->
-        <div class="job-card">
-            <h3>Full Stack Developer - Final Draft</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid-Level</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Ron Nagamati</p>
-                <p><strong>Salary Range:</strong> USD 5,500/month</p>
-                <p><strong>Process:</strong> Technical interview with 2 Software Engineers (1h) → VP of Engineering interview (30 min)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Evolution of screenwriting software into modern web-based SaaS experiences. Works across frontend and backend development.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Next.js</li>
-                        <li>NestJS</li>
-                        <li>AWS Lambda</li>
-                    </ul>
-                    
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> The role is full-stack with a slight frontend focus, candidates must be comfortable working on both sides.</p>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- PSL+ -->
-        <div class="job-card">
-            <h3>Senior Software Engineer - PSL+</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Shrikrushna Garad</p>
-                <p><strong>Salary Range:</strong> USD 6,000/month</p>
-                <p><strong>Process:</strong> Krushna (1h) → Live Coding (1h) → 2 Product Managers (30 min)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Maintaining and modernizing PSL, a large legacy system. Involves working with an established C codebase while contributing to its migration.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>C → C++ migration experience</li>
-                        <li>MySQL</li>
-                    </ul>
-
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> Suited to candidates comfortable working independently with large, mature legacy codebases.</p>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- VERTICAL: QUALITY ASSURANCE (QA) -->
-        <h3 id="qa" style="font-size: 28px; color: var(--petrol-blue); margin: 60px 0 20px 0; border-bottom: 2px solid var(--baby-blue); padding-bottom: 10px;">Vertical: Quality Assurance (QA)</h3>
-
-        <!-- SDET Back -->
-        <div class="job-card">
-            <h3>SDET Back</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid / Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Anne Dawson</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month</p>
-                <p><strong>Process:</strong> Anne (1h) → Live Coding with QA Lead/Manager (1h) → Product Manager (30 min)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Focused on backend quality engineering and API testing. Centers on validating REST/GraphQL services, integrations, and data integrity.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Playwright</li>
-                        <li>TypeScript / JavaScript</li>
-                        <li>Backend Testing</li>
-                        <li>API Testing</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-
-        <!-- SDET Front -->
-        <div class="job-card">
-            <h3>SDET Front</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid / Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Anne Dawson</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month</p>
-                <p><strong>Process:</strong> Anne (1h) → Live Coding with QA Lead/Manager (1h) → Product Manager (30 min)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Focused on frontend quality engineering and UI automation. Building scalable automation with Playwright and TypeScript.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Playwright</li>
-                        <li>TypeScript / JavaScript</li>
-                        <li>UI Testing</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-
-        <!-- SDET Mobile -->
-        <div class="job-card">
-            <h3>SDET Mobile</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Mid / Senior</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Anne Dawson (Product round with Omar Sheikh)</p>
-                <p><strong>Salary Range:</strong> USD 5,800/month</p>
-                <p><strong>Process:</strong> Anne (1h) → Live Coding with QA Lead/Manager (1h) → Product Manager (30 min)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Focused on quality engineering across iOS and Android applications. Combines manual mobile testing with automation.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Playwright</li>
-                        <li>Experience with a mobile automation tool for iOS and Android (ideally Appium)</li>
-                    </ul>
-                    
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> Appium is preferred, not mandatory. Candidates may use another mobile automation framework they are experienced with.</p>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- QA Manager -->
-        <div class="job-card">
-            <h3>QA Manager - Quality Engineering</h3>
-            <p style="font-size: 16px; color: var(--petrol-blue);"><strong>Seniority:</strong> Manager</p>
-            
-            <div class="highlight-box">
-                <p><strong>Manager:</strong> Anne Dawson</p>
-                <p><strong>Salary Range:</strong> USD 8,500/month</p>
-                <p><strong>Process:</strong> Anne (1h) → Live Coding with QA Lead (1h) → Roman (1h)</p>
-            </div>
-
-            <details>
-                <summary>View Details & Requirements</summary>
-                <div class="manager-details">
-                    <h4>About the Role</h4>
-                    <p>Hands-on QA leadership role focused on building and scaling Cast & Crew's Quality Engineering strategy, automation frameworks, and shift-left practices.</p>
-                    
-                    <h4>Must-Haves</h4>
-                    <ul>
-                        <li>Playwright</li>
-                        <li>TypeScript / JavaScript</li>
-                        <li>Experience building or helping build QA teams from the ground up</li>
-                        <li>Hands-on technical involvement</li>
-                    </ul>
-
-                    <div class="recruiter-note">
-                        <p><strong>Recruiter Note:</strong> This should not be screened as a purely people-management role. The person needs to be comfortable leading a team while still participating directly in automation.</p>
-                    </div>
-                </div>
-            </details>
+            <!-- JavaScript llenará este contenedor -->
+            <div id="jobDetailContent"></div>
         </div>
 
     </main>
+
+    <!-- EL MODAL DE PREPARACIÓN DE ENTREVISTA -->
+    <div id="prepModal" class="modal-window">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePrepModal()">&times;</button>
+            
+            <div class="modal-header-area">
+                <h2 id="modalPrepTitle">Job - Stage</h2>
+                <p id="modalPrepDuration" class="hidden"><strong>Duration:</strong> <span></span></p>
+                <p id="modalPrepPlatform" class="hidden"><strong>Platform:</strong> <span></span></p>
+                <p id="modalPrepFormat" class="hidden"><strong>Format:</strong> <span></span></p>
+            </div>
+
+            <div class="modal-body" id="modalPrepBody">
+                <!-- JavaScript inyectará el contenido: setup, expect, prepare, recommendations, internal notes -->
+            </div>
+
+            <div class="modal-footer">
+                <button class="copy-btn" id="copyPrepBtn">Copy Prep to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICACIÓN TOAST -->
+    <div id="toast">Prep copied successfully!</div>
+
+    <!-- EL CEREBRO DE ESTA PÁGINA -->
+    <script src="jobs.js"></script>
 </body>
 </html>
