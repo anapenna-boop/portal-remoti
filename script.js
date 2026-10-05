@@ -261,12 +261,9 @@ const managersData = [
 const managersGrid = document.getElementById('managersGrid');
 const searchInput = document.getElementById('searchInput');
 const filterBtns = document.querySelectorAll('.filter-btn');
-
-// Elementos del Modal
 const modal = document.getElementById('managerModal');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
-// Función principal para dibujar las tarjetas
 function renderManagers(data) {
     managersGrid.innerHTML = '';
     
@@ -276,10 +273,8 @@ function renderManagers(data) {
     }
 
     data.forEach(manager => {
-        // Crear las etiquetas de la tarjeta (solo las primeras 4)
         const tagsHtml = manager.tags.slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join('');
         
-        // Crear la tarjeta
         const card = document.createElement('div');
         card.className = 'manager-card';
         card.innerHTML = `
@@ -295,11 +290,10 @@ function renderManagers(data) {
     });
 }
 
-// Lógica del Buscador
+// Buscador
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     
-    // Quitar la selección de los botones de filtro si el usuario busca manualmente
     filterBtns.forEach(btn => btn.classList.remove('active'));
     document.querySelector('[data-filter="All"]').classList.add('active');
 
@@ -313,13 +307,12 @@ searchInput.addEventListener('input', (e) => {
     renderManagers(filtered);
 });
 
-// Lógica de los Botones de Filtro
+// Filtros
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // Actualizar diseño del botón activo
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        searchInput.value = ''; // Limpiar buscador
+        searchInput.value = ''; 
 
         const filterValue = btn.getAttribute('data-filter');
         
@@ -332,12 +325,11 @@ filterBtns.forEach(btn => {
     });
 });
 
-// Función para abrir la ventana modal
+// Abrir Modal
 window.openModal = function(id) {
     const manager = managersData.find(m => m.id === id);
     if (!manager) return;
 
-    // Llenar Cabecera
     document.getElementById('modalName').textContent = manager.name;
     document.getElementById('modalTitle').textContent = manager.title || 'Hiring Manager';
     
@@ -347,10 +339,8 @@ window.openModal = function(id) {
     if (manager.roles) metaText += `Teams: ${manager.roles}`;
     document.getElementById('modalMeta').textContent = metaText;
 
-    // Llenar Tags
     document.getElementById('modalTags').innerHTML = manager.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
     
-    // Llenar LinkedIn
     const linkedinContainer = document.getElementById('modalLinkedinContainer');
     if (manager.linkedin) {
         linkedinContainer.innerHTML = `<a href="${manager.linkedin}" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>`;
@@ -358,14 +348,12 @@ window.openModal = function(id) {
         linkedinContainer.innerHTML = '';
     }
 
-    // Llenar Columnas
     document.getElementById('modalStyle').textContent = manager.style;
     document.getElementById('modalValues').innerHTML = manager.values.map(v => `<li>${v}</li>`).join('');
     document.getElementById('modalInterview').textContent = manager.interview;
     document.getElementById('modalDos').innerHTML = manager.dos.map(d => `<li>${d}</li>`).join('');
     document.getElementById('modalWatchOuts').innerHTML = manager.watchOuts.map(w => `<li>${w}</li>`).join('');
     
-    // Nota Interna
     const noteContainer = document.getElementById('modalInternalNoteContainer');
     if (manager.internalNote) {
         noteContainer.innerHTML = `<div class="internal-note"><strong>Internal Note:</strong> ${manager.internalNote}</div>`;
@@ -373,21 +361,19 @@ window.openModal = function(id) {
         noteContainer.innerHTML = '';
     }
 
-    // Mostrar el modal
     modal.classList.add('active');
 }
 
-// Función para cerrar la ventana modal
+// Cerrar Modal
 closeModalBtn.addEventListener('click', () => {
     modal.classList.remove('active');
 });
 
-// Cerrar modal al hacer clic fuera del cuadro blanco
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.classList.remove('active');
     }
 });
 
-// Dibujar todas las tarjetas la primera vez que carga la página
+// Inicializar
 renderManagers(managersData);
