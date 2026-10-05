@@ -110,7 +110,7 @@ h1, h2, h3, h4, p, ul {
     margin-bottom: 40px;
 }
 
-/* SECCIONES Y TARJETAS */
+/* SECCIONES DE TEXTO */
 .text-section {
     background-color: var(--white);
     padding: 40px;
@@ -132,6 +132,7 @@ h1, h2, h3, h4, p, ul {
     color: var(--petrol-blue);
 }
 
+/* CONTENEDORES DE TARJETAS (GRIDS) */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -145,6 +146,13 @@ h1, h2, h3, h4, p, ul {
     gap: 30px;
 }
 
+.card-container.three-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* TARJETA BÁSICA */
 .card {
     background-color: var(--white);
     padding: 30px;
@@ -171,6 +179,24 @@ h1, h2, h3, h4, p, ul {
 .card ul {
     padding-left: 20px;
     margin-bottom: 15px;
+}
+
+/* TARJETA COMPACTA (SECONDARY) */
+.compact-card {
+    padding: 20px;
+    border-top: 2px solid var(--baby-blue);
+    min-width: 250px;
+}
+
+.compact-card h4 {
+    color: var(--petrol-blue);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.compact-card p {
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 /* PILARES */
@@ -227,7 +253,7 @@ h1, h2, h3, h4, p, ul {
     border: 3px solid var(--baby-blue);
 }
 
-/* ACORDEÓN PARA MANAGERS Y DETALLES */
+/* ACORDEÓN GENERAL */
 details {
     background-color: var(--white);
     border-radius: 8px;
@@ -251,53 +277,48 @@ summary:hover {
     background-color: var(--baby-blue);
 }
 
-.manager-details {
-    padding: 20px;
+/* ACORDEÓN DE PRODUCTOS (LEARN MORE) */
+.product-card details {
+    box-shadow: none;
+    margin-bottom: 0;
     border-top: 1px solid var(--baby-blue);
+    border-radius: 0;
 }
 
-.manager-details h4 {
-    color: var(--tech-blue);
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-
-.manager-details p, .manager-details ul li {
+.product-card summary {
+    border-left: none;
+    padding: 15px 0 0 0;
     font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* TARJETAS DE JOBS Y RECUADRO ESPECIAL */
-.job-card {
-    background-color: var(--white);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05);
-    margin-bottom: 30px;
-    border-top: 4px solid var(--tech-blue);
-}
-
-.job-card h3 {
-    font-size: 24px;
     color: var(--tech-blue);
-    margin-bottom: 5px;
 }
 
+.product-card summary:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.product-details {
+    padding-top: 15px;
+}
+
+.product-details h4 {
+    margin-bottom: 10px;
+    color: var(--petrol-blue);
+    font-size: 15px;
+}
+
+/* RECUADROS DESTACADOS */
 .highlight-box {
     background-color: var(--baby-blue);
     border-left: 4px solid var(--tech-blue);
     padding: 20px;
-    margin: 20px 0;
+    margin: 15px 0;
     border-radius: 6px;
 }
 
 .highlight-box p {
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--petrol-blue);
 }
 
@@ -305,40 +326,109 @@ summary:hover {
     font-weight: 700;
 }
 
-.recruiter-note {
-    background-color: #FFF4E5;
-    border-left: 4px solid #FF9800;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 4px;
+/* ETIQUETAS DE COLOR (TAGS) */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
 }
 
-/* ETIQUETAS DE COLOR (TAGS) PARA PREPS */
 .tag {
     display: inline-block;
     padding: 4px 10px;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
-    margin-right: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-.tag-blue { 
-    background-color: #E6F1FF; 
-    color: #3543D7; 
-    border: 1px solid #3543D7; 
+.tag-blue { background-color: #E6F1FF; color: #3543D7; border: 1px solid #3543D7; }
+.tag-gray { background-color: #F0F0F0; color: #555555; border: 1px solid #CCCCCC; }
+
+/* CHIPS PARA INDUSTRIAS */
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.tag-orange { 
-    background-color: #FFF4E5; 
-    color: #FF9800; 
-    border: 1px solid #FF9800; 
+.chip {
+    padding: 10px 20px;
+    background-color: var(--white);
+    border: 1px solid var(--tech-blue);
+    border-radius: 50px;
+    color: var(--tech-blue);
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(5,36,70,0.05);
 }
 
-.tag-green { 
-    background-color: #E8F5E9; 
-    color: #2E7D32; 
-    border: 1px solid #2E7D32; 
+/* DIAGRAMA DE FLUJO (ECOSISTEMA) */
+.flow-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #F8FBFF;
+    border-radius: 12px;
+}
+
+.main-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.supporting-flow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flow-step {
+    background: var(--white);
+    border: 2px solid var(--tech-blue);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--petrol-blue);
+    box-shadow: 0 4px 10px rgba(5,36,70,0.05);
+    flex: 1 1 auto;
+    min-width: 140px;
+}
+
+.flow-step small {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 5px;
+    color: var(--tech-blue);
+}
+
+.flow-step.supporting {
+    border-color: #A0B3C6;
+    border-style: dashed;
+}
+
+.flow-arrow {
+    color: var(--tech-blue);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE PARA EL FLUJO EN CELULARES */
+@media (max-width: 768px) {
+    .main-flow { flex-direction: column; }
+    .flow-arrow { transform: rotate(90deg); }
 }
