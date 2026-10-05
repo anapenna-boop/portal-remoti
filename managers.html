@@ -18,19 +18,17 @@
         <nav class="nav-links">
             <div class="dropdown">
                 <a href="info.html" class="dropbtn">Cast & Crew Info</a>
+                <div class="dropdown-content">
+                    <a href="info.html#overview">Company Overview</a>
+                    <a href="info.html#ecosystem">Core Services & Ecosystem</a>
+                    <a href="info.html#executives">Executive Leadership</a>
+                </div>
             </div>
             <div class="dropdown">
                 <a href="managers.html" class="dropbtn">Managers</a>
             </div>
             <div class="dropdown">
                 <a href="jobs.html" class="dropbtn">Jobs</a>
-                <div class="dropdown-content">
-                    <a href="jobs.html#developers">Developers</a>
-                    <a href="jobs.html#qa">Quality Assurance</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="preps.html" class="dropbtn">Preps</a>
             </div>
         </nav>
     </header>
@@ -39,7 +37,6 @@
         <h2 class="section-title">Manager Insights</h2>
         <p class="section-subtitle">Understand each Hiring Manager’s style, priorities, and interview expectations.</p>
 
-        <!-- SECCIÓN DE BÚSQUEDA Y FILTROS SIMPLIFICADA -->
         <section class="controls-section">
             <input type="text" id="searchInput" class="search-bar" placeholder="Search manager by name, title, role or keyword...">
             
@@ -52,13 +49,11 @@
             </div>
         </section>
 
-        <!-- CONTENEDOR DONDE JAVASCRIPT INYECTARÁ LAS TARJETAS -->
         <div id="managersGrid" class="card-container exec-grid">
-            <!-- Las tarjetas aparecerán aquí automáticamente -->
+            <!-- JavaScript inyectará las tarjetas aquí -->
         </div>
     </main>
 
-    <!-- EL MODAL (VENTANA EMERGENTE) -->
     <div id="managerModal" class="modal-window">
         <div class="modal-content">
             <button id="closeModalBtn" class="modal-close">&times;</button>
@@ -72,7 +67,6 @@
             </div>
 
             <div class="modal-body-split">
-                <!-- Columna Izquierda: Estilo del Manager -->
                 <div class="modal-column">
                     <h4>Manager Style</h4>
                     <p id="modalStyle"></p>
@@ -81,7 +75,6 @@
                     <ul id="modalValues"></ul>
                 </div>
                 
-                <!-- Columna Derecha: Guía de Entrevista -->
                 <div class="modal-column">
                     <h4>Interview Style</h4>
                     <p id="modalInterview"></p>
@@ -102,7 +95,6 @@
         </div>
     </div>
 
-    <!-- CONECTAMOS EL CEREBRO JAVASCRIPT -->
     <script src="script.js"></script>
 </body>
 </html>
