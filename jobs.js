@@ -267,7 +267,7 @@ const jobsData = [
         salary: "USD 5,800/month",
         department: "Engineering",
         about: "Full-stack role within the OAT Onboarding team, focused on crew-facing onboarding flows, document packages, and company-level configuration tools.",
-        mustHaves: ["React", "Node.js", "PostgreSQL"],
+        mustHaves: ["React", "Node.js", "PostgreSQL", ".Net - intermediate knowledge"],
         responsibilities: [
             "Build and maintain onboarding workflows end-to-end.",
             "Develop dynamic document packages.",
@@ -277,8 +277,8 @@ const jobsData = [
             "Collaborate with Product, Design, and Engineering."
         ],
         toolsRelevant: ["TypeScript", "REST APIs", "SQL", "React Hooks", "State Management", "AdonisJS"],
-        toolsNice: [".NET — intermediate knowledge", "MobX", "CI/CD", "Automated Testing", "HR Tech / Payroll", "Document Workflows", "Multi-Tenant SaaS", "E-signature / Document Generation"],
-        recruiterNote: "The verified priorities are React, Node.js, and PostgreSQL. .NET is preferred but not mandatory. Screen for a genuine full-stack profile rather than frontend-only.",
+        toolsNice: ["MobX", "CI/CD", "Automated Testing", "HR Tech / Payroll", "Document Workflows", "Multi-Tenant SaaS", "E-signature / Document Generation"],
+        recruiterNote: "The verified priorities are React, Node.js, and PostgreSQL and .NET. Screen for a genuine full-stack profile rather than frontend-only.",
         stages: [
             {
                 name: "Live Coding",
