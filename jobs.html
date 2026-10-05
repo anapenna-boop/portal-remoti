@@ -30,7 +30,6 @@
 
     <main class="main-content">
         
-        <!-- SECCIÓN 1: DIRECTORIO DE TRABAJOS (Visible al inicio) -->
         <div id="jobsDirectorySection">
             <h2 class="section-title">Jobs & Vacancies Directory</h2>
             <p class="section-subtitle">Select a role to view requirements and interview preparation guides.</p>
@@ -52,17 +51,14 @@
             </div>
         </div>
 
-        <!-- SECCIÓN 2: DETALLE DEL TRABAJO (Oculto al inicio) -->
         <div id="jobDetailSection" class="hidden">
             <button class="back-btn" onclick="hideJobDetail()">&larr; Back to Directory</button>
-            
-            <!-- JavaScript llenará este contenedor -->
             <div id="jobDetailContent"></div>
         </div>
 
     </main>
 
-    <!-- EL MODAL DE PREPARACIÓN DE ENTREVISTA -->
+    <!-- EL MODAL DE PREPARACIÓN -->
     <div id="prepModal" class="modal-window">
         <div class="modal-content">
             <button class="modal-close" onclick="closePrepModal()">&times;</button>
@@ -75,7 +71,7 @@
             </div>
 
             <div class="modal-body" id="modalPrepBody">
-                <!-- JavaScript inyectará el contenido: setup, expect, prepare, recommendations, internal notes -->
+                <!-- Contenido dinámico -->
             </div>
 
             <div class="modal-footer">
@@ -84,10 +80,9 @@
         </div>
     </div>
 
-    <!-- NOTIFICACIÓN TOAST -->
     <div id="toast">Prep copied successfully!</div>
 
-    <!-- EL CEREBRO DE ESTA PÁGINA -->
+    <!-- CONEXIÓN AL CEREBRO -->
     <script src="jobs.js"></script>
 </body>
 </html>
