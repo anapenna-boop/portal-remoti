@@ -21,7 +21,6 @@
                 <div class="dropdown-content">
                     <a href="#overview">Company Overview</a>
                     <a href="#ecosystem">Core Services & Ecosystem</a>
-                    <a href="#culture">Cultural Fit</a>
                     <a href="#executives">Executive Leadership</a>
                 </div>
             </div>
@@ -55,7 +54,7 @@
         </section>
 
         <!-- CORE SERVICES & ECOSYSTEM -->
-        <section id="ecosystem" class="text-section" style="background-color: transparent; padding: 0; box-shadow: none;">
+        <section id="ecosystem" style="background-color: transparent; padding: 0; box-shadow: none; border-top: none;">
             
             <div class="text-section">
                 <h3>Cast & Crew Unified Platform</h3>
@@ -73,7 +72,7 @@
                     <h3>MyCast&Crew</h3>
                     <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Crew Self-Service Portal</p>
                     <p>A centralized portal where crew members can manage payroll-related information and employment documentation across Cast & Crew productions.</p>
-                    <div class="tags-container">
+                    <div class="tags-container" style="justify-content: flex-start;">
                         <span class="tag">Payroll</span>
                         <span class="tag">Tax Documents</span>
                         <span class="tag">Crew Self-Service</span>
@@ -101,7 +100,7 @@
                     <h3>Start+</h3>
                     <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Digital Onboarding</p>
                     <p>Digitizes crew hiring and onboarding by replacing paper-based workflows with digital start packets that can be completed, signed, reviewed, and approved online.</p>
-                    <div class="tags-container">
+                    <div class="tags-container" style="justify-content: flex-start;">
                         <span class="tag">Onboarding</span>
                         <span class="tag">Contracts</span>
                         <span class="tag">Compliance</span>
@@ -130,7 +129,7 @@
                     <h3>Hours+</h3>
                     <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Timekeeping</p>
                     <p>Manages digital timecards and workforce time tracking while connecting crew hours directly with payroll workflows.</p>
-                    <div class="tags-container">
+                    <div class="tags-container" style="justify-content: flex-start;">
                         <span class="tag">Timecards</span>
                         <span class="tag">Payroll</span>
                         <span class="tag">Workforce</span>
@@ -159,7 +158,7 @@
                     <h3>Reporting+</h3>
                     <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Reporting & Data Insights</p>
                     <p>Transforms payroll and HR data into reports, analytics, and business intelligence for production teams.</p>
-                    <div class="tags-container">
+                    <div class="tags-container" style="justify-content: flex-start;">
                         <span class="tag">Analytics</span>
                         <span class="tag">Reporting</span>
                         <span class="tag">BI</span>
@@ -188,7 +187,7 @@
                     <h3>Studio+</h3>
                     <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Secure File Transfer</p>
                     <p>A cloud-based system for securely storing, organizing, searching, and transferring production documents across teams.</p>
-                    <div class="tags-container">
+                    <div class="tags-container" style="justify-content: flex-start;">
                         <span class="tag">Documents</span>
                         <span class="tag">Security</span>
                         <span class="tag">Production Files</span>
@@ -218,7 +217,7 @@
                     <h3>PSL+ & DPO</h3>
                     <p style="color: var(--tech-blue); font-weight: 600; font-size: 14px; margin-bottom: 10px;">Production Accounting</p>
                     <p>Supports production accounting, budgeting, purchasing, approvals, payments, and financial reporting.</p>
-                    <div class="tags-container">
+                    <div class="tags-container" style="justify-content: flex-start;">
                         <span class="tag">Accounting</span>
                         <span class="tag">Budgeting</span>
                         <span class="tag">Finance</span>
@@ -265,54 +264,57 @@
                 </div>
             </div>
 
-            <!-- Planning Tools -->
-            <div class="card" style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <h3 style="color: var(--petrol-blue); margin-bottom: 15px;">Planning Tools</h3>
-                <div class="tags-container" style="justify-content: center;">
-                    <span class="tag">Tax Incentive Calculator</span>
-                    <span class="tag">Interactive Incentive Map</span>
-                    <span class="tag">Payroll Cost Estimator</span>
+            <!-- NUEVO: Tarjeta combinada de Planning Tools & Built for Entertainment -->
+            <div class="card combined-card">
+                <div class="combined-col">
+                    <h3>Planning Tools</h3>
+                    <div class="tags-container">
+                        <span class="tag tag-large">Tax Incentive Calculator</span>
+                        <span class="tag tag-large">Interactive Incentive Map</span>
+                        <span class="tag tag-large">Payroll Cost Estimator</span>
+                    </div>
+                </div>
+                
+                <div class="combined-divider"></div>
+                
+                <div class="combined-col">
+                    <h3>Built for Entertainment Production</h3>
+                    <div class="tags-container">
+                        <span class="tag tag-large">Film & Television</span>
+                        <span class="tag tag-large">Streaming</span>
+                        <span class="tag tag-large">Independent Film</span>
+                        <span class="tag tag-large">Commercials & Advertising</span>
+                        <span class="tag tag-large">Sports & Live Events</span>
+                        <span class="tag tag-large">Live Theatre</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Bottom Sections -->
-            <div class="bottom-sections-grid">
-                <div>
-                    <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Beyond the Platform</h3>
-                    <p style="margin-bottom: 20px;">Cast & Crew also provides specialized production services that complement its technology ecosystem.</p>
-                    <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <div class="compact-card">
-                            <h4>Entertainment Payroll</h4>
-                            <p>Payroll administration for production workforces.</p>
-                        </div>
-                        <div class="compact-card">
-                            <h4>Tax Incentives</h4>
-                            <p>Support identifying and maximizing production incentives across regions.</p>
-                        </div>
-                        <div class="compact-card">
-                            <h4>Workers’ Compensation</h4>
-                            <p>Coverage and workforce risk-management support.</p>
-                        </div>
-                        <div class="compact-card">
-                            <h4>Residuals Management</h4>
-                            <p>Administration of residual payments.</p>
-                        </div>
-                        <div class="compact-card">
-                            <h4>Talent & Workforce Services</h4>
-                            <p>Support related to production staffing and workforce operations.</p>
-                        </div>
+            <!-- NUEVO: Beyond the Platform en cuadrícula 2-2-1 -->
+            <div style="margin-top: 50px;">
+                <h3 style="color: var(--petrol-blue); margin-bottom: 10px; text-align: center;">Beyond the Platform</h3>
+                <p style="margin-bottom: 30px; text-align: center;">Cast & Crew also provides specialized production services that complement its technology ecosystem.</p>
+                
+                <div class="beyond-grid">
+                    <div class="compact-card">
+                        <h4>Entertainment Payroll</h4>
+                        <p>Payroll administration for production workforces.</p>
                     </div>
-                </div>
-
-                <div>
-                    <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Built for Entertainment Production</h3>
-                    <div class="chip-container">
-                        <span class="chip">Film & Television</span>
-                        <span class="chip">Streaming</span>
-                        <span class="chip">Independent Film</span>
-                        <span class="chip">Commercials & Advertising</span>
-                        <span class="chip">Sports & Live Events</span>
-                        <span class="chip">Live Theatre</span>
+                    <div class="compact-card">
+                        <h4>Tax Incentives</h4>
+                        <p>Support identifying and maximizing production incentives across regions.</p>
+                    </div>
+                    <div class="compact-card">
+                        <h4>Workers’ Compensation</h4>
+                        <p>Coverage and workforce risk-management support.</p>
+                    </div>
+                    <div class="compact-card">
+                        <h4>Residuals Management</h4>
+                        <p>Administration of residual payments.</p>
+                    </div>
+                    <div class="compact-card">
+                        <h4>Talent & Workforce Services</h4>
+                        <p>Support related to production staffing and workforce operations.</p>
                     </div>
                 </div>
             </div>
@@ -325,8 +327,8 @@
             <p>Backstage, CAPS, Checks & Balances, Final Draft, Media Services, Sargent-Disc, The TEAM Companies.</p>
         </section>
 
-        <!-- NUEVA SECCIÓN: EXECUTIVE LEADERSHIP (CARDS & MODALS) -->
-        <section id="executives" class="text-section" style="background-color: transparent; padding: 0; box-shadow: none;">
+        <!-- EXECUTIVE LEADERSHIP (CARDS & MODALS) -->
+        <section id="executives" style="background-color: transparent; padding: 0; box-shadow: none; border-top: none;">
             <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Executive Leadership</h3>
             
             <div class="card-container exec-grid">
@@ -400,11 +402,7 @@
 
     </main>
 
-    <!-- ============================================== -->
-    <!-- MODALES DE EJECUTIVOS (Ocultos por defecto)    -->
-    <!-- ============================================== -->
-
-    <!-- Modal Jen -->
+    <!-- MODALES DE EJECUTIVOS -->
     <div id="modal-jen" class="modal-window">
         <div class="modal-content">
             <a href="#executives" class="modal-close">&times;</a>
@@ -416,7 +414,7 @@
                 <div class="modal-right">
                     <h3>Jen Hollingsworth</h3>
                     <p class="exec-title" style="margin-bottom: 5px;">Chief Executive Officer</p>
-                    <div class="tags-container" style="margin-bottom: 20px;">
+                    <div class="tags-container" style="justify-content: flex-start; margin-bottom: 20px;">
                         <span class="tag">Entertainment Technology</span>
                         <span class="tag">Business Transformation</span>
                         <span class="tag">Growth</span>
@@ -440,7 +438,6 @@
         </div>
     </div>
 
-    <!-- Modal Tanya -->
     <div id="modal-tanya" class="modal-window">
         <div class="modal-content">
             <a href="#executives" class="modal-close">&times;</a>
@@ -452,7 +449,7 @@
                 <div class="modal-right">
                     <h3>Tanya Alfonso</h3>
                     <p class="exec-title" style="margin-bottom: 5px;">Chief Revenue Officer</p>
-                    <div class="tags-container" style="margin-bottom: 20px;">
+                    <div class="tags-container" style="justify-content: flex-start; margin-bottom: 20px;">
                         <span class="tag">Revenue Growth</span>
                         <span class="tag">Go-to-Market</span>
                         <span class="tag">Enterprise SaaS</span>
@@ -477,7 +474,6 @@
         </div>
     </div>
 
-    <!-- Modal Justin -->
     <div id="modal-justin" class="modal-window">
         <div class="modal-content">
             <a href="#executives" class="modal-close">&times;</a>
@@ -489,7 +485,7 @@
                 <div class="modal-right">
                     <h3>Justin Rofel</h3>
                     <p class="exec-title" style="margin-bottom: 5px;">Chief Financial Officer</p>
-                    <div class="tags-container" style="margin-bottom: 20px;">
+                    <div class="tags-container" style="justify-content: flex-start; margin-bottom: 20px;">
                         <span class="tag">Strategic Finance</span>
                         <span class="tag">Operations</span>
                         <span class="tag">M&A</span>
@@ -515,7 +511,6 @@
         </div>
     </div>
 
-    <!-- Modal Will -->
     <div id="modal-will" class="modal-window">
         <div class="modal-content">
             <a href="#executives" class="modal-close">&times;</a>
@@ -527,7 +522,7 @@
                 <div class="modal-right">
                     <h3>Will Moxley</h3>
                     <p class="exec-title" style="margin-bottom: 5px;">Chief Product Officer</p>
-                    <div class="tags-container" style="margin-bottom: 20px;">
+                    <div class="tags-container" style="justify-content: flex-start; margin-bottom: 20px;">
                         <span class="tag">Product Strategy</span>
                         <span class="tag">Enterprise SaaS</span>
                         <span class="tag">Platform Growth</span>
@@ -553,7 +548,6 @@
         </div>
     </div>
 
-    <!-- Modal Brent -->
     <div id="modal-brent" class="modal-window">
         <div class="modal-content">
             <a href="#executives" class="modal-close">&times;</a>
@@ -565,7 +559,7 @@
                 <div class="modal-right">
                     <h3>Brent Glover</h3>
                     <p class="exec-title" style="margin-bottom: 5px;">Chief Technology Officer</p>
-                    <div class="tags-container" style="margin-bottom: 20px;">
+                    <div class="tags-container" style="justify-content: flex-start; margin-bottom: 20px;">
                         <span class="tag">Technology Modernization</span>
                         <span class="tag">Cloud Engineering</span>
                         <span class="tag">Platform Integration</span>
