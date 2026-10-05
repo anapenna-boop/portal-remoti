@@ -45,6 +45,7 @@
         <h2 class="section-title">Cast & Crew Information</h2>
         <p class="section-subtitle">Understanding the business, culture, and leadership.</p>
 
+        <!-- Company Overview -->
         <section id="overview" class="text-section">
             <h3>Company Overview</h3>
             <p><strong>Founded:</strong> 1976 | <strong>Headquarters:</strong> Burbank, California</p>
@@ -53,7 +54,7 @@
             <p>Cast & Crew is a leading entertainment technology and services company that supports film, television, streaming, live events, and other productions behind the scenes. The company manages many of the administrative and operational processes required to keep productions running smoothly, including payroll, production accounting, onboarding, contracts, time tracking, labor compliance, and tax incentives. Its goal is to simplify production operations so studios, production companies, and creative teams can focus on creating content.</p>
         </section>
 
-        <!-- SECCIÓN: CORE SERVICES & ECOSYSTEM -->
+        <!-- CORE SERVICES & ECOSYSTEM -->
         <section id="ecosystem" class="text-section" style="background-color: transparent; padding: 0; box-shadow: none;">
             
             <div class="text-section">
@@ -264,7 +265,7 @@
                 </div>
             </div>
 
-            <!-- NUEVO: Planning Tools en rectángulo horizontal -->
+            <!-- Planning Tools -->
             <div class="card" style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <h3 style="color: var(--petrol-blue); margin-bottom: 15px;">Planning Tools</h3>
                 <div class="tags-container" style="justify-content: center;">
@@ -274,10 +275,8 @@
                 </div>
             </div>
 
-            <!-- SECCIONES INFERIORES SIMÉTRICAS SIN CAJA BLANCA -->
+            <!-- Bottom Sections -->
             <div class="bottom-sections-grid">
-                
-                <!-- Columna Izquierda: Beyond the Platform -->
                 <div>
                     <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Beyond the Platform</h3>
                     <p style="margin-bottom: 20px;">Cast & Crew also provides specialized production services that complement its technology ecosystem.</p>
@@ -305,7 +304,6 @@
                     </div>
                 </div>
 
-                <!-- Columna Derecha: Built for Entertainment Production -->
                 <div>
                     <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Built for Entertainment Production</h3>
                     <div class="chip-container">
@@ -317,7 +315,6 @@
                         <span class="chip">Live Theatre</span>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -328,65 +325,270 @@
             <p>Backstage, CAPS, Checks & Balances, Final Draft, Media Services, Sargent-Disc, The TEAM Companies.</p>
         </section>
 
-        <!-- Executive Leadership -->
-        <section id="executives" class="text-section">
-            <h3>Executive Leadership</h3>
+        <!-- NUEVA SECCIÓN: EXECUTIVE LEADERSHIP (CARDS & MODALS) -->
+        <section id="executives" class="text-section" style="background-color: transparent; padding: 0; box-shadow: none;">
+            <h3 style="color: var(--petrol-blue); margin-bottom: 20px;">Executive Leadership</h3>
             
-            <div class="card-container two-columns">
-                <div class="card">
-                    <div class="exec-profile">
-                        <img src="imagenes/jen.jpg" alt="Jen Hollingsworth" class="exec-photo">
-                        <div>
-                            <h3>Jen Hollingsworth</h3>
-                            <p><strong>Chief Executive Officer</strong></p>
-                            <p>Los Angeles Metropolitan Area</p>
-                        </div>
+            <div class="card-container exec-grid">
+                
+                <!-- Jen Card -->
+                <a href="#modal-jen" class="card exec-card-link">
+                    <img src="imagenes/jen.jpg" alt="Jen Hollingsworth" class="exec-card-photo">
+                    <h3>Jen Hollingsworth</h3>
+                    <p class="exec-title">Chief Executive Officer</p>
+                    <div class="tags-container" style="justify-content: center;">
+                        <span class="tag">Entertainment</span>
+                        <span class="tag">Technology</span>
+                        <span class="tag">Transformation</span>
+                        <span class="tag">Growth</span>
                     </div>
-                    <p style="margin-top:15px;">Executive and business transformation leader with 20+ years of experience across technology, media, and entertainment.</p>
-                    <a href="https://www.linkedin.com/in/jen-hollingsworth/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
-                </div>
+                </a>
 
-                <div class="card">
-                    <div class="exec-profile">
-                        <img src="imagenes/tanya.jpg" alt="Tanya Alfonso" class="exec-photo">
-                        <div>
-                            <h3>Tanya Alfonso</h3>
-                            <p><strong>Chief Revenue Officer / GTM Leader</strong></p>
-                            <p>Thousand Oaks, California</p>
-                        </div>
+                <!-- Tanya Card -->
+                <a href="#modal-tanya" class="card exec-card-link">
+                    <img src="imagenes/tanya.jpg" alt="Tanya Alfonso" class="exec-card-photo">
+                    <h3>Tanya Alfonso</h3>
+                    <p class="exec-title">Chief Revenue Officer</p>
+                    <div class="tags-container" style="justify-content: center;">
+                        <span class="tag">Revenue Growth</span>
+                        <span class="tag">Go-to-Market</span>
+                        <span class="tag">Enterprise SaaS</span>
+                        <span class="tag">Scaling</span>
                     </div>
-                    <p style="margin-top:15px;">Sales and revenue executive with 20+ years of experience in B2B SaaS and technology. Expertise in Go-To-Market.</p>
-                    <a href="https://www.linkedin.com/in/tanyaalfonso/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
-                </div>
+                </a>
 
-                <div class="card">
-                    <div class="exec-profile">
-                        <img src="imagenes/william.jpg" alt="William Moxley" class="exec-photo">
-                        <div>
-                            <h3>William Moxley</h3>
-                            <p><strong>Chief Product Officer</strong></p>
-                            <p>Los Angeles Metropolitan Area</p>
-                        </div>
+                <!-- Justin Card -->
+                <a href="#modal-justin" class="card exec-card-link">
+                    <img src="imagenes/justin.jpg" alt="Justin Rofel" class="exec-card-photo">
+                    <h3>Justin Rofel</h3>
+                    <p class="exec-title">Chief Financial Officer</p>
+                    <div class="tags-container" style="justify-content: center;">
+                        <span class="tag">Strategic Finance</span>
+                        <span class="tag">Operations</span>
+                        <span class="tag">M&A</span>
+                        <span class="tag">Strategy</span>
                     </div>
-                    <p style="margin-top:15px;">Enterprise software product leader specializing in SaaS, B2B platforms, integrations, and applied AI.</p>
-                    <a href="https://www.linkedin.com/in/williammoxley/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
-                </div>
+                </a>
 
-                <div class="card">
-                    <div class="exec-profile">
-                        <img src="imagenes/brent.jpg" alt="Brent Glover" class="exec-photo">
-                        <div>
-                            <h3>Brent Glover</h3>
-                            <p><strong>Chief Technology Officer</strong></p>
-                            <p>Palm Desert, California</p>
-                        </div>
+                <!-- Will Card -->
+                <a href="#modal-will" class="card exec-card-link">
+                    <img src="imagenes/william.jpg" alt="Will Moxley" class="exec-card-photo">
+                    <h3>Will Moxley</h3>
+                    <p class="exec-title">Chief Product Officer</p>
+                    <div class="tags-container" style="justify-content: center;">
+                        <span class="tag">Product Strategy</span>
+                        <span class="tag">Enterprise SaaS</span>
+                        <span class="tag">Platform Growth</span>
+                        <span class="tag">Innovation</span>
                     </div>
-                    <p style="margin-top:15px;">Technology executive experienced in leading enterprise SaaS engineering organizations and Data AI/ML.</p>
-                    <a href="https://www.linkedin.com/in/brent-glover-3311312/" target="_blank" class="linkedin-btn">View LinkedIn Profile</a>
-                </div>
+                </a>
+
+                <!-- Brent Card -->
+                <a href="#modal-brent" class="card exec-card-link">
+                    <img src="imagenes/brent.jpg" alt="Brent Glover" class="exec-card-photo">
+                    <h3>Brent Glover</h3>
+                    <p class="exec-title">Chief Technology Officer</p>
+                    <div class="tags-container" style="justify-content: center;">
+                        <span class="tag">Modernization</span>
+                        <span class="tag">Cloud Engineering</span>
+                        <span class="tag">Platform Integration</span>
+                    </div>
+                </a>
+
             </div>
         </section>
 
     </main>
+
+    <!-- ============================================== -->
+    <!-- MODALES DE EJECUTIVOS (Ocultos por defecto)    -->
+    <!-- ============================================== -->
+
+    <!-- Modal Jen -->
+    <div id="modal-jen" class="modal-window">
+        <div class="modal-content">
+            <a href="#executives" class="modal-close">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img src="imagenes/jen.jpg" alt="Jen Hollingsworth">
+                    <a href="https://www.linkedin.com/in/jen-hollingsworth/" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+                </div>
+                <div class="modal-right">
+                    <h3>Jen Hollingsworth</h3>
+                    <p class="exec-title" style="margin-bottom: 5px;">Chief Executive Officer</p>
+                    <div class="tags-container" style="margin-bottom: 20px;">
+                        <span class="tag">Entertainment Technology</span>
+                        <span class="tag">Business Transformation</span>
+                        <span class="tag">Growth</span>
+                    </div>
+                    
+                    <h4>About</h4>
+                    <p>Jen joined Cast & Crew as CEO in 2025, bringing more than 20 years of experience across the entertainment and technology industries.</p>
+                    
+                    <h4>Relevant Background</h4>
+                    <ul>
+                        <li>Former Chief Commercial Officer at Flawless AI.</li>
+                        <li>Former COO of Lionsgate’s Motion Picture Group.</li>
+                        <li>Extensive experience connecting business strategy, entertainment operations, and technology.</li>
+                    </ul>
+                    
+                    <div class="highlight-box" style="margin-top: 25px;">
+                        <p><strong>Why It Matters for Cast & Crew:</strong> Her background positions her to lead Cast & Crew through continued modernization while maintaining a strong understanding of the entertainment industry and its operational needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tanya -->
+    <div id="modal-tanya" class="modal-window">
+        <div class="modal-content">
+            <a href="#executives" class="modal-close">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img src="imagenes/tanya.jpg" alt="Tanya Alfonso">
+                    <a href="https://www.linkedin.com/in/tanyaalfonso/" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+                </div>
+                <div class="modal-right">
+                    <h3>Tanya Alfonso</h3>
+                    <p class="exec-title" style="margin-bottom: 5px;">Chief Revenue Officer</p>
+                    <div class="tags-container" style="margin-bottom: 20px;">
+                        <span class="tag">Revenue Growth</span>
+                        <span class="tag">Go-to-Market</span>
+                        <span class="tag">Enterprise SaaS</span>
+                        <span class="tag">Scaling</span>
+                    </div>
+                    
+                    <h4>About</h4>
+                    <p>Tanya joined Cast & Crew as Chief Revenue Officer in 2026 and brings extensive experience building and scaling go-to-market organizations across public, private equity-backed, and venture-backed technology companies.</p>
+                    
+                    <h4>Relevant Background</h4>
+                    <ul>
+                        <li>Former VP of North America at Vicarius.</li>
+                        <li>Former Chief Revenue Officer at Corero Network Security.</li>
+                        <li>Previous senior leadership experience across enterprise technology and SaaS organizations including Imperva and ADP.</li>
+                    </ul>
+                    
+                    <div class="highlight-box" style="margin-top: 25px;">
+                        <p><strong>Why It Matters for Cast & Crew:</strong> Her experience is particularly relevant to Cast & Crew’s commercial growth, client expansion, and ability to scale its technology and services across markets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Justin -->
+    <div id="modal-justin" class="modal-window">
+        <div class="modal-content">
+            <a href="#executives" class="modal-close">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img src="imagenes/justin.jpg" alt="Justin Rofel">
+                    <a href="https://www.linkedin.com/in/justin-rofel/" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+                </div>
+                <div class="modal-right">
+                    <h3>Justin Rofel</h3>
+                    <p class="exec-title" style="margin-bottom: 5px;">Chief Financial Officer</p>
+                    <div class="tags-container" style="margin-bottom: 20px;">
+                        <span class="tag">Strategic Finance</span>
+                        <span class="tag">Operations</span>
+                        <span class="tag">M&A</span>
+                        <span class="tag">Corporate Strategy</span>
+                    </div>
+                    
+                    <h4>About</h4>
+                    <p>Justin joined Cast & Crew as Chief Financial Officer in 2025, bringing nearly 20 years of experience across strategic finance, operations, and corporate strategy.</p>
+                    
+                    <h4>Relevant Background</h4>
+                    <ul>
+                        <li>Experience across SaaS and technology operating models, private equity-backed companies, and high-growth digital platforms.</li>
+                        <li>Former SVP of Finance at symplr, leading global finance, FP&A, and business operations.</li>
+                        <li>Former VP of Finance at Prodege.</li>
+                        <li>Previous investment banking experience at Houlihan Lokey across M&A, capital raising, and financial restructuring.</li>
+                    </ul>
+                    
+                    <div class="highlight-box" style="margin-top: 25px;">
+                        <p><strong>Why It Matters for Cast & Crew:</strong> His background supports Cast & Crew’s financial strategy, operational scalability, investment decisions, and growth within a private equity-backed environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Will -->
+    <div id="modal-will" class="modal-window">
+        <div class="modal-content">
+            <a href="#executives" class="modal-close">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img src="imagenes/william.jpg" alt="Will Moxley">
+                    <a href="https://www.linkedin.com/in/williammoxley/" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+                </div>
+                <div class="modal-right">
+                    <h3>Will Moxley</h3>
+                    <p class="exec-title" style="margin-bottom: 5px;">Chief Product Officer</p>
+                    <div class="tags-container" style="margin-bottom: 20px;">
+                        <span class="tag">Product Strategy</span>
+                        <span class="tag">Enterprise SaaS</span>
+                        <span class="tag">Platform Growth</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    
+                    <h4>About</h4>
+                    <p>Will brings more than 20 years of experience leading software products and enterprise SaaS organizations.</p>
+                    
+                    <h4>Relevant Background</h4>
+                    <ul>
+                        <li>Former SVP of Product at AppFolio.</li>
+                        <li>Former Chief Product Officer at RingCentral.</li>
+                        <li>Spent 13 years at Salesforce leading products including Sales Cloud, PRM, and Marketing Cloud.</li>
+                        <li>Under his leadership, Salesforce Sales Cloud achieved significant revenue growth and expanded its market share.</li>
+                    </ul>
+                    
+                    <div class="highlight-box" style="margin-top: 25px;">
+                        <p><strong>Why It Matters for Cast & Crew:</strong> His experience in large-scale SaaS products is highly relevant as Cast & Crew continues modernizing and connecting its technology ecosystem into more integrated digital experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Brent -->
+    <div id="modal-brent" class="modal-window">
+        <div class="modal-content">
+            <a href="#executives" class="modal-close">&times;</a>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img src="imagenes/brent.jpg" alt="Brent Glover">
+                    <a href="https://www.linkedin.com/in/brent-glover-3311312/" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+                </div>
+                <div class="modal-right">
+                    <h3>Brent Glover</h3>
+                    <p class="exec-title" style="margin-bottom: 5px;">Chief Technology Officer</p>
+                    <div class="tags-container" style="margin-bottom: 20px;">
+                        <span class="tag">Technology Modernization</span>
+                        <span class="tag">Cloud Engineering</span>
+                        <span class="tag">Platform Integration</span>
+                    </div>
+                    
+                    <h4>About</h4>
+                    <p>Brent joined Cast & Crew as CTO in 2025 and brings more than 25 years of experience leading technology, engineering, and product organizations across SaaS, payments, and enterprise software.</p>
+                    
+                    <h4>Relevant Background</h4>
+                    <ul>
+                        <li>Former CTO of Routeware, leading modernization, cloud transformation, and platform integration initiatives.</li>
+                        <li>Previous engineering leadership roles at Zego and Audatex.</li>
+                        <li>Experience with technology integration, eCommerce, mobile development, and M&A.</li>
+                        <li>Track record of building high-performing global engineering organizations.</li>
+                    </ul>
+                    
+                    <div class="highlight-box" style="margin-top: 25px;">
+                        <p><strong>Why It Matters for Cast & Crew:</strong> His experience directly supports Cast & Crew’s technology modernization, platform integration, cloud evolution, and the development of scalable engineering organizations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
