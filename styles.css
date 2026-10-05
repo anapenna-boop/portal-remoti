@@ -170,7 +170,22 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .filter-btn:hover { border-color: var(--tech-blue); color: var(--tech-blue); }
 .filter-btn.active { background-color: var(--tech-blue); color: var(--white); border-color: var(--tech-blue); }
 
-/* JOB DIRECTORY Y ACORDEONES */
+/* -------------------------------------- */
+/* MANAGER CARDS (Aquí estaba el error)   */
+/* -------------------------------------- */
+.manager-card { background-color: var(--white); border-radius: 12px; padding: 30px 20px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); display: flex; flex-direction: column; border-top: 4px solid var(--tech-blue); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.manager-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(5, 36, 70, 0.1); }
+.manager-header { margin-bottom: 15px; }
+.manager-name { font-size: 22px; color: var(--petrol-blue); font-weight: 700; margin-bottom: 5px; }
+.manager-title { font-size: 15px; color: var(--tech-blue); font-weight: 600; margin-bottom: 5px; }
+.manager-roles { font-size: 13px; color: #666; font-style: italic; }
+.view-insights-btn { margin-top: auto; background-color: transparent; color: var(--tech-blue); border: 1px solid var(--tech-blue); padding: 10px; border-radius: 6px; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.3s ease; width: 100%; font-family: 'Figtree', sans-serif; }
+.view-insights-btn:hover { background-color: var(--tech-blue); color: var(--white); }
+#no-results { text-align: center; padding: 40px; font-size: 18px; color: #888; width: 100%; }
+
+/* -------------------------------------- */
+/* JOB DIRECTORY Y ACORDEONES             */
+/* -------------------------------------- */
 .hidden { display: none !important; }
 
 details { background-color: var(--white); border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(5, 36, 70, 0.05); overflow: hidden; }
@@ -182,34 +197,13 @@ summary:hover { background-color: var(--baby-blue); }
 .product-card summary:hover { background-color: transparent; text-decoration: underline; }
 .product-details { padding-top: 15px; }
 
-.job-card {
-    background-color: var(--white);
-    border-radius: 12px;
-    padding: 30px 20px;
-    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05);
-    display: flex;
-    flex-direction: column;
-    border-top: 4px solid var(--tech-blue);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.job-card { background-color: var(--white); border-radius: 12px; padding: 30px 20px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); display: flex; flex-direction: column; border-top: 4px solid var(--tech-blue); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .job-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(5, 36, 70, 0.1); }
 .job-card h3 { font-size: 22px; color: var(--petrol-blue); margin-bottom: 5px; }
 .job-meta { font-size: 14px; color: #666; margin-bottom: 15px; }
 .job-card p { font-size: 14px; line-height: 1.6; margin-bottom: 15px; flex-grow: 1; }
 
-.primary-btn {
-    background-color: var(--tech-blue);
-    color: var(--white);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-    font-family: 'Figtree', sans-serif;
-}
+.primary-btn { background-color: var(--tech-blue); color: var(--white); border: none; padding: 12px 20px; border-radius: 6px; font-weight: 700; font-size: 15px; cursor: pointer; transition: all 0.3s ease; width: 100%; font-family: 'Figtree', sans-serif; }
 .primary-btn:hover { background-color: var(--petrol-blue); }
 
 .linkedin-btn { display: inline-flex; align-items: center; background-color: #0077b5; color: var(--white); padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; transition: background-color 0.3s ease; }
@@ -244,6 +238,8 @@ summary:hover { background-color: var(--baby-blue); }
 /* MODALES */
 .modal-window { position: fixed; background-color: rgba(5, 36, 70, 0.85); top: 0; right: 0; bottom: 0; left: 0; z-index: 9999; visibility: hidden; opacity: 0; pointer-events: none; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; padding: 20px; }
 .modal-window.active { visibility: visible; opacity: 1; pointer-events: auto; }
+.modal-window:target { visibility: visible; opacity: 1; pointer-events: auto; } /* Esto arregla los perfiles de Info */
+
 .modal-content { background: var(--white); width: 100%; max-width: 900px; border-radius: 12px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.3); display: flex; flex-direction: column; }
 .modal-close { position: absolute; top: 20px; right: 25px; font-size: 30px; text-decoration: none; color: var(--petrol-blue); font-weight: bold; z-index: 10; cursor: pointer; border: none; background: transparent; }
 .modal-close:hover { color: var(--tech-blue); }
