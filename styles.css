@@ -146,7 +146,6 @@ h1, h2, h3, h4, p, ul {
     gap: 30px;
 }
 
-/* Cuadrícula para los 6 productos */
 .card-container.three-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -154,7 +153,13 @@ h1, h2, h3, h4, p, ul {
     align-items: flex-start;
 }
 
-/* Cuadrícula para la sección inferior simétrica */
+/* Cuadrícula para ejecutivos */
+.card-container.exec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
 .bottom-sections-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,14 +197,14 @@ h1, h2, h3, h4, p, ul {
     margin-bottom: 15px;
 }
 
-/* TARJETAS DE PRODUCTO (Alineación) */
+/* TARJETAS DE PRODUCTO */
 .product-card {
     display: flex;
     flex-direction: column;
     min-height: 380px; 
 }
 
-/* TARJETA COMPACTA (SECONDARY) */
+/* TARJETA COMPACTA */
 .compact-card {
     background-color: var(--white);
     padding: 20px;
@@ -239,38 +244,22 @@ h1, h2, h3, h4, p, ul {
     margin-bottom: 10px;
 }
 
-/* BOTÓN DE LINKEDIN */
+/* BOTÓN DE LINKEDIN Y ENLACES */
 .linkedin-btn {
     display: inline-block;
-    background-color: var(--tech-blue);
+    background-color: #0077b5; /* Color oficial de LinkedIn */
     color: var(--white);
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
-    margin-top: 15px;
+    font-size: 13px;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
 .linkedin-btn:hover {
-    background-color: var(--petrol-blue);
-}
-
-/* PERFILES EJECUTIVOS */
-.exec-profile {
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.exec-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--baby-blue);
+    background-color: #005582;
 }
 
 /* ACORDEÓN GENERAL */
@@ -291,11 +280,11 @@ summary {
     background-color: var(--white);
     border-left: 4px solid var(--tech-blue);
     transition: background-color 0.2s ease;
-    list-style: none; /* Quita la flecha por defecto */
+    list-style: none;
 }
 
 summary::-webkit-details-marker {
-    display: none; /* Quita la flecha en Safari */
+    display: none;
 }
 
 summary:hover {
@@ -308,7 +297,7 @@ summary:hover {
     margin-bottom: 0;
     border-top: 1px solid var(--baby-blue);
     border-radius: 0;
-    margin-top: auto; /* Empuja siempre el botón "Learn More" hacia abajo */
+    margin-top: auto; 
 }
 
 .product-card summary {
@@ -352,7 +341,7 @@ summary:hover {
     font-weight: 700;
 }
 
-/* ETIQUETAS (TAGS) CORREGIDAS CON FONDO CELESTE SIEMPRE */
+/* ETIQUETAS (TAGS) */
 .tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -362,7 +351,7 @@ summary:hover {
 
 .tag {
     display: inline-block;
-    background-color: var(--baby-blue); /* Fondo celeste forzado */
+    background-color: var(--baby-blue);
     color: var(--tech-blue);
     padding: 6px 12px;
     border-radius: 4px;
@@ -370,7 +359,13 @@ summary:hover {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border: none; /* Sin bordes */
+    border: none;
+}
+
+.tag-large {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
 }
 
 /* CHIPS (TABS) PARA INDUSTRIAS */
@@ -454,9 +449,158 @@ summary:hover {
     font-weight: bold;
 }
 
+/* -------------------------------------- */
+/* NUEVA SECCIÓN: EXECUTIVE CARDS & MODAL */
+/* -------------------------------------- */
+
+/* Tarjetas ejecutivas interactivas */
+.exec-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exec-card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(5, 36, 70, 0.1);
+}
+
+.exec-card-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--baby-blue);
+    margin-bottom: 15px;
+}
+
+.exec-card-link h3 {
+    margin-bottom: 5px;
+    color: var(--petrol-blue);
+}
+
+.exec-title {
+    color: var(--tech-blue);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Modales (Ventanas Emergentes) */
+.modal-window {
+    position: fixed;
+    background-color: rgba(5, 36, 70, 0.85); /* Fondo oscuro transparente */
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Activar el modal cuando se hace clic */
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: var(--white);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--petrol-blue);
+    font-weight: bold;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    color: var(--tech-blue);
+}
+
+.modal-body {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+}
+
+.modal-left {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.modal-left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--baby-blue);
+    margin-bottom: 15px;
+}
+
+.modal-right {
+    flex: 1;
+}
+
+.modal-right h3 {
+    font-size: 28px;
+    color: var(--petrol-blue);
+    margin-bottom: 5px;
+}
+
+.modal-right h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--petrol-blue);
+    font-size: 18px;
+    border-bottom: 2px solid var(--baby-blue);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.modal-right ul {
+    margin-bottom: 15px;
+}
+
+.modal-right ul li {
+    margin-bottom: 8px;
+}
+
+/* Responsivo para celulares */
 @media (max-width: 768px) {
     .main-flow { flex-direction: column; }
     .flow-arrow { transform: rotate(90deg); }
     .card-container.two-columns { grid-template-columns: 1fr; }
     .bottom-sections-grid { grid-template-columns: 1fr; }
+    
+    .modal-body {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    .modal-left {
+        flex: none;
+    }
 }
