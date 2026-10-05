@@ -146,10 +146,12 @@ h1, h2, h3, h4, p, ul {
     gap: 30px;
 }
 
+/* Cuadrícula para los 6 productos */
 .card-container.three-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    align-items: flex-start; /* Evita que las tarjetas se estiren cuando una se abre */
 }
 
 /* TARJETA BÁSICA */
@@ -181,11 +183,20 @@ h1, h2, h3, h4, p, ul {
     margin-bottom: 15px;
 }
 
+/* TARJETAS DE PRODUCTO (Nuevas reglas de alineación) */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px; /* Asegura que todas empiecen a la misma altura */
+}
+
 /* TARJETA COMPACTA (SECONDARY) */
 .compact-card {
+    background-color: var(--white);
     padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05);
     border-top: 2px solid var(--baby-blue);
-    min-width: 250px;
 }
 
 .compact-card h4 {
@@ -271,6 +282,11 @@ summary {
     background-color: var(--white);
     border-left: 4px solid var(--tech-blue);
     transition: background-color 0.2s ease;
+    list-style: none; /* Quita la flecha por defecto */
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Quita la flecha en Safari */
 }
 
 summary:hover {
@@ -283,6 +299,7 @@ summary:hover {
     margin-bottom: 0;
     border-top: 1px solid var(--baby-blue);
     border-radius: 0;
+    margin-top: auto; /* Empuja siempre el botón "Learn More" hacia abajo */
 }
 
 .product-card summary {
@@ -326,7 +343,7 @@ summary:hover {
     font-weight: 700;
 }
 
-/* ETIQUETAS DE COLOR (TAGS) */
+/* ETIQUETAS (TAGS) SIN BORDES */
 .tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -336,7 +353,7 @@ summary:hover {
 
 .tag {
     display: inline-block;
-    padding: 4px 10px;
+    padding: 6px 12px;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 700;
@@ -344,26 +361,17 @@ summary:hover {
     letter-spacing: 0.5px;
 }
 
-.tag-blue { background-color: #E6F1FF; color: #3543D7; border: 1px solid #3543D7; }
-.tag-gray { background-color: #F0F0F0; color: #555555; border: 1px solid #CCCCCC; }
-
-/* CHIPS PARA INDUSTRIAS */
-.chip-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+.tag-blue { 
+    background-color: #E6F1FF; 
+    color: #3543D7; 
+    border: none; /* Borde eliminado */
 }
 
-.chip {
-    padding: 10px 20px;
-    background-color: var(--white);
-    border: 1px solid var(--tech-blue);
-    border-radius: 50px;
-    color: var(--tech-blue);
-    font-weight: 600;
+/* Etiqueta un poco más grande para las Industrias */
+.tag-large {
+    padding: 8px 16px;
     font-size: 14px;
-    box-shadow: 0 4px 10px rgba(5,36,70,0.05);
+    border-radius: 6px;
 }
 
 /* DIAGRAMA DE FLUJO (ECOSISTEMA) */
@@ -427,8 +435,8 @@ summary:hover {
     font-weight: bold;
 }
 
-/* RESPONSIVE PARA EL FLUJO EN CELULARES */
 @media (max-width: 768px) {
     .main-flow { flex-direction: column; }
     .flow-arrow { transform: rotate(90deg); }
+    .card-container.two-columns { grid-template-columns: 1fr; }
 }
