@@ -151,7 +151,16 @@ h1, h2, h3, h4, p, ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    align-items: flex-start; /* Evita que las tarjetas se estiren cuando una se abre */
+    align-items: flex-start;
+}
+
+/* Cuadrícula para la sección inferior simétrica */
+.bottom-sections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 40px;
 }
 
 /* TARJETA BÁSICA */
@@ -183,11 +192,11 @@ h1, h2, h3, h4, p, ul {
     margin-bottom: 15px;
 }
 
-/* TARJETAS DE PRODUCTO (Nuevas reglas de alineación) */
+/* TARJETAS DE PRODUCTO (Alineación) */
 .product-card {
     display: flex;
     flex-direction: column;
-    min-height: 380px; /* Asegura que todas empiecen a la misma altura */
+    min-height: 380px; 
 }
 
 /* TARJETA COMPACTA (SECONDARY) */
@@ -343,7 +352,7 @@ summary:hover {
     font-weight: 700;
 }
 
-/* ETIQUETAS (TAGS) SIN BORDES */
+/* ETIQUETAS (TAGS) CORREGIDAS CON FONDO CELESTE SIEMPRE */
 .tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -353,25 +362,35 @@ summary:hover {
 
 .tag {
     display: inline-block;
+    background-color: var(--baby-blue); /* Fondo celeste forzado */
+    color: var(--tech-blue);
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    border: none; /* Sin bordes */
 }
 
-.tag-blue { 
-    background-color: #E6F1FF; 
-    color: #3543D7; 
-    border: none; /* Borde eliminado */
+/* CHIPS (TABS) PARA INDUSTRIAS */
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
 }
 
-/* Etiqueta un poco más grande para las Industrias */
-.tag-large {
-    padding: 8px 16px;
+.chip {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: var(--white);
+    border: 1px solid var(--tech-blue);
+    border-radius: 50px;
+    color: var(--tech-blue);
+    font-weight: 600;
     font-size: 14px;
-    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(5,36,70,0.05);
 }
 
 /* DIAGRAMA DE FLUJO (ECOSISTEMA) */
@@ -439,4 +458,5 @@ summary:hover {
     .main-flow { flex-direction: column; }
     .flow-arrow { transform: rotate(90deg); }
     .card-container.two-columns { grid-template-columns: 1fr; }
+    .bottom-sections-grid { grid-template-columns: 1fr; }
 }
