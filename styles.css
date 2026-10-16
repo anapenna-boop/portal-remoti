@@ -6,6 +6,7 @@
     --white: #ffffff;
     --gray-bg: #F4F7FB;
     --success-green: #2E7D32;
+    --success-bg: #E8F5E9;
     --warning-orange: #ED6C02;
 }
 
@@ -86,9 +87,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .section-title { font-size: 36px; font-weight: 700; margin-bottom: 10px; }
 .section-subtitle { font-size: 18px; color: var(--tech-blue); margin-bottom: 40px; }
 
-/* -------------------------------------- */
-/* NUEVO HOME: DASHBOARD & ACTION CARDS   */
-/* -------------------------------------- */
+/* DASHBOARD & ACTION CARDS (HOME) */
 .action-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -155,7 +154,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     gap: 8px;
 }
 
-/* WIDGET DE AVISOS Y ESTADO */
+/* WIDGET DE AVISOS */
 .status-board {
     background-color: var(--white);
     border-radius: 12px;
@@ -222,9 +221,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     line-height: 1.5;
 }
 
-/* -------------------------------------- */
-/* SECCIONES Y TARJETAS GENERALES         */
-/* -------------------------------------- */
+/* SECCIONES Y TARJETAS GENERALES */
 .text-section {
     background-color: var(--white);
     padding: 40px;
@@ -238,7 +235,12 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .text-section p { font-size: 17px; line-height: 1.7; margin-bottom: 15px; color: var(--petrol-blue); }
 
 .card-container { display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 40px; }
-.card-container.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.card-container.two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: flex-start;
+}
 .card-container.three-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: flex-start; }
 .card-container.exec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 
@@ -257,9 +259,20 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .card p, .card ul li { font-size: 15px; line-height: 1.6; color: var(--petrol-blue); }
 .card ul { padding-left: 20px; margin-bottom: 15px; }
 
-/* ELEMENTOS INFO */
-.product-card { display: flex; flex-direction: column; min-height: 380px; }
-.compact-card { background-color: var(--white); padding: 20px; border-radius: 12px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); border-top: 4px solid var(--tech-blue); }
+/* PRODUCT CARDS */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+}
+
+.compact-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05);
+    border-top: 4px solid var(--tech-blue);
+}
 .compact-card h4 { color: var(--petrol-blue); margin-bottom: 8px; font-size: 16px; }
 .compact-card p { font-size: 14px; opacity: 0.8; }
 
@@ -296,10 +309,13 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .internal-note { background-color: #F0F0F0; border-left: 4px solid #888; padding: 15px; border-radius: 6px; margin: 15px 0; font-size: 14px; font-style: italic; color: #444; }
 .internal-note h4 { color: #555; margin-bottom: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-.tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; justify-content: center; }
+/* ETIQUETAS */
+.tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
+.tags-container.center { justify-content: center; }
 .tag { display: inline-block; background-color: var(--baby-blue); color: var(--tech-blue); padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; border: none; }
 .tag-gray { background-color: #F0F0F0; color: #555; }
 .tag-large { padding: 8px 16px; font-size: 14px; border-radius: 6px; }
+.tag-recruiting { background-color: var(--success-bg); color: var(--success-green); border: 1px solid var(--success-green); }
 
 /* BÚSQUEDA Y FILTROS */
 .controls-section { background-color: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.03); margin-bottom: 40px; }
@@ -321,14 +337,21 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .view-insights-btn:hover { background-color: var(--tech-blue); color: var(--white); }
 #no-results { text-align: center; padding: 40px; font-size: 18px; color: #888; width: 100%; }
 
-/* JOBS */
+/* JOBS & ACORDEONES */
 .hidden { display: none !important; }
 
 details { background-color: var(--white); border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(5, 36, 70, 0.05); overflow: hidden; }
 summary { font-size: 18px; font-weight: 700; color: var(--petrol-blue); padding: 20px; cursor: pointer; background-color: var(--white); border-left: 4px solid var(--tech-blue); transition: background-color 0.2s ease; list-style: none; }
 summary::-webkit-details-marker { display: none; }
 summary:hover { background-color: var(--baby-blue); }
-.product-card details { box-shadow: none; margin-bottom: 0; border-top: 1px solid var(--baby-blue); border-radius: 0; margin-top: auto; }
+
+.product-card details {
+    box-shadow: none;
+    margin-bottom: 0;
+    border-top: 1px solid var(--baby-blue);
+    border-radius: 0;
+    margin-top: auto;
+}
 .product-card summary { border-left: none; padding: 15px 0 0 0; font-size: 15px; color: var(--tech-blue); }
 .product-card summary:hover { background-color: transparent; text-decoration: underline; }
 .product-details { padding-top: 15px; }
@@ -345,6 +368,7 @@ summary:hover { background-color: var(--baby-blue); }
 .linkedin-btn { display: inline-flex; align-items: center; background-color: #0077b5; color: var(--white); padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; transition: background-color 0.3s ease; }
 .linkedin-btn:hover { background-color: #005582; }
 
+/* JOB DETAIL VIEW */
 .back-btn { background-color: transparent; border: none; color: var(--tech-blue); font-weight: 700; font-size: 16px; cursor: pointer; padding: 0; margin-bottom: 25px; display: inline-flex; align-items: center; gap: 8px; font-family: 'Figtree', sans-serif; }
 .back-btn:hover { text-decoration: underline; }
 
