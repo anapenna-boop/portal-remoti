@@ -5,6 +5,8 @@
     --baby-blue: #E6F1FF;
     --white: #ffffff;
     --gray-bg: #F4F7FB;
+    --success-green: #2E7D32;
+    --warning-orange: #ED6C02;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 
 h1, h2, h3, h4, p, ul { margin: 0; }
 
-/* NAVEGACIÓN */
+/* NAVEGACIÓN PRINCIPAL */
 .navbar {
     background-color: var(--white);
     display: flex;
@@ -51,7 +53,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     display: none;
     position: absolute;
     background-color: var(--white);
-    min-width: 200px;
+    min-width: 220px;
     box-shadow: 0 8px 24px rgba(5, 36, 70, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -84,7 +86,145 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .section-title { font-size: 36px; font-weight: 700; margin-bottom: 10px; }
 .section-subtitle { font-size: 18px; color: var(--tech-blue); margin-bottom: 40px; }
 
-/* SECCIONES Y TARJETAS GENERALES */
+/* -------------------------------------- */
+/* NUEVO HOME: DASHBOARD & ACTION CARDS   */
+/* -------------------------------------- */
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.action-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 35px 30px;
+    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05);
+    border-top: 5px solid var(--tech-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(5, 36, 70, 0.12);
+}
+
+.action-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.action-card-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    background-color: var(--baby-blue);
+    color: var(--tech-blue);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.action-card h3 {
+    font-size: 24px;
+    color: var(--petrol-blue);
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #556980;
+    margin-bottom: 25px;
+}
+
+.action-card-link {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--tech-blue);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* WIDGET DE AVISOS Y ESTADO */
+.status-board {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.04);
+    border-top: 4px solid var(--tech-blue);
+    margin-top: 20px;
+}
+
+.status-board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--baby-blue);
+}
+
+.status-board-header h3 {
+    font-size: 20px;
+    color: var(--petrol-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.live-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--success-green);
+    border-radius: 50%;
+}
+
+.status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.status-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 15px 20px;
+    background-color: var(--gray-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--tech-blue);
+}
+
+.status-item.pending {
+    border-left-color: var(--warning-orange);
+}
+
+.status-item-content h4 {
+    font-size: 15px;
+    color: var(--petrol-blue);
+    margin-bottom: 4px;
+}
+
+.status-item-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* -------------------------------------- */
+/* SECCIONES Y TARJETAS GENERALES         */
+/* -------------------------------------- */
 .text-section {
     background-color: var(--white);
     padding: 40px;
@@ -117,7 +257,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .card p, .card ul li { font-size: 15px; line-height: 1.6; color: var(--petrol-blue); }
 .card ul { padding-left: 20px; margin-bottom: 15px; }
 
-/* ELEMENTOS DE CAST & CREW INFO */
+/* ELEMENTOS INFO */
 .product-card { display: flex; flex-direction: column; min-height: 380px; }
 .compact-card { background-color: var(--white); padding: 20px; border-radius: 12px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); border-top: 4px solid var(--tech-blue); }
 .compact-card h4 { color: var(--petrol-blue); margin-bottom: 8px; font-size: 16px; }
@@ -144,7 +284,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .flow-step.supporting { border-color: #A0B3C6; border-style: dashed; }
 .flow-arrow { color: var(--tech-blue); font-size: 20px; font-weight: bold; }
 
-/* RECUADROS DESTACADOS Y ETIQUETAS */
+/* RECUADROS DESTACADOS */
 .highlight-box { background-color: var(--baby-blue); border-left: 4px solid var(--tech-blue); padding: 20px; margin: 15px 0; border-radius: 6px; }
 .highlight-box p { margin-bottom: 8px; font-size: 15px; color: var(--petrol-blue); }
 .highlight-box strong { font-weight: 700; }
@@ -170,9 +310,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .filter-btn:hover { border-color: var(--tech-blue); color: var(--tech-blue); }
 .filter-btn.active { background-color: var(--tech-blue); color: var(--white); border-color: var(--tech-blue); }
 
-/* -------------------------------------- */
-/* MANAGER CARDS (Aquí estaba el error)   */
-/* -------------------------------------- */
+/* MANAGERS */
 .manager-card { background-color: var(--white); border-radius: 12px; padding: 30px 20px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); display: flex; flex-direction: column; border-top: 4px solid var(--tech-blue); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .manager-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(5, 36, 70, 0.1); }
 .manager-header { margin-bottom: 15px; }
@@ -183,9 +321,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .view-insights-btn:hover { background-color: var(--tech-blue); color: var(--white); }
 #no-results { text-align: center; padding: 40px; font-size: 18px; color: #888; width: 100%; }
 
-/* -------------------------------------- */
-/* JOB DIRECTORY Y ACORDEONES             */
-/* -------------------------------------- */
+/* JOBS */
 .hidden { display: none !important; }
 
 details { background-color: var(--white); border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(5, 36, 70, 0.05); overflow: hidden; }
@@ -209,7 +345,6 @@ summary:hover { background-color: var(--baby-blue); }
 .linkedin-btn { display: inline-flex; align-items: center; background-color: #0077b5; color: var(--white); padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; transition: background-color 0.3s ease; }
 .linkedin-btn:hover { background-color: #005582; }
 
-/* JOB DETAIL VIEW */
 .back-btn { background-color: transparent; border: none; color: var(--tech-blue); font-weight: 700; font-size: 16px; cursor: pointer; padding: 0; margin-bottom: 25px; display: inline-flex; align-items: center; gap: 8px; font-family: 'Figtree', sans-serif; }
 .back-btn:hover { text-decoration: underline; }
 
@@ -223,7 +358,7 @@ summary:hover { background-color: var(--baby-blue); }
 .detail-section p, .detail-section ul li { font-size: 16px; line-height: 1.6; color: var(--petrol-blue); margin-bottom: 10px; }
 .detail-section ul { padding-left: 20px; }
 
-/* TIMELINE DE ENTREVISTAS */
+/* TIMELINE */
 .timeline-container { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 15px; padding: 10px 0 20px 0; align-items: stretch; }
 .timeline-step { background-color: var(--gray-bg); border: 2px solid var(--baby-blue); border-radius: 10px; padding: 20px; min-width: 260px; flex: 0 0 260px; display: flex; flex-direction: column; }
 .step-number { font-size: 12px; font-weight: 700; color: var(--tech-blue); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
@@ -238,7 +373,7 @@ summary:hover { background-color: var(--baby-blue); }
 /* MODALES */
 .modal-window { position: fixed; background-color: rgba(5, 36, 70, 0.85); top: 0; right: 0; bottom: 0; left: 0; z-index: 9999; visibility: hidden; opacity: 0; pointer-events: none; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; padding: 20px; }
 .modal-window.active { visibility: visible; opacity: 1; pointer-events: auto; }
-.modal-window:target { visibility: visible; opacity: 1; pointer-events: auto; } /* Esto arregla los perfiles de Info */
+.modal-window:target { visibility: visible; opacity: 1; pointer-events: auto; }
 
 .modal-content { background: var(--white); width: 100%; max-width: 900px; border-radius: 12px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.3); display: flex; flex-direction: column; }
 .modal-close { position: absolute; top: 20px; right: 25px; font-size: 30px; text-decoration: none; color: var(--petrol-blue); font-weight: bold; z-index: 10; cursor: pointer; border: none; background: transparent; }
@@ -271,6 +406,7 @@ summary:hover { background-color: var(--baby-blue); }
 #toast.show { visibility: visible; opacity: 1; }
 
 @media (max-width: 768px) {
+    .action-grid { grid-template-columns: 1fr; }
     .card-container.two-columns { grid-template-columns: 1fr; }
     .combined-card { flex-direction: column; }
     .combined-divider { width: 100%; height: 2px; margin: 0; }
