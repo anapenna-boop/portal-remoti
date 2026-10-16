@@ -35,22 +35,81 @@
     </header>
 
     <main class="main-content">
-        <section class="welcome-section">
-            <h2 class="section-title">Welcome to the Knowledge Hub</h2>
-            <p class="section-subtitle">Your central source of truth for Cast & Crew recruitment.</p>
+        <!-- HEADER DE ACCIÓN RÁPIDA -->
+        <h2 class="section-title">What do you need to look up today?</h2>
+        <p class="section-subtitle">Direct access to vacancies, hiring manager intelligence, and client ecosystem rules.</p>
+        
+        <!-- TARJETAS DE NAVEGACIÓN RÁPIDA -->
+        <div class="action-grid">
             
-            <div class="card-container">
-                <div class="card">
-                    <h3>Clear Insights</h3>
-                    <p>Access all updated job descriptions and requirements in one place.</p>
+            <!-- Acción 1: Jobs & Preps -->
+            <a href="jobs.html" class="action-card">
+                <div>
+                    <div class="action-card-header">
+                        <span class="action-card-tag">Vacancies & Guides</span>
+                    </div>
+                    <h3>Jobs Directory</h3>
+                    <p>Consult open roles, verified screening Must-Haves, compensation ranges, and copy interview guides directly for candidates.</p>
                 </div>
-                <div class="card">
-                    <h3>Manager Profiles</h3>
-                    <p>Understand exactly what each Hiring Manager is looking for.</p>
+                <span class="action-card-link">Open Jobs Directory &rarr;</span>
+            </a>
+
+            <!-- Acción 2: Hiring Managers -->
+            <a href="managers.html" class="action-card">
+                <div>
+                    <div class="action-card-header">
+                        <span class="action-card-tag">Leadership Styles</span>
+                    </div>
+                    <h3>Manager Insights</h3>
+                    <p>Review specific interview styles, what each leader values, key Candidate Do's, and fatal red flags (Watch Outs) before calls.</p>
                 </div>
-                <div class="card">
-                    <h3>Unified Process</h3>
-                    <p>Access Interview Preps directly inside every Job profile.</p>
+                <span class="action-card-link">Review Manager Profiles &rarr;</span>
+            </a>
+
+            <!-- Acción 3: Cast & Crew Info -->
+            <a href="info.html" class="action-card">
+                <div>
+                    <div class="action-card-header">
+                        <span class="action-card-tag">Company & Culture</span>
+                    </div>
+                    <h3>Cast & Crew Overview</h3>
+                    <p>Understand the 6 core software platforms, production accounting workflows, executive leadership, and strict sourcing exclusion rules.</p>
+                </div>
+                <span class="action-card-link">Explore Client Info &rarr;</span>
+            </a>
+
+        </div>
+
+        <!-- TABLERO DE AVISOS Y ESTADO DEL HUB -->
+        <section class="status-board">
+            <div class="status-board-header">
+                <h3>
+                    <span class="live-indicator"></span>
+                    Knowledge Hub Status & Operational Alerts
+                </h3>
+                <span class="tag tag-gray">Internal Recruiting Feed</span>
+            </div>
+
+            <div class="status-list">
+                <div class="status-item">
+                    <div class="status-item-content">
+                        <h4>Unified Interview Preps</h4>
+                        <p>Individual prep pages have been integrated directly inside each role under <strong>Jobs Directory</strong>. Use the "Copy Prep" button to export candidate-ready guides without internal recruiter notes.</p>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-item-content">
+                        <h4>Sourcing Exclusion Alert</h4>
+                        <p>Reminder: Do not source candidates from Cast & Crew family companies (Backstage, CAPS, Checks & Balances, Final Draft, Media Services, Sargent-Disc, The TEAM Companies).</p>
+                    </div>
+                </div>
+
+                <div class="status-item pending">
+                    <div class="status-item-content">
+                        <h4>Candidate Tracking Dashboard — Coming Soon</h4>
+                        <p>A centralized candidate status board tracking dropped candidates, active pipeline metrics, and interview stage drop-off reasons is currently in preparation.</p>
+                    </div>
                 </div>
             </div>
         </section>
