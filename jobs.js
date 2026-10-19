@@ -24,7 +24,10 @@ const jobsData = [
                 name: "Skill Panel",
                 subtitle: "Technical Assessment",
                 hasPrep: true,
-                duration: "", platform: "", format: "", setup: "",
+                duration: "",
+                platform: "",
+                format: "",
+                setup: "",
                 expect: "This assessment focuses on reading, understanding, and reasoning about real-world Java backend code. Expect code snippets, SQL questions, and practical scenarios where you may need to identify issues, explain existing functionality, or suggest improvements.",
                 prepare: [
                     "Java Fundamentals: Generics, collections, iterators, serialization, and core Java concepts.",
@@ -39,7 +42,9 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Pair programming / live coding",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Pair programming / live coding",
                 setup: "Before the interview: Please have Java installed and configured, along with an IDE of your preference. Make sure your environment is ready to create, run, and test a Java application without setup issues.",
                 expect: "You will work alongside the interviewer to solve a practical Java coding exercise. The focus will be on your problem-solving approach, code structure, handling of edge cases, and ability to explain your technical decisions.",
                 prepare: [
@@ -56,7 +61,10 @@ const jobsData = [
             {
                 name: "Roman Smolgovsky",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical and experience-based interview", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical and experience-based interview",
+                setup: "",
                 expect: "A technical conversation focused on your Java backend experience, practical knowledge, and ability to explain architectural decisions. Expect questions about real projects, production challenges, and technical problem-solving.",
                 prepare: [
                     "Java & Backend: Review Java fundamentals, REST APIs, Spring Boot, and backend service design.",
@@ -69,6 +77,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "dotnet-developer",
         title: ".NET Developer",
@@ -92,7 +101,10 @@ const jobsData = [
             {
                 name: "Skill Panel",
                 hasPrep: true,
-                duration: "", platform: "", format: "", setup: "",
+                duration: "",
+                platform: "",
+                format: "",
+                setup: "",
                 expect: "This assessment focuses on reading and reasoning about real-world .NET backend code. Expect short code snippets, SQL questions, and production scenarios where you may need to explain existing functionality, identify potential issues, and suggest improvements.",
                 prepare: [
                     "C# & .NET Fundamentals: Core language concepts, collections, expressions, and application execution.",
@@ -107,7 +119,9 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Pair programming / live coding",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Pair programming / live coding",
                 setup: "Before the interview: Please have the .NET SDK installed and configured, along with an IDE of your preference. Make sure your environment is ready to create, run, and test a .NET application without setup issues.",
                 expect: "You will code alongside the interviewer while explaining your reasoning and approach. The assessment focuses on problem-solving, code structure, handling edge cases, and your ability to collaborate.",
                 prepare: [
@@ -123,7 +137,10 @@ const jobsData = [
             {
                 name: "Roman / Quynh",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical and experience-based interview", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical and experience-based interview",
+                setup: "",
                 expect: "A technical conversation focused on your .NET experience, practical knowledge, and problem-solving approach. Expect technical questions and scenarios based on previous projects rather than a formal coding assessment.",
                 prepare: [
                     "C# & .NET: Collections, LINQ, async/await, Tasks, concurrency, and error handling.",
@@ -137,6 +154,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "psl-webification",
         title: "Senior Software Engineer — PSL Webification",
@@ -160,7 +178,10 @@ const jobsData = [
             {
                 name: "Shrikrushna Garad",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical Conversation", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical Conversation",
+                setup: "",
                 expect: "A technical conversation focused on previous experience, software architecture, and problem-solving. Expect questions about React fundamentals, design patterns, application performance, troubleshooting, and familiarity with AI-assisted development tools.",
                 prepare: [
                     "React & TypeScript: Components, hooks, state management, and frontend application structure.",
@@ -175,7 +196,10 @@ const jobsData = [
             {
                 name: "Principal Engineers",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical Assessment / Live Coding", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical Assessment / Live Coding",
+                setup: "",
                 expect: "An in-depth technical assessment focused on engineering experience, problem-solving, and technical decision-making. Expect practical scenarios, deeper technical questions, and follow-up questions about your reasoning.",
                 prepare: [
                     "Software Engineering: SOLID principles, design patterns, dependency injection, and clean architecture.",
@@ -190,7 +214,10 @@ const jobsData = [
             {
                 name: "Product Managers",
                 hasPrep: true,
-                duration: "30 minutes", platform: "Microsoft Teams", format: "Product & Business Conversation", setup: "",
+                duration: "30 minutes",
+                platform: "Microsoft Teams",
+                format: "Product & Business Conversation",
+                setup: "",
                 expect: "A conversation focused on professional experience, previous projects, collaboration, and ability to understand business requirements and translate them into technical solutions.",
                 prepare: [
                     "Technical Background: React, TypeScript, C#/.NET, REST APIs, and SQL at a high level.",
@@ -204,6 +231,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "platform-fullstack",
         title: "Full Stack Developer — Platform Team",
@@ -227,7 +255,10 @@ const jobsData = [
             {
                 name: "Jan Sevilla",
                 hasPrep: true,
-                duration: "30 minutes", platform: "Microsoft Teams", format: "Conversational interview with the Hiring Manager", setup: "",
+                duration: "30 minutes",
+                platform: "Microsoft Teams",
+                format: "Conversational interview with the Hiring Manager",
+                setup: "",
                 expect: "A conversation focused on professional experience, technical background, and cultural fit. Jan will also introduce the Platform Team and explain its responsibilities.",
                 prepare: [
                     "Professional Experience: Full-stack experience, particularly React and Node.js.",
@@ -241,7 +272,10 @@ const jobsData = [
             {
                 name: "Ven or Joshua",
                 hasPrep: true,
-                duration: "30 minutes", platform: "Microsoft Teams", format: "Technical interview with a Lead Software Developer", setup: "",
+                duration: "30 minutes",
+                platform: "Microsoft Teams",
+                format: "Technical interview with a Lead Software Developer",
+                setup: "",
                 expect: "An in-depth technical conversation focused on engineering experience, architecture, and real-world problems involving scalable platform applications.",
                 prepare: [
                     "Frontend: React, Module Federation, micro-frontends, and frontend architecture.",
@@ -255,6 +289,87 @@ const jobsData = [
             }
         ]
     },
+
+    {
+        id: "fullstack-data",
+        title: "Full Stack Developer — Data",
+        seniority: "Mid-Level",
+        manager: "TBD",
+        department: "Engineering",
+        about: "Full-stack engineering role working across backend, frontend, data, and cloud layers. The engineer owns features end-to-end, from database and API development through frontend implementation, testing, deployment, and ongoing maintenance, with an important focus on data workflows and data-intensive applications.",
+        mustHaves: [
+            "Node.js",
+            "React",
+            "Data: ETL OR Snowflake OR SQL"
+        ],
+        responsibilities: [
+            "Build and enhance full-stack applications across backend, frontend, and data layers.",
+            "Own features end-to-end, from database design and backend APIs through frontend implementation, testing, deployment, and maintenance.",
+            "Design and implement scalable backend services and APIs using Node.js / Express.",
+            "Develop responsive and maintainable frontend applications using React and TypeScript.",
+            "Work with SQL, Snowflake, data pipelines, and ETL processes to support application and analytical use cases.",
+            "Contribute to technical decisions around architecture, performance, reliability, scalability, and engineering standards."
+        ],
+        toolsRelevant: [
+            "TypeScript",
+            "Node.js / Express",
+            "React 18",
+            "PostgreSQL",
+            "Snowflake",
+            "SQL",
+            "ETL / Data Pipelines",
+            "Redis",
+            "AWS",
+            "ECS / Fargate",
+            "S3",
+            "Docker",
+            "Distributed Systems",
+            "JWT / OAuth2",
+            "Okta",
+            "Unit & Integration Testing"
+        ],
+        toolsNice: [
+            "Tableau / BI Tools",
+            "Jest",
+            "Vitest",
+            "BigQuery / Redshift"
+        ],
+        recruiterNote: "",
+        stages: [
+            {
+                name: "Live Coding",
+                subtitle: "Technical Discussion + System Design Exercise",
+                hasPrep: true,
+                duration: "1 hour",
+                platform: "TBD",
+                format: "Technical Discussion + System Design Exercise",
+                setup: "Please create an Excalidraw account before the interview and make sure you can access the platform. You will use Excalidraw to diagram your solution during the System Design Exercise.",
+                expect: "The interview will include a deeper discussion of your experience, technical architecture and decisions, teamwork and leadership examples, and an end-to-end System Design Exercise using Excalidraw. The interview will conclude with time for your questions about the interviewer, team, or project.",
+                prepare: [
+                    "Introduction: Be ready to introduce yourself and walk through your experience in more depth, explaining how your systems and projects worked technically.",
+                    "Technical Discussion: Expect questions about your architecture, technical decisions, and how you approach system design.",
+                    "Teamwork and Leadership: Prepare examples of collaboration, ownership, and leadership.",
+                    "System Design Exercise: Be prepared to design and explain an end-to-end system, walking through its architecture, components, data flow, and how the different parts interact. Think about scalability, performance, data processing, database design, error handling, and how the system handles high volumes of transactions.",
+                    "Your Questions: Prepare questions about the interviewer, team, or project for the end of the interview."
+                ],
+                recommendations: "Be ready to explain your technical decisions, discuss trade-offs, and justify your approach throughout the System Design Exercise.",
+                internalNote: ""
+            },
+            {
+                name: "Conversational Interview",
+                hasPrep: false,
+                duration: "",
+                platform: "",
+                format: "TBD",
+                setup: "",
+                expect: "Prep TBD",
+                prepare: [],
+                recommendations: "",
+                internalNote: ""
+            }
+        ]
+    },
+
     {
         id: "oat-onboarding",
         title: "Full-Stack Software Engineer — OAT Onboarding",
@@ -278,7 +393,10 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams + CodeSandbox", format: "Live coding with two Software Engineers", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams + CodeSandbox",
+                format: "Live coding with two Software Engineers",
+                setup: "",
                 expect: "A practical React and JavaScript coding exercise using an existing application in CodeSandbox. You will be asked to understand existing code, implement changes, and explain your approach.",
                 prepare: [
                     "React Fundamentals: Functional components, useState, props, event handling, and component communication.",
@@ -293,7 +411,10 @@ const jobsData = [
             {
                 name: "Roja Kamireddy",
                 hasPrep: true,
-                duration: "30 minutes", platform: "Microsoft Teams", format: "Conversational interview with the Hiring Manager", setup: "",
+                duration: "30 minutes",
+                platform: "Microsoft Teams",
+                format: "Conversational interview with the Hiring Manager",
+                setup: "",
                 expect: "A conversation focused on technical experience, projects, engineering decisions, problem-solving, collaboration, and ownership.",
                 prepare: [
                     "Full-Stack Development: React, TypeScript, Node.js, REST APIs, and PostgreSQL.",
@@ -307,6 +428,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "start-plus",
         title: "Full-Stack Engineer — Start+",
@@ -330,7 +452,10 @@ const jobsData = [
             {
                 name: "Maggie Reddy & Shankar Rajugiri",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical Interview & Code Review", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical Interview & Code Review",
+                setup: "",
                 expect: "A technical interview focused on full-stack experience, software architecture, and problem-solving. Expect technical questions across React and .NET and potentially a C# code-review exercise.",
                 prepare: [
                     "React & Frontend: Components, hooks, state management, API integration, rendering, and performance.",
@@ -350,6 +475,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "final-draft-fullstack",
         title: "Full Stack Developer — Final Draft",
@@ -373,7 +499,10 @@ const jobsData = [
             {
                 name: "Software Engineers",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical conversation with two Software Engineers", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical conversation with two Software Engineers",
+                setup: "",
                 expect: "A technical conversation focused on full-stack development experience, previous projects, and technical decision-making. Expect practical engineering scenarios.",
                 prepare: [
                     "TypeScript & Next.js: TypeScript fundamentals, React components, state management, API integration, and frontend performance.",
@@ -388,7 +517,10 @@ const jobsData = [
             {
                 name: "Ron Nagamati",
                 hasPrep: true,
-                duration: "30 minutes", platform: "TBD", format: "Conversational interview with the VP of Engineering", setup: "",
+                duration: "30 minutes",
+                platform: "TBD",
+                format: "Conversational interview with the VP of Engineering",
+                setup: "",
                 expect: "A high-level conversation focused on professional background, previous projects, technical decision-making, and ability to solve real-world engineering challenges.",
                 prepare: [
                     "Professional Background: Concise career overview and relevant projects.",
@@ -402,6 +534,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "psl-plus-c",
         title: "Senior Software Engineer — PSL+ (C)",
@@ -425,7 +558,10 @@ const jobsData = [
             {
                 name: "Shrikrushna Garad",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical and experience-based interview", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical and experience-based interview",
+                setup: "",
                 expect: "A technical conversation focused on C programming, legacy-system modernization, and problem-solving. Expect practical troubleshooting scenarios and questions about large unfamiliar codebases.",
                 prepare: [
                     "C & C++: C fundamentals, pointers, memory management, macros, and C-to-C++ migration.",
@@ -440,7 +576,10 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Technical assessment focused on C programming, debugging, SQL, and problem-solving", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Technical assessment focused on C programming, debugging, SQL, and problem-solving",
+                setup: "",
                 expect: "A practical assessment focused on analyzing existing code, identifying issues, and proposing safe solutions.",
                 prepare: [
                     "C Fundamentals: Pointers, memory management, structs, arrays, strings, and functions.",
@@ -455,7 +594,10 @@ const jobsData = [
             {
                 name: "Product Managers",
                 hasPrep: true,
-                duration: "30 minutes", platform: "Microsoft Teams", format: "Conversational interview with two Product Managers", setup: "",
+                duration: "30 minutes",
+                platform: "Microsoft Teams",
+                format: "Conversational interview with two Product Managers",
+                setup: "",
                 expect: "A conversation focused on professional experience, collaboration, business requirements, production issues, and technical decision-making.",
                 prepare: [
                     "Professional Experience: Software products, legacy systems, modernization, and changing requirements.",
@@ -469,6 +611,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "sdet-front",
         title: "SDET Front",
@@ -489,11 +632,18 @@ const jobsData = [
         toolsNice: ["Selenium → Playwright Migration", "Kafka / Microservices", "Zephyr", "Quality Metrics", "Regulated Environments", "Claude Code / AI-assisted Testing"],
         recruiterNote: "The verified priorities are Playwright, TypeScript/JavaScript, and UI testing. This is a frontend/UI-focused SDET role.",
         stages: [
-            { name: "Skill Panel", hasPrep: false, expect: "Prep TBD" },
+            {
+                name: "Skill Panel",
+                hasPrep: false,
+                expect: "Prep TBD"
+            },
             {
                 name: "Anne Dawson",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Conversational interview with the Head of QA", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Conversational interview with the Head of QA",
+                setup: "",
                 expect: "A conversation focused on professional experience, automation projects, and quality engineering scenarios at Cast & Crew.",
                 prepare: [
                     "Playwright & TypeScript: Automation frameworks, reusable fixtures, Page Object Models, selectors, and maintainable design.",
@@ -508,7 +658,10 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "CodeInterview.io", format: "Practical Playwright live coding with a QA Lead or QA Manager", setup: "",
+                duration: "1 hour",
+                platform: "CodeInterview.io",
+                format: "Practical Playwright live coding with a QA Lead or QA Manager",
+                setup: "",
                 expect: "A practical Playwright coding session combining UI automation and API assertion scenarios.",
                 prepare: [
                     "Playwright & TypeScript: Locators, assertions, fixtures, async operations, and test structure.",
@@ -523,7 +676,10 @@ const jobsData = [
             {
                 name: "Engineering Manager",
                 hasPrep: true,
-                duration: "30–60 minutes", platform: "Microsoft Teams", format: "Product & Technical Conversation", setup: "",
+                duration: "30–60 minutes",
+                platform: "Microsoft Teams",
+                format: "Product & Technical Conversation",
+                setup: "",
                 expect: "The manager will explain the product and may discuss real projects, quality challenges, and how you would contribute to the team.",
                 prepare: [
                     "Professional Experience: Frontend automation and quality engineering.",
@@ -536,6 +692,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "sdet-back",
         title: "SDET Back",
@@ -556,11 +713,18 @@ const jobsData = [
         toolsNice: ["Kafka / Event-Driven Systems", "Asynchronous Testing", "Quality Metrics", "Financial / Payroll Systems", "Compliance Environments"],
         recruiterNote: "The confirmed priorities are Playwright, TypeScript/JavaScript, backend testing, and API testing.",
         stages: [
-            { name: "Skill Panel", hasPrep: false, expect: "Prep TBD" },
+            {
+                name: "Skill Panel",
+                hasPrep: false,
+                expect: "Prep TBD"
+            },
             {
                 name: "Anne Dawson",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Conversational interview with the Head of QA", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Conversational interview with the Head of QA",
+                setup: "",
                 expect: "A conversation focused on professional experience, previous automation projects, backend reliability, API testing, and system integrations.",
                 prepare: [
                     "Playwright & API Automation: REST/GraphQL testing, automation frameworks, negative testing, and edge cases.",
@@ -575,7 +739,9 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "CodeInterview.io", format: "Practical Playwright live coding with a QA Lead or QA Manager",
+                duration: "1 hour",
+                platform: "CodeInterview.io",
+                format: "Practical Playwright live coding with a QA Lead or QA Manager",
                 setup: "If you use an additional API testing tool, please have it installed, configured, and ready to use before the interview.",
                 expect: "A practical Playwright coding session combining backend test automation and API assertion scenarios.",
                 prepare: [
@@ -591,7 +757,10 @@ const jobsData = [
             {
                 name: "Engineering Manager",
                 hasPrep: true,
-                duration: "30–60 minutes", platform: "Microsoft Teams", format: "Product & Technical Conversation", setup: "",
+                duration: "30–60 minutes",
+                platform: "Microsoft Teams",
+                format: "Product & Technical Conversation",
+                setup: "",
                 expect: "The manager will introduce the product and discuss professional experience, backend quality challenges, and how you would contribute.",
                 prepare: [
                     "Backend automation and API testing experience.",
@@ -605,6 +774,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "sdet-mobile",
         title: "SDET Mobile",
@@ -625,11 +795,18 @@ const jobsData = [
         toolsNice: ["Payroll / Financial Systems", "Distributed Systems", "Performance Testing", "Mobile Reliability", "AI-assisted Testing", "Observability"],
         recruiterNote: "Playwright plus hands-on experience with at least one mobile automation tool for iOS and Android are the confirmed priorities. Appium is preferred, not mandatory.",
         stages: [
-            { name: "Skill Panel", hasPrep: false, expect: "Prep TBD" },
+            {
+                name: "Skill Panel",
+                hasPrep: false,
+                expect: "Prep TBD"
+            },
             {
                 name: "Anne Dawson",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Conversational interview with the Head of QA", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Conversational interview with the Head of QA",
+                setup: "",
                 expect: "A conversation focused on mobile testing projects, automation, application reliability, and iOS/Android quality challenges.",
                 prepare: [
                     "Mobile Testing & Automation: Playwright and mobile frameworks used across iOS/Android.",
@@ -644,7 +821,10 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "TBD", format: "Practical mobile automation assessment using the candidate’s preferred testing tool", setup: "",
+                duration: "1 hour",
+                platform: "TBD",
+                format: "Practical mobile automation assessment using the candidate’s preferred testing tool",
+                setup: "",
                 expect: "A practical assessment focused on mobile automation across iOS and Android using the framework the candidate is most comfortable with.",
                 prepare: [
                     "Mobile Automation: Candidate’s preferred framework.",
@@ -659,7 +839,10 @@ const jobsData = [
             {
                 name: "Omar Sheikh",
                 hasPrep: true,
-                duration: "30–60 minutes", platform: "Microsoft Teams", format: "Product & Technical Conversation", setup: "",
+                duration: "30–60 minutes",
+                platform: "Microsoft Teams",
+                format: "Product & Technical Conversation",
+                setup: "",
                 expect: "A conversation focused on professional experience and how you would contribute to the product team. Omar may discuss projects, mobile quality challenges, and product needs.",
                 prepare: [
                     "Mobile testing and automation experience.",
@@ -673,6 +856,7 @@ const jobsData = [
             }
         ]
     },
+
     {
         id: "qa-manager",
         title: "QA Manager — Quality Engineering",
@@ -696,7 +880,10 @@ const jobsData = [
             {
                 name: "Anne Dawson",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Leadership & Technical Conversation", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Leadership & Technical Conversation",
+                setup: "",
                 expect: "A conversation focused on leadership, technical background, team building, automation strategy, and organizing QA operations.",
                 prepare: [
                     "Team Building & Leadership",
@@ -711,7 +898,10 @@ const jobsData = [
             {
                 name: "Live Coding",
                 hasPrep: true,
-                duration: "1 hour", platform: "CodeInterview.io", format: "Practical Playwright live coding with a QA Lead or QA Manager", setup: "",
+                duration: "1 hour",
+                platform: "CodeInterview.io",
+                format: "Practical Playwright live coding with a QA Lead or QA Manager",
+                setup: "",
                 expect: "A practical Playwright assessment combining UI automation and API assertion scenarios.",
                 prepare: [
                     "Playwright & TypeScript/JavaScript",
@@ -726,7 +916,10 @@ const jobsData = [
             {
                 name: "Roman Smolgovsky",
                 hasPrep: true,
-                duration: "1 hour", platform: "Microsoft Teams", format: "Product Vision & Engineering Strategy Conversation", setup: "",
+                duration: "1 hour",
+                platform: "Microsoft Teams",
+                format: "Product Vision & Engineering Strategy Conversation",
+                setup: "",
                 expect: "A strategic and technical conversation focused on product vision, complex software ecosystems, and how Quality Engineering can support developers and improve delivery.",
                 prepare: [
                     "Product & Business Understanding",
@@ -752,139 +945,311 @@ const detailContent = document.getElementById('jobDetailContent');
 const modal = document.getElementById('prepModal');
 
 function renderJobsGrid(data) {
-    if(!jobsGrid) return;
+    if (!jobsGrid) return;
+
     jobsGrid.innerHTML = '';
+
     if (data.length === 0) {
         jobsGrid.innerHTML = '<p style="text-align: center; width: 100%; color: #888; padding: 20px;">No jobs found matching your criteria.</p>';
         return;
     }
+
     data.forEach(job => {
         const card = document.createElement('div');
         card.className = 'job-card';
+
         card.innerHTML = `
             <h3>${job.title}</h3>
-            <p class="job-meta"><strong>Seniority:</strong> ${job.seniority} <br><strong>Manager:</strong> ${job.manager}</p>
+            <p class="job-meta">
+                <strong>Seniority:</strong> ${job.seniority}
+                <br>
+                <strong>Manager:</strong> ${job.manager}
+            </p>
             <p>${job.about}</p>
-            <button class="primary-btn" onclick="showJobDetail('${job.id}')">View Details & Process &rarr;</button>
+            <button
+                class="primary-btn"
+                onclick="showJobDetail('${job.id}')"
+            >
+                View Details & Process &rarr;
+            </button>
         `;
+
         jobsGrid.appendChild(card);
     });
 }
 
-if(searchInput) {
+if (searchInput) {
     searchInput.addEventListener('input', applyFilters);
 }
 
-if(filterBtns) {
+if (filterBtns) {
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
+
             searchInput.value = '';
             applyFilters();
         });
     });
 }
 
-// LOGICA DE FILTROS ACTUALIZADA (Developers, QA, Fullstack)
+// LOGICA DE FILTROS ACTUALIZADA
 function applyFilters() {
     const term = searchInput.value.toLowerCase();
-    const activeFilter = document.querySelector('#jobFiltersContainer .filter-btn.active').getAttribute('data-filter');
+
+    const activeFilter = document
+        .querySelector('#jobFiltersContainer .filter-btn.active')
+        .getAttribute('data-filter');
 
     const filtered = jobsData.filter(job => {
-        const matchesTerm = job.title.toLowerCase().includes(term) || job.manager.toLowerCase().includes(term) || job.mustHaves.some(m => m.toLowerCase().includes(term));
-        
+        const matchesTerm =
+            job.title.toLowerCase().includes(term) ||
+            job.manager.toLowerCase().includes(term) ||
+            job.mustHaves.some(m =>
+                m.toLowerCase().includes(term)
+            );
+
         let matchesFilter = true;
+
         if (activeFilter !== 'All') {
             if (activeFilter === 'QA') {
                 matchesFilter = job.department === 'QA';
-            } else if (activeFilter === 'Developers') {
-                // Developers muestra todo lo que sea Engineering
+            }
+
+            else if (activeFilter === 'Developers') {
                 matchesFilter = job.department === 'Engineering';
-            } else if (activeFilter === 'Fullstack') {
-                // Busca la palabra "full stack" o "webification" en el titulo o en el about
-                matchesFilter = job.title.toLowerCase().includes('full stack') || 
-                                job.title.toLowerCase().includes('full-stack') || 
-                                job.about.toLowerCase().includes('full stack') ||
-                                job.about.toLowerCase().includes('full-stack');
+            }
+
+            else if (activeFilter === 'Fullstack') {
+                matchesFilter =
+                    job.title.toLowerCase().includes('full stack') ||
+                    job.title.toLowerCase().includes('full-stack') ||
+                    job.about.toLowerCase().includes('full stack') ||
+                    job.about.toLowerCase().includes('full-stack');
             }
         }
+
         return matchesTerm && matchesFilter;
     });
+
     renderJobsGrid(filtered);
 }
 
 window.showJobDetail = function(jobId) {
     const job = jobsData.find(j => j.id === jobId);
+
     if (!job) return;
 
-    const mustHavesTags = job.mustHaves.map(m => `<span class="tag">${m}</span>`).join('');
-    
+    const mustHavesTags = job.mustHaves
+        .map(m => `<span class="tag">${m}</span>`)
+        .join('');
+
     let timelineHtml = '<div class="timeline-container">';
+
     job.stages.forEach((stage, index) => {
         const stepNum = String(index + 1).padStart(2, '0');
-        let btnHtml = stage.hasPrep ? `<button class="prep-btn" onclick="openPrepModal('${job.id}', ${index})">View Prep &rarr;</button>` : `<span class="prep-btn disabled">${stage.expect || 'Prep TBD'}</span>`;
+
+        let btnHtml = stage.hasPrep
+            ? `
+                <button
+                    class="prep-btn"
+                    onclick="openPrepModal('${job.id}', ${index})"
+                >
+                    View Prep &rarr;
+                </button>
+            `
+            : `
+                <span class="prep-btn disabled">
+                    ${stage.expect || 'Prep TBD'}
+                </span>
+            `;
 
         timelineHtml += `
             <div class="timeline-step">
-                <span class="step-number">${stepNum}</span>
-                <p class="step-name">${stage.name}</p>
-                ${stage.duration || stage.platform ? `<p class="step-meta">${stage.duration ? stage.duration : ''}${stage.duration && stage.platform ? ' &middot; ' : ''}${stage.platform ? stage.platform : ''}</p>` : ''}
-                ${stage.format ? `<p class="step-meta"><strong>${stage.format}</strong></p>` : ''}
+
+                <span class="step-number">
+                    ${stepNum}
+                </span>
+
+                <p class="step-name">
+                    ${stage.name}
+                </p>
+
+                ${
+                    stage.duration || stage.platform
+                        ? `
+                            <p class="step-meta">
+                                ${stage.duration ? stage.duration : ''}
+                                ${
+                                    stage.duration && stage.platform
+                                        ? ' &middot; '
+                                        : ''
+                                }
+                                ${stage.platform ? stage.platform : ''}
+                            </p>
+                        `
+                        : ''
+                }
+
+                ${
+                    stage.format
+                        ? `
+                            <p class="step-meta">
+                                <strong>${stage.format}</strong>
+                            </p>
+                        `
+                        : ''
+                }
+
                 ${btnHtml}
+
             </div>
         `;
-        if (index < job.stages.length - 1) { timelineHtml += `<div class="timeline-arrow">&rarr;</div>`; }
+
+        if (index < job.stages.length - 1) {
+            timelineHtml += `
+                <div class="timeline-arrow">
+                    &rarr;
+                </div>
+            `;
+        }
     });
+
     timelineHtml += '</div>';
 
     detailContent.innerHTML = `
         <div class="job-header">
+
             <h2>${job.title}</h2>
+
             <div class="job-header-meta">
-                <span><strong>Seniority:</strong> ${job.seniority}</span>
-                <span><strong>Hiring Manager:</strong> ${job.manager}</span>
-                <span><strong>Salary:</strong> ${job.salary}</span>
+
+                <span>
+                    <strong>Seniority:</strong>
+                    ${job.seniority}
+                </span>
+
+                <span>
+                    <strong>Hiring Manager:</strong>
+                    ${job.manager}
+                </span>
+
             </div>
         </div>
 
         <div class="detail-section">
-            <h3>About the Role</h3>
-            <p>${job.about}</p>
+
+            <h3>
+                About the Role
+            </h3>
+
+            <p>
+                ${job.about}
+            </p>
+
         </div>
 
         <div class="detail-section">
-            <h3>Must-Haves (Verified)</h3>
-            <div class="tags-container" style="justify-content: flex-start;">${mustHavesTags}</div>
+
+            <h3>
+                Must-Haves (Verified)
+            </h3>
+
+            <div
+                class="tags-container"
+                style="justify-content: flex-start;"
+            >
+                ${mustHavesTags}
+            </div>
+
         </div>
 
         <div class="detail-section">
-            <h3>Responsibilities</h3>
-            <ul>${job.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>
+
+            <h3>
+                Responsibilities
+            </h3>
+
+            <ul>
+                ${job.responsibilities
+                    .map(r => `<li>${r}</li>`)
+                    .join('')}
+            </ul>
+
         </div>
 
         <div class="detail-section">
-            <h3>Additional Tools & Knowledge</h3>
-            <p><strong>Relevant:</strong> ${job.toolsRelevant.join(', ')}</p>
-            ${job.toolsNice && job.toolsNice.length > 0 ? `<p><strong>Nice to Have:</strong> ${job.toolsNice.join(', ')}</p>` : ''}
+
+            <h3>
+                Additional Tools & Knowledge
+            </h3>
+
+            <p>
+                <strong>Relevant:</strong>
+                ${job.toolsRelevant.join(', ')}
+            </p>
+
+            ${
+                job.toolsNice && job.toolsNice.length > 0
+                    ? `
+                        <p>
+                            <strong>Nice to Have:</strong>
+                            ${job.toolsNice.join(', ')}
+                        </p>
+                    `
+                    : ''
+            }
+
         </div>
 
-        ${job.recruiterNote ? `<div class="internal-note"><h4>Recruiter Note</h4><p>${job.recruiterNote}</p></div>` : ''}
+        ${
+            job.recruiterNote
+                ? `
+                    <div class="internal-note">
 
-        <div class="detail-section" style="background-color: transparent; box-shadow: none; padding: 0; border-top: none;">
-            <h3 style="margin-top: 30px;">Interview Process</h3>
+                        <h4>
+                            Recruiter Note
+                        </h4>
+
+                        <p>
+                            ${job.recruiterNote}
+                        </p>
+
+                    </div>
+                `
+                : ''
+        }
+
+        <div
+            class="detail-section"
+            style="
+                background-color: transparent;
+                box-shadow: none;
+                padding: 0;
+                border-top: none;
+            "
+        >
+
+            <h3 style="margin-top: 30px;">
+                Interview Process
+            </h3>
+
             ${timelineHtml}
+
         </div>
     `;
 
     dirSection.classList.add('hidden');
     detailSection.classList.remove('hidden');
+
     window.scrollTo(0, 0);
 };
 
 window.hideJobDetail = function() {
     detailSection.classList.add('hidden');
     dirSection.classList.remove('hidden');
+
     window.scrollTo(0, 0);
 };
 
@@ -893,87 +1258,406 @@ let currentStageForCopy = null;
 
 window.openPrepModal = function(jobId, stageIndex) {
     const job = jobsData.find(j => j.id === jobId);
-    const stage = job.stages[stageIndex];
-    currentJobForCopy = job; currentStageForCopy = stage;
 
-    document.getElementById('modalPrepTitle').textContent = `${job.title} — ${stage.name}`;
-    
-    const dDur = document.getElementById('modalPrepDuration');
-    if (stage.duration) { dDur.classList.remove('hidden'); dDur.querySelector('span').textContent = stage.duration; } else { dDur.classList.add('hidden'); }
-    
-    const dPlat = document.getElementById('modalPrepPlatform');
-    if (stage.platform) { dPlat.classList.remove('hidden'); dPlat.querySelector('span').textContent = stage.platform; } else { dPlat.classList.add('hidden'); }
-    
-    const dForm = document.getElementById('modalPrepFormat');
-    if (stage.format) { dForm.classList.remove('hidden'); dForm.querySelector('span').textContent = stage.format; } else { dForm.classList.add('hidden'); }
+    if (!job) return;
+
+    const stage = job.stages[stageIndex];
+
+    if (!stage) return;
+
+    currentJobForCopy = job;
+    currentStageForCopy = stage;
+
+    document.getElementById('modalPrepTitle').textContent =
+        `${job.title} — ${stage.name}`;
+
+    const dDur =
+        document.getElementById('modalPrepDuration');
+
+    if (stage.duration) {
+        dDur.classList.remove('hidden');
+        dDur.querySelector('span').textContent =
+            stage.duration;
+    } else {
+        dDur.classList.add('hidden');
+    }
+
+    const dPlat =
+        document.getElementById('modalPrepPlatform');
+
+    if (stage.platform) {
+        dPlat.classList.remove('hidden');
+        dPlat.querySelector('span').textContent =
+            stage.platform;
+    } else {
+        dPlat.classList.add('hidden');
+    }
+
+    const dForm =
+        document.getElementById('modalPrepFormat');
+
+    if (stage.format) {
+        dForm.classList.remove('hidden');
+        dForm.querySelector('span').textContent =
+            stage.format;
+    } else {
+        dForm.classList.add('hidden');
+    }
 
     let bodyHtml = '';
-    if (stage.setup) bodyHtml += `<div class="danger-box"><h4>⚠️ Required Setup</h4><p>${stage.setup}</p></div>`;
-    if (stage.expect) bodyHtml += `<h4>What to Expect</h4><p>${stage.expect}</p>`;
-    if (stage.prepare && stage.prepare.length > 0) bodyHtml += `<h4>How to Prepare</h4><ul>${stage.prepare.map(p => `<li>${p}</li>`).join('')}</ul>`;
-    if (stage.recommendations) bodyHtml += `<h4>Key Recommendations</h4><p>${stage.recommendations}</p>`;
-    if (stage.internalNote) bodyHtml += `<div class="internal-note" style="margin-top: 30px;"><h4>Internal Recruiter Note — Do Not Send</h4><p>${stage.internalNote}</p></div>`;
 
-    document.getElementById('modalPrepBody').innerHTML = bodyHtml;
+    if (stage.setup) {
+        bodyHtml += `
+            <div class="danger-box">
+
+                <h4>
+                    ⚠️ Required Setup
+                </h4>
+
+                <p>
+                    ${stage.setup}
+                </p>
+
+            </div>
+        `;
+    }
+
+    if (stage.expect) {
+        bodyHtml += `
+            <h4>
+                What to Expect
+            </h4>
+
+            <p>
+                ${stage.expect}
+            </p>
+        `;
+    }
+
+    if (
+        stage.prepare &&
+        stage.prepare.length > 0
+    ) {
+        bodyHtml += `
+            <h4>
+                How to Prepare
+            </h4>
+
+            <ul>
+                ${stage.prepare
+                    .map(p => `<li>${p}</li>`)
+                    .join('')}
+            </ul>
+        `;
+    }
+
+    if (stage.recommendations) {
+        bodyHtml += `
+            <h4>
+                Key Recommendations
+            </h4>
+
+            <p>
+                ${stage.recommendations}
+            </p>
+        `;
+    }
+
+    if (stage.internalNote) {
+        bodyHtml += `
+            <div
+                class="internal-note"
+                style="margin-top: 30px;"
+            >
+
+                <h4>
+                    Internal Recruiter Note — Do Not Send
+                </h4>
+
+                <p>
+                    ${stage.internalNote}
+                </p>
+
+            </div>
+        `;
+    }
+
+    document.getElementById(
+        'modalPrepBody'
+    ).innerHTML = bodyHtml;
+
     modal.classList.add('active');
 };
 
-window.closePrepModal = function() { modal.classList.remove('active'); };
+window.closePrepModal = function() {
+    modal.classList.remove('active');
+};
 
-if(document.getElementById('copyPrepBtn')){
-    document.getElementById('copyPrepBtn').addEventListener('click', () => {
-        if (!currentJobForCopy || !currentStageForCopy) return;
+if (
+    document.getElementById(
+        'copyPrepBtn'
+    )
+) {
+    document.getElementById(
+        'copyPrepBtn'
+    ).addEventListener(
+        'click',
+        () => {
+            if (
+                !currentJobForCopy ||
+                !currentStageForCopy
+            ) {
+                return;
+            }
 
-        let html = `<div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">`;
-        html += `<h2 style="color: #052446; border-bottom: 2px solid #E6F1FF; padding-bottom: 8px;">Interview Preparation: ${currentJobForCopy.title} — ${currentStageForCopy.name}</h2>`;
-        
-        if (currentStageForCopy.duration || currentStageForCopy.platform || currentStageForCopy.format) {
-            html += `<ul>`;
-            if (currentStageForCopy.duration) html += `<li><strong>Duration:</strong> ${currentStageForCopy.duration}</li>`;
-            if (currentStageForCopy.platform) html += `<li><strong>Platform:</strong> ${currentStageForCopy.platform}</li>`;
-            if (currentStageForCopy.format) html += `<li><strong>Format:</strong> ${currentStageForCopy.format}</li>`;
-            html += `</ul>`;
+            let html = `
+                <div
+                    style="
+                        font-family: Arial, sans-serif;
+                        color: #333;
+                        line-height: 1.6;
+                    "
+                >
+            `;
+
+            html += `
+                <h2
+                    style="
+                        color: #052446;
+                        border-bottom: 2px solid #E6F1FF;
+                        padding-bottom: 8px;
+                    "
+                >
+                    Interview Preparation:
+                    ${currentJobForCopy.title}
+                    —
+                    ${currentStageForCopy.name}
+                </h2>
+            `;
+
+            if (
+                currentStageForCopy.duration ||
+                currentStageForCopy.platform ||
+                currentStageForCopy.format
+            ) {
+                html += `<ul>`;
+
+                if (
+                    currentStageForCopy.duration
+                ) {
+                    html += `
+                        <li>
+                            <strong>
+                                Duration:
+                            </strong>
+                            ${currentStageForCopy.duration}
+                        </li>
+                    `;
+                }
+
+                if (
+                    currentStageForCopy.platform
+                ) {
+                    html += `
+                        <li>
+                            <strong>
+                                Platform:
+                            </strong>
+                            ${currentStageForCopy.platform}
+                        </li>
+                    `;
+                }
+
+                if (
+                    currentStageForCopy.format
+                ) {
+                    html += `
+                        <li>
+                            <strong>
+                                Format:
+                            </strong>
+                            ${currentStageForCopy.format}
+                        </li>
+                    `;
+                }
+
+                html += `</ul>`;
+            }
+
+            if (
+                currentStageForCopy.setup
+            ) {
+                html += `
+                    <h3 style="color: #D73535;">
+                        ⚠️ Required Setup
+                    </h3>
+
+                    <p>
+                        ${currentStageForCopy.setup}
+                    </p>
+                `;
+            }
+
+            if (
+                currentStageForCopy.expect
+            ) {
+                html += `
+                    <h3 style="color: #3543D7;">
+                        What to Expect
+                    </h3>
+
+                    <p>
+                        ${currentStageForCopy.expect}
+                    </p>
+                `;
+            }
+
+            if (
+                currentStageForCopy.prepare &&
+                currentStageForCopy.prepare.length > 0
+            ) {
+                html += `
+                    <h3 style="color: #3543D7;">
+                        How to Prepare
+                    </h3>
+
+                    <ul>
+                `;
+
+                currentStageForCopy.prepare.forEach(
+                    item => {
+                        html += `
+                            <li>
+                                ${item}
+                            </li>
+                        `;
+                    }
+                );
+
+                html += `</ul>`;
+            }
+
+            if (
+                currentStageForCopy.recommendations
+            ) {
+                html += `
+                    <h3 style="color: #3543D7;">
+                        Key Recommendations
+                    </h3>
+
+                    <p>
+                        ${currentStageForCopy.recommendations}
+                    </p>
+                `;
+            }
+
+            html += `</div>`;
+
+            const blobHtml = new Blob(
+                [html],
+                {
+                    type: "text/html"
+                }
+            );
+
+            const blobText = new Blob(
+                [
+                    html.replace(
+                        /<[^>]*>?/gm,
+                        ''
+                    )
+                ],
+                {
+                    type: "text/plain"
+                }
+            );
+
+            try {
+                const data = [
+                    new ClipboardItem({
+                        "text/html":
+                            blobHtml,
+                        "text/plain":
+                            blobText
+                    })
+                ];
+
+                navigator.clipboard
+                    .write(data)
+                    .then(showToast);
+            }
+
+            catch (err) {
+                const tempDiv =
+                    document.createElement(
+                        "div"
+                    );
+
+                tempDiv.innerHTML = html;
+
+                tempDiv.style.position =
+                    "absolute";
+
+                tempDiv.style.left =
+                    "-9999px";
+
+                document.body.appendChild(
+                    tempDiv
+                );
+
+                const selection =
+                    window.getSelection();
+
+                const range =
+                    document.createRange();
+
+                range.selectNodeContents(
+                    tempDiv
+                );
+
+                selection.removeAllRanges();
+
+                selection.addRange(
+                    range
+                );
+
+                document.execCommand(
+                    "copy"
+                );
+
+                document.body.removeChild(
+                    tempDiv
+                );
+
+                showToast();
+            }
         }
-        
-        if (currentStageForCopy.setup) { html += `<h3 style="color: #D73535;">⚠️ Required Setup</h3><p>${currentStageForCopy.setup}</p>`; }
-        if (currentStageForCopy.expect) { html += `<h3 style="color: #3543D7;">What to Expect</h3><p>${currentStageForCopy.expect}</p>`; }
-        if (currentStageForCopy.prepare && currentStageForCopy.prepare.length > 0) {
-            html += `<h3 style="color: #3543D7;">How to Prepare</h3><ul>`;
-            currentStageForCopy.prepare.forEach(item => { html += `<li>${item}</li>`; });
-            html += `</ul>`;
-        }
-        if (currentStageForCopy.recommendations) { html += `<h3 style="color: #3543D7;">Key Recommendations</h3><p>${currentStageForCopy.recommendations}</p>`; }
-        html += `</div>`;
-
-        const blobHtml = new Blob([html], { type: "text/html" });
-        const blobText = new Blob([html.replace(/<[^>]*>?/gm, '')], { type: "text/plain" });
-
-        try {
-            const data = [new ClipboardItem({ "text/html": blobHtml, "text/plain": blobText })];
-            navigator.clipboard.write(data).then(showToast);
-        } catch (err) {
-            const tempDiv = document.createElement("div");
-            tempDiv.innerHTML = html;
-            tempDiv.style.position = "absolute"; tempDiv.style.left = "-9999px";
-            document.body.appendChild(tempDiv);
-            const selection = window.getSelection();
-            const range = document.createRange();
-            range.selectNodeContents(tempDiv);
-            selection.removeAllRanges(); selection.addRange(range);
-            document.execCommand("copy");
-            document.body.removeChild(tempDiv);
-            showToast();
-        }
-    });
+    );
 }
 
 function showToast() {
-    const toast = document.getElementById("toast");
-    if(toast) {
-        toast.classList.add("show");
-        setTimeout(() => { toast.classList.remove("show"); }, 3000);
+    const toast =
+        document.getElementById(
+            "toast"
+        );
+
+    if (toast) {
+        toast.classList.add(
+            "show"
+        );
+
+        setTimeout(
+            () => {
+                toast.classList.remove(
+                    "show"
+                );
+            },
+            3000
+        );
     }
 }
 
 // Inicializar
-if(jobsGrid) { renderJobsGrid(jobsData); }
+if (jobsGrid) {
+    renderJobsGrid(jobsData);
+}
