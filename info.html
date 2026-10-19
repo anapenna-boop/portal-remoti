@@ -22,6 +22,7 @@
                     <a href="#overview">Company Overview</a>
                     <a href="#ecosystem">Core Services & Ecosystem</a>
                     <a href="#brands">Key Family Brands</a>
+                    <a href="#lifecycle">Production Lifecycle</a>
                     <a href="#executives">Executive Leadership</a>
                 </div>
             </div>
@@ -239,13 +240,12 @@
                 </div>
             </div>
 
-            <!-- NUEVA SECCIÓN: KEY FAMILY BRANDS -->
+            <!-- KEY FAMILY BRANDS -->
             <div id="brands" style="margin-top: 50px;">
                 <h3 style="color: var(--petrol-blue); margin-bottom: 10px;">Key Family Brands</h3>
                 <p style="margin-bottom: 25px;">Flagship standalone platforms expanding Cast & Crew's presence across the creative development and casting stages of entertainment production.</p>
                 
                 <div class="card-container two-columns">
-                    
                     <!-- Final Draft -->
                     <div class="card product-card">
                         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px;">
@@ -304,27 +304,86 @@
                             </div>
                         </details>
                     </div>
-
                 </div>
             </div>
 
-            <!-- How the Ecosystem Connects -->
-            <h3 style="color: var(--petrol-blue); margin-top: 50px;">How the Ecosystem Connects</h3>
-            <div class="flow-diagram">
-                <div class="main-flow">
-                    <div class="flow-step">Start+ <br><small>Hire & onboard crew</small></div>
-                    <div class="flow-arrow">&rarr;</div>
-                    <div class="flow-step">Hours+ <br><small>Capture time worked</small></div>
-                    <div class="flow-arrow">&rarr;</div>
-                    <div class="flow-step">Payroll Services <br><small>Process compensation</small></div>
-                    <div class="flow-arrow">&rarr;</div>
-                    <div class="flow-step">PSL+ / DPO <br><small>Manage accounting</small></div>
-                    <div class="flow-arrow">&rarr;</div>
-                    <div class="flow-step">Reporting+ <br><small>Analyze data</small></div>
+            <!-- NUEVO: PRODUCTION LIFECYCLE (DIAGRAMA CIRCULAR) -->
+            <div id="lifecycle" class="lifecycle-wrapper">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <h3 style="color: var(--petrol-blue); margin-bottom: 8px;">Production Lifecycle Ecosystem</h3>
+                    <p style="color: #556980; font-size: 15px; max-width: 650px; margin: 0 auto;">Cast & Crew supports productions across every phase of their lifecycle, with MyCast&Crew acting as the universal self-service connector in the center.</p>
                 </div>
-                <div class="supporting-flow">
-                    <div class="flow-step supporting">MyCast&Crew <br><small>Crew self-service access</small></div>
-                    <div class="flow-step supporting">Studio+ <br><small>Secure production workflows</small></div>
+
+                <div class="lifecycle-stage-container">
+                    <!-- SVG Anillo y Flechas Conectoras Circulares -->
+                    <svg class="lifecycle-svg-ring" viewBox="0 0 760 760">
+                        <defs>
+                            <marker id="circle-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#3543D7"/>
+                            </marker>
+                        </defs>
+                        <!-- Pista circular base -->
+                        <circle cx="380" cy="380" r="260" fill="none" stroke="#E6F1FF" stroke-width="4" />
+                        
+                        <!-- Flechas de secuencia continua entre las 5 etapas -->
+                        <!-- 1 a 2 -->
+                        <path d="M 445 130 A 260 260 0 0 1 600 240" fill="none" stroke="#3543D7" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#circle-arrow)" />
+                        <!-- 2 a 3 -->
+                        <path d="M 640 400 A 260 260 0 0 1 540 590" fill="none" stroke="#3543D7" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#circle-arrow)" />
+                        <!-- 3 a 4 -->
+                        <path d="M 460 640 A 260 260 0 0 1 300 640" fill="none" stroke="#3543D7" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#circle-arrow)" />
+                        <!-- 4 a 5 -->
+                        <path d="M 220 590 A 260 260 0 0 1 120 400" fill="none" stroke="#3543D7" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#circle-arrow)" />
+                        <!-- 5 a 1 -->
+                        <path d="M 160 240 A 260 260 0 0 1 315 130" fill="none" stroke="#3543D7" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#circle-arrow)" />
+                    </svg>
+
+                    <!-- NÚCLEO CENTRAL: MyCast&Crew -->
+                    <div class="lifecycle-center-hub">
+                        <span class="hub-badge">Universal Connector</span>
+                        <h4>MyCast&Crew</h4>
+                        <p>Crew self-service access to paystubs, W-2 tax documents, and employment files throughout the entire production lifecycle[cite: 5].</p>
+                    </div>
+
+                    <!-- FASE 1: Story & Development -->
+                    <div class="lifecycle-node node-pos-1">
+                        <span class="node-phase-tag">01. Story & Dev</span>
+                        <h5>Final Draft</h5>
+                        <p class="node-tools">Script & Screenplay</p>
+                        <p class="node-desc">Story outlining, screenplay formatting & writers collaboration.</p>
+                    </div>
+
+                    <!-- FASE 2: Talent & Casting -->
+                    <div class="lifecycle-node node-pos-2">
+                        <span class="node-phase-tag">02. Talent & Casting</span>
+                        <h5>Backstage</h5>
+                        <p class="node-tools">Marketplace & Auditions</p>
+                        <p class="node-desc">Talent discovery, casting calls & applicant evaluations.</p>
+                    </div>
+
+                    <!-- FASE 3: Onboarding & Prep -->
+                    <div class="lifecycle-node node-pos-3">
+                        <span class="node-phase-tag">03. Digital Onboarding</span>
+                        <h5>Start+</h5>
+                        <p class="node-tools">Contracts & Packets</p>
+                        <p class="node-desc">Digital hiring packets, union compliance & encrypted storage.</p>
+                    </div>
+
+                    <!-- FASE 4: Production & Set -->
+                    <div class="lifecycle-node node-pos-4">
+                        <span class="node-phase-tag">04. Set Workflows</span>
+                        <h5>Hours+ & Studio+</h5>
+                        <p class="node-tools">Time & Secure Files</p>
+                        <p class="node-desc">Digital timecards, approvals & encrypted script distributions.</p>
+                    </div>
+
+                    <!-- FASE 5: Accounting & Wrap -->
+                    <div class="lifecycle-node node-pos-5">
+                        <span class="node-phase-tag">05. Wrap & Accounting</span>
+                        <h5>Payroll, PSL+ & Reporting+</h5>
+                        <p class="node-tools">Finance & Analytics</p>
+                        <p class="node-desc">Production accounting, payroll runs, tax incentives & BI data.</p>
+                    </div>
                 </div>
             </div>
 
