@@ -243,7 +243,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 }
 .card-container.three-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: flex-start; }
 
-/* CUADRÍCULA DE EJECUTIVOS CENTRADA */
+/* CUADRÍCULA DE EJECUTIVOS EN INFO.HTML */
 .card-container.exec-grid {
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +390,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     color: #556980;
 }
 
-/* NODOS ORBITALES (5 Fases) */
+/* NODOS ORBITALES */
 .lifecycle-node {
     position: absolute;
     width: 200px;
@@ -474,16 +474,92 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .filter-btn:hover { border-color: var(--tech-blue); color: var(--tech-blue); }
 .filter-btn.active { background-color: var(--tech-blue); color: var(--white); border-color: var(--tech-blue); }
 
-/* MANAGERS */
-.manager-card { background-color: var(--white); border-radius: 12px; padding: 30px 20px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05); display: flex; flex-direction: column; border-top: 4px solid var(--tech-blue); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.manager-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(5, 36, 70, 0.1); }
-.manager-header { margin-bottom: 15px; }
-.manager-name { font-size: 22px; color: var(--petrol-blue); font-weight: 700; margin-bottom: 5px; }
-.manager-title { font-size: 15px; color: var(--tech-blue); font-weight: 600; margin-bottom: 5px; }
-.manager-roles { font-size: 13px; color: #666; font-style: italic; }
-.view-insights-btn { margin-top: auto; background-color: transparent; color: var(--tech-blue); border: 1px solid var(--tech-blue); padding: 10px; border-radius: 6px; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.3s ease; width: 100%; font-family: 'Figtree', sans-serif; }
-.view-insights-btn:hover { background-color: var(--tech-blue); color: var(--white); }
-#no-results { text-align: center; padding: 40px; font-size: 18px; color: #888; width: 100%; }
+/* ---------------------------------------------------- */
+/* MANAGERS GRID: CUADRÍCULA UNIFORME Y DEL MISMO TAMAÑO */
+/* ---------------------------------------------------- */
+#managersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.manager-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px 24px;
+    box-shadow: 0 10px 30px rgba(5, 36, 70, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 4px solid var(--tech-blue);
+    min-height: 220px;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manager-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(5, 36, 70, 0.12);
+}
+
+.manager-header {
+    margin-bottom: 20px;
+}
+
+.manager-name {
+    font-size: 22px;
+    color: var(--petrol-blue);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.manager-title {
+    font-size: 14px;
+    color: var(--tech-blue);
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.manager-roles {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.view-insights-btn {
+    margin-top: auto;
+    background-color: transparent;
+    color: var(--tech-blue);
+    border: 1px solid var(--tech-blue);
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+}
+
+.view-insights-btn:hover {
+    background-color: var(--tech-blue);
+    color: var(--white);
+}
+
+#no-results {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #888;
+    width: 100%;
+    grid-column: 1 / -1;
+}
 
 /* JOBS & ACORDEONES */
 .hidden { display: none !important; }
@@ -588,6 +664,10 @@ summary:hover { background-color: var(--baby-blue); }
     .card-container.exec-grid .exec-card-link {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+    
+    #managersGrid {
+        grid-template-columns: 1fr;
     }
     
     .lifecycle-stage-container {
