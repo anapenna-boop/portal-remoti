@@ -41,7 +41,7 @@ const jobsData = [
             "CI/CD",
             "Monitoring / Observability"
         ],
-        recruiterNote: "Do not screen strictly by years of experience. Although the original JD mentions 5+ years, Roman prioritizes actual technical knowledge and the candidate’s ability to clearly explain what they know and have done.",
+        recruiterNote: "",
         stages: [
             {
                 name: "Skill Panel",
@@ -143,7 +143,7 @@ const jobsData = [
             "SaaS",
             "Payroll / Financial Systems"
         ],
-        recruiterNote: "Do not treat every qualification in the original JD as a hard requirement. The verified screening priorities are strong C#/.NET experience, SQL, concurrency, idempotency, Kafka, AWS messaging, and infrastructure knowledge. For Roman, technical knowledge is more important than screening solely by years of experience.",
+        recruiterNote: "",
         stages: [
             {
                 name: "Skill Panel",
@@ -726,7 +726,7 @@ const jobsData = [
             "C#",
             "Automated Testing"
         ],
-        recruiterNote: "The confirmed priorities are C-to-C++ migration experience and MySQL. Linux is preferred, not mandatory.",
+        recruiterNote: "",
         stages: [
             {
                 name: "Shrikrushna Garad",
@@ -822,7 +822,7 @@ const jobsData = [
             "Regulated Environments",
             "Claude Code / AI-assisted Testing"
         ],
-        recruiterNote: "The verified priorities are Playwright, TypeScript/JavaScript, and UI testing. This is a frontend/UI-focused SDET role.",
+        recruiterNote: "",
         stages: [
             {
                 name: "Skill Panel",
@@ -931,7 +931,7 @@ const jobsData = [
             "Financial / Payroll Systems",
             "Compliance Environments"
         ],
-        recruiterNote: "The confirmed priorities are Playwright, TypeScript/JavaScript, backend testing, and API testing.",
+        recruiterNote: "",
         stages: [
             {
                 name: "Skill Panel",
@@ -1046,6 +1046,7 @@ const jobsData = [
             "High-Compliance Data Environments",
             "SDET Mentoring / Technical Leadership"
         ],
+        recruiterNote: "",
         stages: [
             {
                 name: "Anne Dawson",
@@ -1147,7 +1148,7 @@ const jobsData = [
             "AI-assisted Testing",
             "Observability"
         ],
-        recruiterNote: "Playwright plus hands-on experience with at least one mobile automation tool for iOS and Android are the confirmed priorities. Appium is preferred, not mandatory.",
+        recruiterNote: "",
         stages: [
             {
                 name: "Skill Panel",
