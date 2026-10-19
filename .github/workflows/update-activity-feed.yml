@@ -1,0 +1,46 @@
+name: Update Internal Recruiting Feed
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "jobs.js"
+      - "info.html"
+      - "managers.html"
+      - "script.js"
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate recruiting feed events
+        run: node scripts/update-activity-feed.js
+
+      - name: Commit feed update
+        run: |
+          if git diff --quiet -- activity-feed.json; then
+            echo "No recruiter-relevant feed changes detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add activity-feed.json
+          git commit -m "Update internal recruiting feed [skip feed]"
+          git push
