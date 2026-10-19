@@ -169,7 +169,7 @@ const managersData = [
         id: 5,
         name: "Roja Kamireddy",
         title: "Senior Software Engineering Manager",
-        location: "Irvine / Burbank",
+        location: "Irvine / Burbank (Eastern Time)",
         roles: "Full Stack Node/React, .NET Engineers",
         linkedin: "https://www.linkedin.com/in/roja-kamireddy-34649a10/",
         tags: ["Open", "Flexible", "Independent", "Clear Communicator", "Engineering"],
