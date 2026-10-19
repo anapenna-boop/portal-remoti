@@ -1,0 +1,30 @@
+[
+  {
+    "id": "seed-2026-10-19-screening-questions",
+    "timestamp": "2026-10-19T17:20:00-05:00",
+    "category": "Recruiting Resources",
+    "title": "Suggested screening questions added for 4 technical roles",
+    "description": "Available for Java, .NET, Full Stack Data, and SDET Data."
+  },
+  {
+    "id": "seed-2026-10-19-sdet-front-skill-panel",
+    "timestamp": "2026-10-19T16:40:00-05:00",
+    "category": "Interview Prep",
+    "title": "SDET Front Skill Panel is now available",
+    "description": "A candidate-ready preparation guide for the Technical QA Fundamentals Assessment was added."
+  },
+  {
+    "id": "seed-2026-10-19-copy-jd",
+    "timestamp": "2026-10-19T15:55:00-05:00",
+    "category": "Recruiting Resources",
+    "title": "Job descriptions can now be copied directly from the portal",
+    "description": "Each job detail page now includes a candidate-facing Copy Job Description action."
+  },
+  {
+    "id": "seed-2026-10-19-new-jobs",
+    "timestamp": "2026-10-19T14:30:00-05:00",
+    "category": "Jobs",
+    "title": "2 new jobs were added",
+    "description": "Full Stack Developer — Data and Senior SDET — Data Platform are now available in the Jobs Directory."
+  }
+]
