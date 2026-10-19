@@ -8,8 +8,8 @@ const managersData = [
         roles: "Java Developer, .NET Engineer, BI & Data Integration Developer",
         linkedin: "https://www.linkedin.com/in/romansmolgovsky/",
         tags: ["Direct", "Practical", "Technical", "Adaptable", "Engineering"],
-        style: "Direct, practical, and focused on genuine technical understanding.",
-        values: ["Strong English", "Adaptability and practical technical knowledge", "Clear and concise communication", "Ability to explain complex concepts simply"],
+        style: "Direct, practical, and focused on genuine technical understanding. Has a strong accent, so the candidate must have strong English listening comprehension.",
+        values: ["Strong English (C1)", "Adaptability and practical technical knowledge", "Clear and concise communication", "Ability to explain complex concepts simply"],
         interview: "Direct technical questions and practical scenarios. Prioritizes actual technical capability over years of experience.",
         dos: ["Answer questions directly.", "Explain technical decisions using concrete examples.", "Demonstrate adaptability and practical knowledge."],
         watchOuts: ["Overcomplicating simple answers.", "Talking around questions.", "Relying on years of experience instead of demonstrating knowledge."],
@@ -23,8 +23,8 @@ const managersData = [
         roles: ".NET Developer, UI Developer, React Developer",
         linkedin: "https://www.linkedin.com/in/quynh-vo-mba-a5033225/",
         tags: ["Direct", "Practical", "Technical", "Concise", "Engineering"],
-        style: "Very direct, practical, and technically focused.",
-        values: ["Strong English", "Concrete technical experience", "Practical problem-solving", "Confidence backed by experience", "Receptiveness to direct feedback"],
+        style: "Very direct, practical, and technically focused. Has a strong accent, so the candidate must have strong English listening comprehension.",
+        values: ["Strong English proficiency", "Concrete technical experience", "Practical problem-solving", "Confidence backed by experience", "Receptiveness to direct feedback"],
         interview: "Direct technical questions focused on real projects and personal contributions. Live coding may be included, depending on the process.",
         dos: ["Prepare specific examples from previous projects.", "Explain individual contributions and technical decisions.", "Be concise and receptive to feedback."],
         watchOuts: ["Generic or excessively long answers.", "Describing projects without explaining personal contributions.", "Taking direct feedback personally."],
@@ -69,7 +69,7 @@ const managersData = [
         linkedin: "https://www.linkedin.com/in/roja-kamireddy-34649a10/",
         tags: ["Open", "Flexible", "Independent", "Clear Communicator", "Engineering"],
         style: "Open, flexible, and focused on clear communication and independent problem-solving.",
-        values: ["Strong english", "Clear communication", "Independence and ownership", "Problem-solving ability", "Flexibility"],
+        values: ["C1 English", "Clear communication", "Independence and ownership", "Problem-solving ability", "Flexibility"],
         interview: "Conversational interviews focused on technical experience, practical decision-making, and the ability to work independently.",
         dos: ["Communicate ideas clearly and naturally.", "Demonstrate independent problem-solving.", "Prepare examples of ownership and technical decisions."],
         watchOuts: ["Vague or unnecessarily complicated explanations.", "Difficulty demonstrating independent problem-solving.", "Requiring constant guidance."],
@@ -127,9 +127,9 @@ const managersData = [
         location: "",
         roles: "",
         linkedin: "",
-        tags: ["Fast", "Direct", "Practical", "Concise", "DevOps"],
-        style: "Fast, direct, and practical.",
-        values: ["Strong english", "Concise communication", "Efficiency"],
+        tags: ["Fast", "Direct", "Practical", "Concise", "Engineering"],
+        style: "Fast, direct, and practical. Has a strong accent, so the candidate must have strong English listening comprehension.",
+        values: ["Strong English proficiency", "Concise communication", "Efficiency"],
         interview: "Practical and direct, with a preference for getting straight to the point.",
         dos: ["Keep answers short and relevant.", "Communicate technical knowledge clearly.", "Focus on practical experience."],
         watchOuts: ["Excessively detailed explanations.", "Unnecessarily long answers."],
@@ -144,7 +144,7 @@ const managersData = [
         linkedin: "",
         tags: ["Open", "Approachable", "Relationship-Oriented", "Team Fit", "Engineering"],
         style: "Open, approachable, and relationship-oriented.",
-        values: ["Strong english", "Team fit", "Confidence in professional experience", "Positive interpersonal relationships"],
+        values: ["C1 English", "Team fit", "Confidence in professional experience", "Positive interpersonal relationships"],
         interview: "Open and conversational, with an emphasis on professional experience and team fit.",
         dos: ["Be personable and confident.", "Explain previous experience clearly.", "Demonstrate your ability to connect and collaborate with a team."],
         watchOuts: ["Difficulty explaining or demonstrating previous experience.", "Limited engagement during the conversation."],
@@ -157,7 +157,7 @@ const managersData = [
         location: "",
         roles: "",
         linkedin: "",
-        tags: ["Technical", "Business-Oriented", "Open", "Senior-Level", "Engineering", "Security"],
+        tags: ["Technical", "Business-Oriented", "Open", "Senior-Level", "Engineering"],
         style: "Open, technically rigorous, and business-oriented.",
         values: ["Senior-level technical expertise", "Broad technical understanding", "Business awareness", "Clear goals", "Technical depth", "Responsiveness"],
         interview: "Technical conversations focused on depth of knowledge, business understanding, and the ability to consider different perspectives.",
@@ -189,7 +189,7 @@ const managersData = [
         linkedin: "",
         tags: ["Highly Technical", "Direct", "Demanding", "Precise", "AI"],
         style: "Extremely direct and technically demanding.",
-        values: ["Strong english", "Strong technical understanding", "Confidence", "Concrete examples", "Intellectual honesty"],
+        values: ["C1 English", "Strong technical understanding", "Confidence", "Concrete examples", "Intellectual honesty"],
         interview: "Direct technical conversations focused on genuine technical depth, practical experience, and the ability to explain concepts clearly.",
         dos: ["Use concrete examples.", "Be technically precise.", "Demonstrate confidence backed by experience.", "Be transparent when you don’t know something."],
         watchOuts: ["Abstract answers without practical examples.", "Bluffing or exaggerating technical knowledge.", "Unnecessary explanations."],
@@ -264,6 +264,7 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 const modal = document.getElementById('managerModal');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
+// RENDERIZADO DE TARJETAS SIN TAGS EXTERNOS
 function renderManagers(data) {
     managersGrid.innerHTML = '';
     
@@ -273,8 +274,6 @@ function renderManagers(data) {
     }
 
     data.forEach(manager => {
-        const tagsHtml = manager.tags.slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join('');
-        
         const card = document.createElement('div');
         card.className = 'manager-card';
         card.innerHTML = `
@@ -283,14 +282,13 @@ function renderManagers(data) {
                 <p class="manager-title">${manager.title || 'Hiring Manager'}</p>
                 ${manager.roles ? `<p class="manager-roles">Teams: ${manager.roles}</p>` : ''}
             </div>
-            <div class="tags-container">${tagsHtml}</div>
             <button class="view-insights-btn" onclick="openModal(${manager.id})">View Insights &rarr;</button>
         `;
         managersGrid.appendChild(card);
     });
 }
 
-// Buscador
+// BÚSQUEDA
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     
@@ -307,7 +305,7 @@ searchInput.addEventListener('input', (e) => {
     renderManagers(filtered);
 });
 
-// Filtros
+// FILTROS
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
@@ -325,7 +323,7 @@ filterBtns.forEach(btn => {
     });
 });
 
-// Abrir Modal
+// MODAL
 window.openModal = function(id) {
     const manager = managersData.find(m => m.id === id);
     if (!manager) return;
@@ -364,7 +362,6 @@ window.openModal = function(id) {
     modal.classList.add('active');
 }
 
-// Cerrar Modal
 closeModalBtn.addEventListener('click', () => {
     modal.classList.remove('active');
 });
@@ -375,5 +372,5 @@ modal.addEventListener('click', (e) => {
     }
 });
 
-// Inicializar
+// INICIALIZACIÓN
 renderManagers(managersData);
