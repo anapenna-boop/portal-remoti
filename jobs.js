@@ -5,7 +5,6 @@ const jobsData = [
         title: "Java Developer",
         seniority: "Senior",
         manager: "Roman Smolgovsky",
-        salary: "USD 5,800/month (Up to USD 6,000 for exceptional profiles)",
         department: "Engineering",
         about: "Backend engineering role focused on building and maintaining scalable Java applications for business-critical systems. The engineer works with distributed applications, APIs, databases, production infrastructure, reliability, scalability, and performance.",
         mustHaves: ["Java", "SQL", "Concurrency", "Idempotency", "Kafka", "AWS Messaging", "Infrastructure knowledge"],
