@@ -1088,7 +1088,7 @@ const jobsData = [
 
     {
         id: "sdet-data",
-        title: "Senior SDET — Data Platform",
+        title: "SDET Data",
         seniority: "Senior",
         manager: "Anne Dawson",
         department: "QA",
