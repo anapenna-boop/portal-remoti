@@ -1,4 +1,7 @@
-// BASE DE DATOS COMPLETA DE TRABAJOS Y ENTREVISTAS
+// ============================================================
+// JOBS DATA
+// ============================================================
+
 const jobsData = [
     {
         id: "java-developer",
@@ -6,7 +9,10 @@ const jobsData = [
         seniority: "Senior",
         manager: "Roman Smolgovsky",
         department: "Engineering",
-        about: "Backend engineering role focused on building and maintaining scalable Java applications for business-critical systems. The engineer works with distributed applications, APIs, databases, production infrastructure, reliability, scalability, and performance.",
+
+        about:
+            "Backend engineering role focused on building and maintaining scalable Java applications for business-critical systems. The engineer works with distributed applications, APIs, databases, production infrastructure, reliability, scalability, and performance.",
+
         mustHaves: [
             "Java",
             "SQL",
@@ -16,6 +22,7 @@ const jobsData = [
             "AWS Messaging",
             "Infrastructure knowledge"
         ],
+
         responsibilities: [
             "Design, develop, and maintain scalable Java backend services.",
             "Build REST APIs and microservices.",
@@ -24,6 +31,7 @@ const jobsData = [
             "Troubleshoot production issues and implement long-term solutions.",
             "Participate in architecture and technical design discussions."
         ],
+
         toolsRelevant: [
             "REST APIs",
             "Microservices",
@@ -33,6 +41,7 @@ const jobsData = [
             "Git",
             "Debugging"
         ],
+
         toolsNice: [
             "Spring Boot",
             "Redis",
@@ -41,7 +50,7 @@ const jobsData = [
             "CI/CD",
             "Monitoring / Observability"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Skill Panel",
@@ -51,7 +60,10 @@ const jobsData = [
                 platform: "",
                 format: "",
                 setup: "",
-                expect: "This assessment focuses on reading, understanding, and reasoning about real-world Java backend code. Expect code snippets, SQL questions, and practical scenarios where you may need to identify issues, explain existing functionality, or suggest improvements.",
+
+                expect:
+                    "This assessment focuses on reading, understanding, and reasoning about real-world Java backend code. Expect code snippets, SQL questions, and practical scenarios where you may need to identify issues, explain existing functionality, or suggest improvements.",
+
                 prepare: [
                     "Java Fundamentals: Generics, collections, iterators, serialization, and core Java concepts.",
                     "Spring & Spring Boot: Application contexts, bean management, dependency injection, and application structure.",
@@ -59,17 +71,24 @@ const jobsData = [
                     "Codebase Analysis: Understanding existing code, identifying established patterns, and implementing new requirements.",
                     "Testing & Code Quality: Running existing tests, handling edge cases, and writing maintainable code."
                 ],
-                recommendations: "Focus on understanding code rather than memorizing definitions. Practice analyzing unfamiliar applications, explaining how components interact, and identifying potential improvements while preserving existing functionality.",
-                internalNote: ""
+
+                recommendations:
+                    "Focus on understanding code rather than memorizing definitions. Practice analyzing unfamiliar applications, explaining how components interact, and identifying potential improvements while preserving existing functionality."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
                 duration: "1 hour",
                 platform: "Microsoft Teams",
                 format: "Pair programming / live coding",
-                setup: "Before the interview: Please have Java installed and configured, along with an IDE of your preference. Make sure your environment is ready to create, run, and test a Java application without setup issues.",
-                expect: "You will work alongside the interviewer to solve a practical Java coding exercise. The focus will be on your problem-solving approach, code structure, handling of edge cases, and ability to explain your technical decisions.",
+
+                setup:
+                    "Before the interview: Please have Java installed and configured, along with an IDE of your preference. Make sure your environment is ready to create, run, and test a Java application without setup issues.",
+
+                expect:
+                    "You will work alongside the interviewer to solve a practical Java coding exercise. The focus will be on your problem-solving approach, code structure, handling of edge cases, and ability to explain your technical decisions.",
+
                 prepare: [
                     "Review collections, Streams, lambdas, CompletableFuture, and concurrent operations.",
                     "Review HTTP requests, JSON, status codes, asynchronous calls, and error handling.",
@@ -78,9 +97,11 @@ const jobsData = [
                     "Practice handling empty inputs, null values, failed requests, partial failures, and duplicate data.",
                     "Practice writing clean, readable code using appropriate data structures and clear naming."
                 ],
-                recommendations: "Clarify requirements before coding and explain your reasoning throughout the exercise. Start with a simple working solution and improve it if time allows. Treat the interview as a collaboration, ask questions when needed, and remain open to feedback. Prioritize a working solution first, then testing and refinement.",
-                internalNote: ""
+
+                recommendations:
+                    "Clarify requirements before coding and explain your reasoning throughout the exercise. Start with a simple working solution and improve it if time allows. Treat the interview as a collaboration, ask questions when needed, and remain open to feedback. Prioritize a working solution first, then testing and refinement."
             },
+
             {
                 name: "Roman Smolgovsky",
                 hasPrep: true,
@@ -88,15 +109,19 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical and experience-based interview",
                 setup: "",
-                expect: "A technical conversation focused on your Java backend experience, practical knowledge, and ability to explain architectural decisions. Expect questions about real projects, production challenges, and technical problem-solving.",
+
+                expect:
+                    "A technical conversation focused on your Java backend experience, practical knowledge, and ability to explain architectural decisions. Expect questions about real projects, production challenges, and technical problem-solving.",
+
                 prepare: [
                     "Java & Backend: Review Java fundamentals, REST APIs, Spring Boot, and backend service design.",
                     "Concurrency & Distributed Systems: Review multithreading, thread safety, scalability, and idempotency.",
                     "Databases & Messaging: Review SQL optimization, Kafka, AWS messaging, and distributed infrastructure.",
                     "Production Experience: Prepare examples of debugging, performance improvements, architecture decisions, and adapting to technical challenges."
                 ],
-                recommendations: "Roman values direct communication and genuine technical understanding. Be concise, use concrete examples from your experience, and explain the reasoning behind your decisions. Focus on demonstrating what you know and how you have applied it rather than simply listing technologies or years of experience.",
-                internalNote: ""
+
+                recommendations:
+                    "Roman values direct communication and genuine technical understanding. Be concise, use concrete examples from your experience, and explain the reasoning behind your decisions. Focus on demonstrating what you know and how you have applied it rather than simply listing technologies or years of experience."
             }
         ]
     },
@@ -107,7 +132,10 @@ const jobsData = [
         seniority: "Senior / Lead",
         manager: "Roman Smolgovsky / Quynh Vo",
         department: "Engineering",
-        about: "Senior backend engineering role focused on building and improving Cast & Crew payroll processing systems using C# and .NET. The engineer works on distributed and event-driven applications and owns features from design through deployment and maintenance.",
+
+        about:
+            "Senior backend engineering role focused on building and improving Cast & Crew payroll processing systems using C# and .NET. The engineer works on distributed and event-driven applications and owns features from design through deployment and maintenance.",
+
         mustHaves: [
             "C# / .NET",
             "SQL",
@@ -117,6 +145,7 @@ const jobsData = [
             "AWS Messaging",
             "Infrastructure knowledge"
         ],
+
         responsibilities: [
             "Build and enhance payroll processing applications using C# and .NET.",
             "Own features end-to-end.",
@@ -125,6 +154,7 @@ const jobsData = [
             "Collaborate with QA, Product, Business Analysts, and Engineering.",
             "Contribute to technical architecture and evaluate new technologies."
         ],
+
         toolsRelevant: [
             "REST APIs",
             "Relational Databases",
@@ -135,6 +165,7 @@ const jobsData = [
             "Design Patterns",
             "Data Structures & Algorithms"
         ],
+
         toolsNice: [
             "PostgreSQL",
             "Kubernetes",
@@ -143,7 +174,7 @@ const jobsData = [
             "SaaS",
             "Payroll / Financial Systems"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Skill Panel",
@@ -152,7 +183,10 @@ const jobsData = [
                 platform: "",
                 format: "",
                 setup: "",
-                expect: "This assessment focuses on reading and reasoning about real-world .NET backend code. Expect short code snippets, SQL questions, and production scenarios where you may need to explain existing functionality, identify potential issues, and suggest improvements.",
+
+                expect:
+                    "This assessment focuses on reading and reasoning about real-world .NET backend code. Expect short code snippets, SQL questions, and production scenarios where you may need to explain existing functionality, identify potential issues, and suggest improvements.",
+
                 prepare: [
                     "C# & .NET Fundamentals: Core language concepts, collections, expressions, and application execution.",
                     "Backend & API Development: RESTful APIs, HTTP responses, controllers, dependency management, and database operations.",
@@ -160,17 +194,24 @@ const jobsData = [
                     "Messaging & Event-Driven Architecture: Asynchronous communication, publishing events, subscriptions, and messaging patterns.",
                     "Backend Engineering: Dependency injection, service lifetimes, database access, reliability, and distributed consistency."
                 ],
-                recommendations: "Practice reading unfamiliar code and explaining how its components interact. Focus on identifying problems, reasoning through practical scenarios, and proposing maintainable solutions.",
-                internalNote: ""
+
+                recommendations:
+                    "Practice reading unfamiliar code and explaining how its components interact. Focus on identifying problems, reasoning through practical scenarios, and proposing maintainable solutions."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
                 duration: "1 hour",
                 platform: "Microsoft Teams",
                 format: "Pair programming / live coding",
-                setup: "Before the interview: Please have the .NET SDK installed and configured, along with an IDE of your preference. Make sure your environment is ready to create, run, and test a .NET application without setup issues.",
-                expect: "You will code alongside the interviewer while explaining your reasoning and approach. The assessment focuses on problem-solving, code structure, handling edge cases, and your ability to collaborate.",
+
+                setup:
+                    "Before the interview: Please have the .NET SDK installed and configured, along with an IDE of your preference. Make sure your environment is ready to create, run, and test a .NET application without setup issues.",
+
+                expect:
+                    "You will code alongside the interviewer while explaining your reasoning and approach. The assessment focuses on problem-solving, code structure, handling edge cases, and your ability to collaborate.",
+
                 prepare: [
                     "C# & .NET Fundamentals: Collections, LINQ, async/await, Tasks, and concurrent operations.",
                     "API Integration: HTTP requests, JSON, status codes, asynchronous calls, and error handling.",
@@ -178,9 +219,11 @@ const jobsData = [
                     "Edge Cases: Null values, empty inputs, failed requests, partial failures, and duplicate data.",
                     "Code Quality: Clean, readable, and testable code."
                 ],
-                recommendations: "Clarify requirements before coding and explain your reasoning throughout the exercise. Start with a simple working solution and use remaining time for testing and improvement. Ask questions when needed and remain open to feedback.",
-                internalNote: ""
+
+                recommendations:
+                    "Clarify requirements before coding and explain your reasoning throughout the exercise. Start with a simple working solution and use remaining time for testing and improvement. Ask questions when needed and remain open to feedback."
             },
+
             {
                 name: "Roman / Quynh",
                 hasPrep: true,
@@ -188,7 +231,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical and experience-based interview",
                 setup: "",
-                expect: "A technical conversation focused on your .NET experience, practical knowledge, and problem-solving approach. Expect technical questions and scenarios based on previous projects rather than a formal coding assessment.",
+
+                expect:
+                    "A technical conversation focused on your .NET experience, practical knowledge, and problem-solving approach. Expect technical questions and scenarios based on previous projects rather than a formal coding assessment.",
+
                 prepare: [
                     "C# & .NET: Collections, LINQ, async/await, Tasks, concurrency, and error handling.",
                     "Backend Development: REST APIs, JSON, HTTP requests, and asynchronous operations.",
@@ -196,8 +242,9 @@ const jobsData = [
                     "SQL & Problem-Solving: Database operations, technical decisions, and production challenges.",
                     "Practical Experience: Projects, technical challenges, and adapting to new technologies or requirements."
                 ],
-                recommendations: "Use clear, direct answers and demonstrate genuine technical understanding. Use specific examples, avoid unnecessarily complicated explanations, and be transparent when you do not know something.",
-                internalNote: ""
+
+                recommendations:
+                    "Use clear, direct answers and demonstrate genuine technical understanding. Use specific examples, avoid unnecessarily complicated explanations, and be transparent when you do not know something."
             }
         ]
     },
@@ -208,13 +255,17 @@ const jobsData = [
         seniority: "Mid / Senior",
         manager: "Shrikrushna Garad",
         department: "Engineering",
-        about: "Full-stack engineering role with a strong frontend focus, working on the modernization of PSL, Cast & Crew’s production accounting platform. The team is transforming legacy desktop workflows into a modern web application using React and .NET, with emphasis on performance, reliability, usability, and preserving existing business behavior.",
+
+        about:
+            "Full-stack engineering role with a strong frontend focus, working on the modernization of PSL, Cast & Crew’s production accounting platform. The team is transforming legacy desktop workflows into a modern web application using React and .NET, with emphasis on performance, reliability, usability, and preserving existing business behavior.",
+
         mustHaves: [
             "React",
             ".NET / C#",
             "Performance",
             "Reliability"
         ],
+
         responsibilities: [
             "Build and maintain modern web applications using React.",
             "Develop reusable frontend components and complex workflows.",
@@ -223,6 +274,7 @@ const jobsData = [
             "Ensure new functionality is performant and preserves existing PSL behavior.",
             "Collaborate with Product, QA, and Engineering."
         ],
+
         toolsRelevant: [
             "TypeScript",
             "JavaScript",
@@ -234,6 +286,7 @@ const jobsData = [
             "Automated Testing",
             "Authentication & Authorization"
         ],
+
         toolsNice: [
             "ASP.NET Core",
             "Jest",
@@ -247,7 +300,10 @@ const jobsData = [
             "Legacy Modernization",
             "Financial / Accounting Systems"
         ],
-        recruiterNote: "The verified priorities are React, .NET, performance, and reliability. Although the official title is Senior Software Engineer, the team can consider Mid-to-Senior profiles if they demonstrate the required capability.",
+
+        recruiterNote:
+            "The verified priorities are React, .NET, performance, and reliability. Although the official title is Senior Software Engineer, the team can consider Mid-to-Senior profiles if they demonstrate the required capability.",
+
         stages: [
             {
                 name: "Shrikrushna Garad",
@@ -256,7 +312,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical Conversation",
                 setup: "",
-                expect: "A technical conversation focused on previous experience, software architecture, and problem-solving. Expect questions about React fundamentals, design patterns, application performance, troubleshooting, and familiarity with AI-assisted development tools.",
+
+                expect:
+                    "A technical conversation focused on previous experience, software architecture, and problem-solving. Expect questions about React fundamentals, design patterns, application performance, troubleshooting, and familiarity with AI-assisted development tools.",
+
                 prepare: [
                     "React & TypeScript: Components, hooks, state management, and frontend application structure.",
                     "Software Architecture: Design patterns, modular architecture, REST APIs, and C#/.NET.",
@@ -264,9 +323,11 @@ const jobsData = [
                     "Practical Experience: Previous projects, technical decisions, challenges, and personal contributions.",
                     "AI-Assisted Development: AI coding tools, daily use, benefits, limitations, and workflow integration."
                 ],
-                recommendations: "Keep answers concise, direct, and practical. Focus on what you personally built and how you approach technical challenges. If you do not know something, explain how you would investigate it.",
-                internalNote: ""
+
+                recommendations:
+                    "Keep answers concise, direct, and practical. Focus on what you personally built and how you approach technical challenges. If you do not know something, explain how you would investigate it."
             },
+
             {
                 name: "Principal Engineers",
                 hasPrep: true,
@@ -274,7 +335,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical Assessment / Live Coding",
                 setup: "",
-                expect: "An in-depth technical assessment focused on engineering experience, problem-solving, and technical decision-making. Expect practical scenarios, deeper technical questions, and follow-up questions about your reasoning.",
+
+                expect:
+                    "An in-depth technical assessment focused on engineering experience, problem-solving, and technical decision-making. Expect practical scenarios, deeper technical questions, and follow-up questions about your reasoning.",
+
                 prepare: [
                     "Software Engineering: SOLID principles, design patterns, dependency injection, and clean architecture.",
                     "Backend Development: C#/.NET, REST APIs, SQL, indexing, database transactions, and API design.",
@@ -282,9 +346,11 @@ const jobsData = [
                     "Production Experience: Scalability, performance challenges, architectural decisions, and personal contributions.",
                     "AI-Assisted Development: AI coding tools, Prompt Engineering, Context Engineering, and validating AI-generated code."
                 ],
-                recommendations: "Demonstrate practical engineering knowledge through concrete examples. Explain your thought process and trade-offs before proposing solutions. Be technically precise and transparent about unfamiliar topics.",
-                internalNote: ""
+
+                recommendations:
+                    "Demonstrate practical engineering knowledge through concrete examples. Explain your thought process and trade-offs before proposing solutions. Be technically precise and transparent about unfamiliar topics."
             },
+
             {
                 name: "Product Managers",
                 hasPrep: true,
@@ -292,7 +358,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Product & Business Conversation",
                 setup: "",
-                expect: "A conversation focused on professional experience, previous projects, collaboration, and ability to understand business requirements and translate them into technical solutions.",
+
+                expect:
+                    "A conversation focused on professional experience, previous projects, collaboration, and ability to understand business requirements and translate them into technical solutions.",
+
                 prepare: [
                     "Technical Background: React, TypeScript, C#/.NET, REST APIs, and SQL at a high level.",
                     "Project Experience: Specific contributions, challenges, and results.",
@@ -300,8 +369,9 @@ const jobsData = [
                     "Problem-Solving: Technical blockers, prioritization, and trade-offs.",
                     "Legacy Modernization: Modernizing applications while preserving functionality."
                 ],
-                recommendations: "Use clear, concise answers and concrete examples. Demonstrate business understanding, collaboration with non-technical stakeholders, and practical technical decision-making.",
-                internalNote: ""
+
+                recommendations:
+                    "Use clear, concise answers and concrete examples. Demonstrate business understanding, collaboration with non-technical stakeholders, and practical technical decision-making."
             }
         ]
     },
@@ -312,13 +382,17 @@ const jobsData = [
         seniority: "Mid / Senior",
         manager: "Jan Sevilla",
         department: "Engineering",
-        about: "Full-stack role within Cast & Crew’s Platform Team, focused on building a unified technology experience across the company and contributing to shared platform capabilities, scalable services, and architecture.",
+
+        about:
+            "Full-stack role within Cast & Crew’s Platform Team, focused on building a unified technology experience across the company and contributing to shared platform capabilities, scalable services, and architecture.",
+
         mustHaves: [
             "Node.js",
             "React",
             "Micro-frontends",
             "REST APIs or GraphQL"
         ],
+
         responsibilities: [
             "Build scalable frontend and backend applications.",
             "Develop frontend experiences and backend services.",
@@ -327,6 +401,7 @@ const jobsData = [
             "Collaborate with Engineering, QA, and Product.",
             "Participate in code reviews, troubleshooting, and continuous improvement."
         ],
+
         toolsRelevant: [
             "Module Federation",
             "Event-Driven Architecture",
@@ -335,11 +410,15 @@ const jobsData = [
             "AWS",
             "Distributed Systems"
         ],
+
         toolsNice: [
             "Design Systems",
             "Shared Component Libraries"
         ],
-        recruiterNote: "The verified screening priorities are Node.js, React, micro-frontends, and API experience with REST or GraphQL. Screen for a true full-stack profile rather than an exclusively frontend or backend engineer.",
+
+        recruiterNote:
+            "The verified screening priorities are Node.js, React, micro-frontends, and API experience with REST or GraphQL. Screen for a true full-stack profile rather than an exclusively frontend or backend engineer.",
+
         stages: [
             {
                 name: "Jan Sevilla",
@@ -348,16 +427,21 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Conversational interview with the Hiring Manager",
                 setup: "",
-                expect: "A conversation focused on professional experience, technical background, and cultural fit. Jan will also introduce the Platform Team and explain its responsibilities.",
+
+                expect:
+                    "A conversation focused on professional experience, technical background, and cultural fit. Jan will also introduce the Platform Team and explain its responsibilities.",
+
                 prepare: [
                     "Professional Experience: Full-stack experience, particularly React and Node.js.",
                     "Project Experience: 1–2 relevant projects, responsibilities, technologies, and achievements.",
                     "Technical Decisions: Examples of problem-solving and adapting to changing requirements.",
                     "Team Collaboration: Working with Engineering, QA, and Product."
                 ],
-                recommendations: "Keep answers clear, concise, and practical. Focus on individual contributions and real project experience. Prepare questions about the Platform Team and role expectations.",
-                internalNote: ""
+
+                recommendations:
+                    "Keep answers clear, concise, and practical. Focus on individual contributions and real project experience. Prepare questions about the Platform Team and role expectations."
             },
+
             {
                 name: "Ven or Joshua",
                 hasPrep: true,
@@ -365,7 +449,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical interview with a Lead Software Developer",
                 setup: "",
-                expect: "An in-depth technical conversation focused on engineering experience, architecture, and real-world problems involving scalable platform applications.",
+
+                expect:
+                    "An in-depth technical conversation focused on engineering experience, architecture, and real-world problems involving scalable platform applications.",
+
                 prepare: [
                     "Frontend: React, Module Federation, micro-frontends, and frontend architecture.",
                     "Backend & APIs: Node.js, REST APIs, GraphQL, and event-driven architecture.",
@@ -373,8 +460,9 @@ const jobsData = [
                     "Databases & Cloud: PostgreSQL, Amazon RDS, DynamoDB, and AWS.",
                     "Practical Experience: Technical challenges, architecture decisions, trade-offs, and collaboration."
                 ],
-                recommendations: "Be specific and technically precise. Explain what you personally built, why you made certain decisions, and the outcomes. Be prepared to go deeper into your strongest technical area while demonstrating full-stack knowledge.",
-                internalNote: ""
+
+                recommendations:
+                    "Be specific and technically precise. Explain what you personally built, why you made certain decisions, and the outcomes. Be prepared to go deeper into your strongest technical area while demonstrating full-stack knowledge."
             }
         ]
     },
@@ -385,12 +473,16 @@ const jobsData = [
         seniority: "Mid-Level",
         manager: "TBD",
         department: "Engineering",
-        about: "Full-stack engineering role working across backend, frontend, data, and cloud layers. The engineer owns features end-to-end, from database and API development through frontend implementation, testing, deployment, and ongoing maintenance, with an important focus on data workflows and data-intensive applications.",
+
+        about:
+            "Full-stack engineering role working across backend, frontend, data, and cloud layers. The engineer owns features end-to-end, from database and API development through frontend implementation, testing, deployment, and ongoing maintenance, with an important focus on data workflows and data-intensive applications.",
+
         mustHaves: [
             "Node.js",
             "React",
             "Data: ETL OR Snowflake OR SQL"
         ],
+
         responsibilities: [
             "Build and enhance full-stack applications across backend, frontend, and data layers.",
             "Own features end-to-end, from database design and backend APIs through frontend implementation, testing, deployment, and maintenance.",
@@ -399,6 +491,7 @@ const jobsData = [
             "Work with SQL, Snowflake, data pipelines, and ETL processes to support application and analytical use cases.",
             "Contribute to technical decisions around architecture, performance, reliability, scalability, and engineering standards."
         ],
+
         toolsRelevant: [
             "TypeScript",
             "Node.js / Express",
@@ -417,13 +510,14 @@ const jobsData = [
             "Okta",
             "Unit & Integration Testing"
         ],
+
         toolsNice: [
             "Tableau / BI Tools",
             "Jest",
             "Vitest",
             "BigQuery / Redshift"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Live Coding",
@@ -432,8 +526,13 @@ const jobsData = [
                 duration: "1 hour",
                 platform: "TBD",
                 format: "Technical Discussion + System Design Exercise",
-                setup: "Please create an Excalidraw account before the interview and make sure you can access the platform. You will use Excalidraw to diagram your solution during the System Design Exercise.",
-                expect: "The interview will include a deeper discussion of your experience, technical architecture and decisions, teamwork and leadership examples, and an end-to-end System Design Exercise using Excalidraw. The interview will conclude with time for your questions about the interviewer, team, or project.",
+
+                setup:
+                    "Please create an Excalidraw account before the interview and make sure you can access the platform. You will use Excalidraw to diagram your solution during the System Design Exercise.",
+
+                expect:
+                    "The interview will include a deeper discussion of your experience, technical architecture and decisions, teamwork and leadership examples, and an end-to-end System Design Exercise using Excalidraw. The interview will conclude with time for your questions about the interviewer, team, or project.",
+
                 prepare: [
                     "Introduction: Be ready to introduce yourself and walk through your experience in more depth, explaining how your systems and projects worked technically.",
                     "Technical Discussion: Expect questions about your architecture, technical decisions, and how you approach system design.",
@@ -441,9 +540,11 @@ const jobsData = [
                     "System Design Exercise: Be prepared to design and explain an end-to-end system, walking through its architecture, components, data flow, and how the different parts interact. Think about scalability, performance, data processing, database design, error handling, and how the system handles high volumes of transactions.",
                     "Your Questions: Prepare questions about the interviewer, team, or project for the end of the interview."
                 ],
-                recommendations: "Be ready to explain your technical decisions, discuss trade-offs, and justify your approach throughout the System Design Exercise.",
-                internalNote: ""
+
+                recommendations:
+                    "Be ready to explain your technical decisions, discuss trade-offs, and justify your approach throughout the System Design Exercise."
             },
+
             {
                 name: "Conversational Interview",
                 hasPrep: false,
@@ -453,8 +554,7 @@ const jobsData = [
                 setup: "",
                 expect: "Prep TBD",
                 prepare: [],
-                recommendations: "",
-                internalNote: ""
+                recommendations: ""
             }
         ]
     },
@@ -465,13 +565,17 @@ const jobsData = [
         seniority: "Mid / Senior",
         manager: "Roja Kamireddy",
         department: "Engineering",
-        about: "Full-stack role within the OAT Onboarding team, focused on crew-facing onboarding flows, document packages, and company-level configuration tools.",
+
+        about:
+            "Full-stack role within the OAT Onboarding team, focused on crew-facing onboarding flows, document packages, and company-level configuration tools.",
+
         mustHaves: [
             "React",
             "Node.js",
             "PostgreSQL",
             ".NET — Intermediate Knowledge"
         ],
+
         responsibilities: [
             "Build and maintain onboarding workflows end-to-end.",
             "Develop dynamic document packages.",
@@ -480,6 +584,7 @@ const jobsData = [
             "Debug production issues.",
             "Collaborate with Product, Design, and Engineering."
         ],
+
         toolsRelevant: [
             "TypeScript",
             "REST APIs",
@@ -488,6 +593,7 @@ const jobsData = [
             "State Management",
             "AdonisJS"
         ],
+
         toolsNice: [
             "MobX",
             "CI/CD",
@@ -497,7 +603,10 @@ const jobsData = [
             "Multi-Tenant SaaS",
             "E-signature / Document Generation"
         ],
-        recruiterNote: "The verified priorities are React, Node.js, PostgreSQL, and .NET. Screen for a genuine full-stack profile rather than frontend-only.",
+
+        recruiterNote:
+            "The verified priorities are React, Node.js, PostgreSQL, and .NET. Screen for a genuine full-stack profile rather than frontend-only.",
+
         stages: [
             {
                 name: "Live Coding",
@@ -506,7 +615,10 @@ const jobsData = [
                 platform: "Microsoft Teams + CodeSandbox",
                 format: "Live coding with two Software Engineers",
                 setup: "",
-                expect: "A practical React and JavaScript coding exercise using an existing application in CodeSandbox. You will be asked to understand existing code, implement changes, and explain your approach.",
+
+                expect:
+                    "A practical React and JavaScript coding exercise using an existing application in CodeSandbox. You will be asked to understand existing code, implement changes, and explain your approach.",
+
                 prepare: [
                     "React Fundamentals: Functional components, useState, props, event handling, and component communication.",
                     "State Management: Updating and sharing state between components.",
@@ -514,9 +626,11 @@ const jobsData = [
                     "Debugging: Reading existing React code and implementing targeted changes.",
                     "Code Quality: Clean component design, maintainable code, and edge cases."
                 ],
-                recommendations: "Understand the existing code before making changes. Clarify requirements and explain your reasoning as you code. Prioritize a simple working solution before optimization.",
-                internalNote: "The internal CodeSandbox exercise currently uses a simple React application with Red and Blue components, individual counters, and shared state. Do not expose the exact exercise or solution to candidates."
+
+                recommendations:
+                    "Understand the existing code before making changes. Clarify requirements and explain your reasoning as you code. Prioritize a simple working solution before optimization."
             },
+
             {
                 name: "Roja Kamireddy",
                 hasPrep: true,
@@ -524,7 +638,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Conversational interview with the Hiring Manager",
                 setup: "",
-                expect: "A conversation focused on technical experience, projects, engineering decisions, problem-solving, collaboration, and ownership.",
+
+                expect:
+                    "A conversation focused on technical experience, projects, engineering decisions, problem-solving, collaboration, and ownership.",
+
                 prepare: [
                     "Full-Stack Development: React, TypeScript, Node.js, REST APIs, and PostgreSQL.",
                     "Architecture & Problem-Solving: Frontend architecture, state management, backend integration, and trade-offs.",
@@ -532,8 +649,9 @@ const jobsData = [
                     "Product Knowledge: Configurable SaaS applications and complex user workflows.",
                     "Team Collaboration: Independent problem-solving, ownership, and cross-functional collaboration."
                 ],
-                recommendations: "Roja values clear communication, flexibility, and independent problem-solving. Use concrete examples and explain your personal contributions and technical decisions.",
-                internalNote: ""
+
+                recommendations:
+                    "Roja values clear communication, flexibility, and independent problem-solving. Use concrete examples and explain your personal contributions and technical decisions."
             }
         ]
     },
@@ -544,7 +662,10 @@ const jobsData = [
         seniority: "Mid / Senior (3–5 years)",
         manager: "Maggie Reddy",
         department: "Engineering",
-        about: "Full-stack role within Start+, focused on building and maintaining the platform across React frontend and .NET backend while reducing single-point-of-failure risk and increasing shared ownership of the codebase.",
+
+        about:
+            "Full-stack role within Start+, focused on building and maintaining the platform across React frontend and .NET backend while reducing single-point-of-failure risk and increasing shared ownership of the codebase.",
+
         mustHaves: [
             ".NET",
             "React",
@@ -552,6 +673,7 @@ const jobsData = [
             "Modular Architecture",
             "Distributed Systems / Microservices"
         ],
+
         responsibilities: [
             "Build and maintain Start+ features.",
             "Work across React and .NET.",
@@ -560,6 +682,7 @@ const jobsData = [
             "Resolve production issues.",
             "Collaborate closely with Engineering."
         ],
+
         toolsRelevant: [
             "Backend APIs",
             "Relational Database Design",
@@ -567,13 +690,17 @@ const jobsData = [
             "Automated Testing",
             "Platform Reliability"
         ],
+
         toolsNice: [
             "CI/CD",
             "HR Tech / Onboarding",
             "Entertainment Industry",
             "Small-Team Experience"
         ],
-        recruiterNote: "The verified priorities are .NET, React, PostgreSQL, and modular/distributed architecture or microservices. Candidates must be able to ramp up on an existing codebase with limited hand-holding.",
+
+        recruiterNote:
+            "The verified priorities are .NET, React, PostgreSQL, and modular/distributed architecture or microservices. Candidates must be able to ramp up on an existing codebase with limited hand-holding.",
+
         stages: [
             {
                 name: "Maggie Reddy & Shankar Rajugiri",
@@ -582,7 +709,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical Interview & Code Review",
                 setup: "",
-                expect: "A technical interview focused on full-stack experience, software architecture, and problem-solving. Expect technical questions across React and .NET and potentially a C# code-review exercise.",
+
+                expect:
+                    "A technical interview focused on full-stack experience, software architecture, and problem-solving. Expect technical questions across React and .NET and potentially a C# code-review exercise.",
+
                 prepare: [
                     "React & Frontend: Components, hooks, state management, API integration, rendering, and performance.",
                     "C# & .NET: async/await, dependency injection, Entity Framework, error handling, and backend APIs.",
@@ -591,9 +721,11 @@ const jobsData = [
                     "Code Review: Analyze existing C# code and identify issues involving async database operations, performance, reliability, and error handling.",
                     "Practical Experience: Hands-on contributions in both frontend and backend."
                 ],
-                recommendations: "Demonstrate technical depth in both React and .NET using concrete examples. Explain reasoning and trade-offs. Show independence and the ability to work through unfamiliar codebases.",
-                internalNote: "Previous interview feedback indicated that a candidate was rejected because their experience was primarily with monolithic applications and they could not demonstrate sufficient depth in either frontend or backend development. Candidates may receive a C# code snippet similar to an OfferService example and be asked to identify potential issues and suggest improvements. The exact second interview is still TBD."
+
+                recommendations:
+                    "Demonstrate technical depth in both React and .NET using concrete examples. Explain reasoning and trade-offs. Show independence and the ability to work through unfamiliar codebases."
             },
+
             {
                 name: "Second Stage",
                 hasPrep: false,
@@ -603,8 +735,7 @@ const jobsData = [
                 setup: "",
                 expect: "Prep TBD",
                 prepare: [],
-                recommendations: "",
-                internalNote: ""
+                recommendations: ""
             }
         ]
     },
@@ -615,12 +746,16 @@ const jobsData = [
         seniority: "Mid-Level",
         manager: "Final Draft Engineering Team / TBD",
         department: "Engineering",
-        about: "Full-stack role within Final Draft focused on evolving its screenwriting software into modern web-based SaaS experiences. The role spans frontend and backend development with a slight frontend emphasis and exposure to cloud infrastructure.",
+
+        about:
+            "Full-stack role within Final Draft focused on evolving its screenwriting software into modern web-based SaaS experiences. The role spans frontend and backend development with a slight frontend emphasis and exposure to cloud infrastructure.",
+
         mustHaves: [
             "Next.js",
             "NestJS",
             "AWS Lambda"
         ],
+
         responsibilities: [
             "Develop web applications using Next.js and TypeScript.",
             "Build backend services using NestJS and AWS Lambda.",
@@ -629,6 +764,7 @@ const jobsData = [
             "Translate requirements into scalable technical solutions.",
             "Support the full software lifecycle."
         ],
+
         toolsRelevant: [
             "TypeScript",
             "Tailwind CSS",
@@ -641,12 +777,16 @@ const jobsData = [
             "Bitbucket",
             "SaaS Architecture"
         ],
+
         toolsNice: [
             "Desktop-to-Web Modernization",
             "Entertainment / Media Experience",
             "Claude / Claude Code"
         ],
-        recruiterNote: "The confirmed screening priorities are Next.js, NestJS, and AWS Lambda. The role is full-stack with a slight frontend focus.",
+
+        recruiterNote:
+            "The confirmed screening priorities are Next.js, NestJS, and AWS Lambda. The role is full-stack with a slight frontend focus.",
+
         stages: [
             {
                 name: "Software Engineers",
@@ -655,7 +795,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical conversation with two Software Engineers",
                 setup: "",
-                expect: "A technical conversation focused on full-stack development experience, previous projects, and technical decision-making. Expect practical engineering scenarios.",
+
+                expect:
+                    "A technical conversation focused on full-stack development experience, previous projects, and technical decision-making. Expect practical engineering scenarios.",
+
                 prepare: [
                     "TypeScript & Next.js: TypeScript fundamentals, React components, state management, API integration, and frontend performance.",
                     "Backend: Node.js, NestJS, REST APIs, dependency injection, authentication, and error handling.",
@@ -663,9 +806,11 @@ const jobsData = [
                     "Architecture: SaaS, scalability, reliability, CI/CD, and frontend/backend communication.",
                     "Practical Experience & AI: Projects, debugging, technical decisions, and AI-assisted development tools."
                 ],
-                recommendations: "Use concrete examples and explain how technologies were used in real projects. Be especially prepared to discuss Next.js, NestJS, and AWS Lambda. Explain technical decisions clearly and demonstrate adaptability.",
-                internalNote: "Previous candidate feedback indicated that the Software Engineers asked for career context followed by practical case-based questions about real engineering problems the team was facing."
+
+                recommendations:
+                    "Use concrete examples and explain how technologies were used in real projects. Be especially prepared to discuss Next.js, NestJS, and AWS Lambda. Explain technical decisions clearly and demonstrate adaptability."
             },
+
             {
                 name: "Ron Nagamati",
                 hasPrep: true,
@@ -673,7 +818,10 @@ const jobsData = [
                 platform: "TBD",
                 format: "Conversational interview with the VP of Engineering",
                 setup: "",
-                expect: "A high-level conversation focused on professional background, previous projects, technical decision-making, and ability to solve real-world engineering challenges.",
+
+                expect:
+                    "A high-level conversation focused on professional background, previous projects, technical decision-making, and ability to solve real-world engineering challenges.",
+
                 prepare: [
                     "Professional Background: Concise career overview and relevant projects.",
                     "Practical Scenarios: Explain how you approach engineering challenges and propose solutions.",
@@ -681,8 +829,9 @@ const jobsData = [
                     "Problem-Solving: Analyze unfamiliar situations and describe implementation approaches.",
                     "Business & Product Understanding: Connect technical decisions to product goals, scalability, and reliability."
                 ],
-                recommendations: "Keep answers concise, practical, and focused on the bigger picture. Build rapport naturally and explain your reasoning without unnecessary implementation detail.",
-                internalNote: "Ron tends to prefer relationship-oriented, high-level conversations and concise answers. The exact content of his interview is still tentative and should not be presented as fully confirmed."
+
+                recommendations:
+                    "Keep answers concise, practical, and focused on the bigger picture. Build rapport naturally and explain your reasoning without unnecessary implementation detail."
             }
         ]
     },
@@ -693,11 +842,15 @@ const jobsData = [
         seniority: "Senior",
         manager: "Shrikrushna Garad",
         department: "Engineering",
-        about: "Backend engineering role focused on maintaining and modernizing PSL, Cast & Crew’s production accounting platform. The role involves working with a mature legacy C codebase while contributing to ongoing modernization and migration.",
+
+        about:
+            "Backend engineering role focused on maintaining and modernizing PSL, Cast & Crew’s production accounting platform. The role involves working with a mature legacy C codebase while contributing to ongoing modernization and migration.",
+
         mustHaves: [
             "C → C++ migration experience",
             "MySQL"
         ],
+
         responsibilities: [
             "Maintain, debug, and modernize PSL applications.",
             "Diagnose issues across a large legacy codebase.",
@@ -706,6 +859,7 @@ const jobsData = [
             "Contribute to modernization of existing applications.",
             "Work independently on unfamiliar code and production issues."
         ],
+
         toolsRelevant: [
             "C",
             "SQL",
@@ -716,6 +870,7 @@ const jobsData = [
             "GNU Toolchain",
             "Debugging"
         ],
+
         toolsNice: [
             "Linux",
             "AWS / S3",
@@ -726,7 +881,7 @@ const jobsData = [
             "C#",
             "Automated Testing"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Shrikrushna Garad",
@@ -735,7 +890,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical and experience-based interview",
                 setup: "",
-                expect: "A technical conversation focused on C programming, legacy-system modernization, and problem-solving. Expect practical troubleshooting scenarios and questions about large unfamiliar codebases.",
+
+                expect:
+                    "A technical conversation focused on C programming, legacy-system modernization, and problem-solving. Expect practical troubleshooting scenarios and questions about large unfamiliar codebases.",
+
                 prepare: [
                     "C & C++: C fundamentals, pointers, memory management, macros, and C-to-C++ migration.",
                     "Legacy Systems & Debugging: Investigating unfamiliar code and implementing safe changes.",
@@ -743,9 +901,11 @@ const jobsData = [
                     "Linux & Development Tools: Linux, GDB, GCC, GNU Make, and shell scripting if applicable.",
                     "Production Experience: Production incidents, safe data changes, and sensitive financial information."
                 ],
-                recommendations: "Be practical, independent, and concise. Use concrete examples and explain how you investigate unfamiliar problems and make safe technical decisions.",
-                internalNote: ""
+
+                recommendations:
+                    "Be practical, independent, and concise. Use concrete examples and explain how you investigate unfamiliar problems and make safe technical decisions."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
@@ -753,7 +913,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Technical assessment focused on C programming, debugging, SQL, and problem-solving",
                 setup: "",
-                expect: "A practical assessment focused on analyzing existing code, identifying issues, and proposing safe solutions.",
+
+                expect:
+                    "A practical assessment focused on analyzing existing code, identifying issues, and proposing safe solutions.",
+
                 prepare: [
                     "C Fundamentals: Pointers, memory management, structs, arrays, strings, and functions.",
                     "Code Analysis & Debugging: Existing C code, macro expansion, bugs, and systematic debugging.",
@@ -761,9 +924,11 @@ const jobsData = [
                     "Development Tools: GDB, GCC, GNU Make, and Linux tools if applicable.",
                     "Defensive Programming: Error handling and safe changes to production systems."
                 ],
-                recommendations: "Clarify requirements before making changes and explain your reasoning. Focus on root causes, correctness, reliability, and safety rather than speed.",
-                internalNote: ""
+
+                recommendations:
+                    "Clarify requirements before making changes and explain your reasoning. Focus on root causes, correctness, reliability, and safety rather than speed."
             },
+
             {
                 name: "Product Managers",
                 hasPrep: true,
@@ -771,7 +936,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Conversational interview with two Product Managers",
                 setup: "",
-                expect: "A conversation focused on professional experience, collaboration, business requirements, production issues, and technical decision-making.",
+
+                expect:
+                    "A conversation focused on professional experience, collaboration, business requirements, production issues, and technical decision-making.",
+
                 prepare: [
                     "Professional Experience: Software products, legacy systems, modernization, and changing requirements.",
                     "Product & Collaboration: Working with Product, QA, and Engineering.",
@@ -779,8 +947,9 @@ const jobsData = [
                     "Technical Decisions: Trade-offs, requirements clarification, and communicating risk.",
                     "Ownership: Working independently and adapting to priorities."
                 ],
-                recommendations: "Keep answers concise and practical. Demonstrate how you understand business needs, collaborate with different teams, and communicate technical implications clearly.",
-                internalNote: ""
+
+                recommendations:
+                    "Keep answers concise and practical. Demonstrate how you understand business needs, collaborate with different teams, and communicate technical implications clearly."
             }
         ]
     },
@@ -791,12 +960,16 @@ const jobsData = [
         seniority: "Mid / Senior",
         manager: "Anne Dawson",
         department: "QA",
-        about: "SDET role focused on frontend quality engineering and UI automation across Cast & Crew web platforms.",
+
+        about:
+            "SDET role focused on frontend quality engineering and UI automation across Cast & Crew web platforms.",
+
         mustHaves: [
             "Playwright",
             "TypeScript / JavaScript",
             "UI Testing"
         ],
+
         responsibilities: [
             "Build and maintain UI automation frameworks.",
             "Develop E2E test coverage.",
@@ -805,6 +978,7 @@ const jobsData = [
             "Troubleshoot UI, API, and data-layer issues.",
             "Collaborate with Engineering and Product."
         ],
+
         toolsRelevant: [
             "E2E Testing",
             "API Testing",
@@ -814,6 +988,7 @@ const jobsData = [
             "Database Validation",
             "Debugging"
         ],
+
         toolsNice: [
             "Selenium → Playwright Migration",
             "Kafka / Microservices",
@@ -822,7 +997,7 @@ const jobsData = [
             "Regulated Environments",
             "Claude Code / AI-assisted Testing"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Skill Panel",
@@ -833,9 +1008,9 @@ const jobsData = [
                 setup: "",
                 expect: "Prep TBD",
                 prepare: [],
-                recommendations: "",
-                internalNote: ""
+                recommendations: ""
             },
+
             {
                 name: "Anne Dawson",
                 hasPrep: true,
@@ -843,7 +1018,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Conversational interview with the Head of QA",
                 setup: "",
-                expect: "A conversation focused on professional experience, automation projects, and quality engineering scenarios at Cast & Crew.",
+
+                expect:
+                    "A conversation focused on professional experience, automation projects, and quality engineering scenarios at Cast & Crew.",
+
                 prepare: [
                     "Playwright & TypeScript: Automation frameworks, reusable fixtures, Page Object Models, selectors, and maintainable design.",
                     "Testing Strategy: E2E, regression, prioritization, and flaky tests.",
@@ -851,9 +1029,11 @@ const jobsData = [
                     "Practical Experience: Frameworks built or improved, complex workflows, and defects.",
                     "AI-Assisted Testing: AI tools for test generation, debugging, or reviews."
                 ],
-                recommendations: "Anne values punctuality, professionalism, and structured communication. Use concrete examples and highlight results.",
-                internalNote: ""
+
+                recommendations:
+                    "Anne values punctuality, professionalism, and structured communication. Use concrete examples and highlight results."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
@@ -861,7 +1041,10 @@ const jobsData = [
                 platform: "CodeInterview.io",
                 format: "Practical Playwright live coding with a QA Lead or QA Manager",
                 setup: "",
-                expect: "A practical Playwright coding session combining UI automation and API assertion scenarios.",
+
+                expect:
+                    "A practical Playwright coding session combining UI automation and API assertion scenarios.",
+
                 prepare: [
                     "Playwright & TypeScript: Locators, assertions, fixtures, async operations, and test structure.",
                     "UI Automation: Interactions, forms, navigation, dynamic elements, and critical journeys.",
@@ -869,9 +1052,11 @@ const jobsData = [
                     "Test Reliability: Dynamic waits, flaky tests, error scenarios, and edge cases.",
                     "Code Quality: Clean and reusable automation code."
                 ],
-                recommendations: "Clarify requirements, explain your reasoning, prioritize a working solution, use reliable selectors and meaningful assertions, and manage your time carefully.",
-                internalNote: ""
+
+                recommendations:
+                    "Clarify requirements, explain your reasoning, prioritize a working solution, use reliable selectors and meaningful assertions, and manage your time carefully."
             },
+
             {
                 name: "Engineering Manager",
                 hasPrep: true,
@@ -879,15 +1064,19 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Product & Technical Conversation",
                 setup: "",
-                expect: "The manager will explain the product and may discuss real projects, quality challenges, and how you would contribute to the team.",
+
+                expect:
+                    "The manager will explain the product and may discuss real projects, quality challenges, and how you would contribute to the team.",
+
                 prepare: [
                     "Professional Experience: Frontend automation and quality engineering.",
                     "Project Experience: Relevant projects, contributions, challenges, and results.",
                     "Problem-Solving: Defects, test coverage, and automation challenges.",
                     "Team Collaboration: Working with developers, QA, and Product."
                 ],
-                recommendations: "Use clear communication and practical examples. Prepare questions about the product and team expectations.",
-                internalNote: ""
+
+                recommendations:
+                    "Use clear communication and practical examples. Prepare questions about the product and team expectations."
             }
         ]
     },
@@ -898,13 +1087,17 @@ const jobsData = [
         seniority: "Mid / Senior",
         manager: "Anne Dawson",
         department: "QA",
-        about: "SDET role focused on backend quality engineering and API testing across Cast & Crew systems.",
+
+        about:
+            "SDET role focused on backend quality engineering and API testing across Cast & Crew systems.",
+
         mustHaves: [
             "Playwright",
             "TypeScript / JavaScript",
             "Backend Testing",
             "API Testing"
         ],
+
         responsibilities: [
             "Build automated tests for backend services and APIs.",
             "Validate REST and GraphQL integrations.",
@@ -913,6 +1106,7 @@ const jobsData = [
             "Troubleshoot API and integration issues.",
             "Integrate automated tests into CI/CD."
         ],
+
         toolsRelevant: [
             "REST APIs",
             "GraphQL",
@@ -924,6 +1118,7 @@ const jobsData = [
             "Integration Testing",
             "Root Cause Analysis"
         ],
+
         toolsNice: [
             "Kafka / Event-Driven Systems",
             "Asynchronous Testing",
@@ -931,7 +1126,7 @@ const jobsData = [
             "Financial / Payroll Systems",
             "Compliance Environments"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Skill Panel",
@@ -942,9 +1137,9 @@ const jobsData = [
                 setup: "",
                 expect: "Prep TBD",
                 prepare: [],
-                recommendations: "",
-                internalNote: ""
+                recommendations: ""
             },
+
             {
                 name: "Anne Dawson",
                 hasPrep: true,
@@ -952,7 +1147,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Conversational interview with the Head of QA",
                 setup: "",
-                expect: "A conversation focused on professional experience, previous automation projects, backend reliability, API testing, and system integrations.",
+
+                expect:
+                    "A conversation focused on professional experience, previous automation projects, backend reliability, API testing, and system integrations.",
+
                 prepare: [
                     "Playwright & API Automation: REST/GraphQL testing, automation frameworks, negative testing, and edge cases.",
                     "Integration & Contract Testing: Service-to-service communication and microservices.",
@@ -960,17 +1158,24 @@ const jobsData = [
                     "CI/CD & Troubleshooting: Quality gates and root-cause analysis.",
                     "Practical Experience: API frameworks, complex defects, and testing strategies."
                 ],
-                recommendations: "Anne values punctuality, professionalism, and structured communication. Use concrete project examples and clearly explain outcomes.",
-                internalNote: ""
+
+                recommendations:
+                    "Anne values punctuality, professionalism, and structured communication. Use concrete project examples and clearly explain outcomes."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
                 duration: "1 hour",
                 platform: "CodeInterview.io",
                 format: "Practical Playwright live coding with a QA Lead or QA Manager",
-                setup: "If you use an additional API testing tool, please have it installed, configured, and ready to use before the interview.",
-                expect: "A practical Playwright coding session combining backend test automation and API assertion scenarios.",
+
+                setup:
+                    "If you use an additional API testing tool, please have it installed, configured, and ready to use before the interview.",
+
+                expect:
+                    "A practical Playwright coding session combining backend test automation and API assertion scenarios.",
+
                 prepare: [
                     "Playwright & TypeScript/JavaScript",
                     "API Testing: REST requests, status codes, JSON, and assertions.",
@@ -978,9 +1183,11 @@ const jobsData = [
                     "Negative Testing & Edge Cases",
                     "Code Quality"
                 ],
-                recommendations: "Clarify requirements before coding, explain your reasoning, prioritize meaningful assertions and a working solution, and remain open to feedback.",
-                internalNote: ""
+
+                recommendations:
+                    "Clarify requirements before coding, explain your reasoning, prioritize meaningful assertions and a working solution, and remain open to feedback."
             },
+
             {
                 name: "Engineering Manager",
                 hasPrep: true,
@@ -988,7 +1195,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Product & Technical Conversation",
                 setup: "",
-                expect: "The manager will introduce the product and discuss professional experience, backend quality challenges, and how you would contribute.",
+
+                expect:
+                    "The manager will introduce the product and discuss professional experience, backend quality challenges, and how you would contribute.",
+
                 prepare: [
                     "Backend automation and API testing experience.",
                     "Relevant projects and results.",
@@ -996,8 +1206,9 @@ const jobsData = [
                     "Backend reliability and testing strategy.",
                     "Collaboration with Engineering, QA, and Product."
                 ],
-                recommendations: "Use specific examples, communicate clearly, and prepare questions about the product and technical challenges.",
-                internalNote: ""
+
+                recommendations:
+                    "Use specific examples, communicate clearly, and prepare questions about the product and technical challenges."
             }
         ]
     },
@@ -1008,13 +1219,17 @@ const jobsData = [
         seniority: "Senior",
         manager: "Anne Dawson",
         department: "QA",
-        about: "Senior SDET role embedded within Cast & Crew’s Data Platform, focused on quality engineering for the microservices and ETL pipelines that move and transform data across the product ecosystem. The role combines hands-on quality engineering with technical automation leadership across API and data-pipeline testing.",
+
+        about:
+            "Senior SDET role embedded within Cast & Crew’s Data Platform, focused on quality engineering for the microservices and ETL pipelines that move and transform data across the product ecosystem. The role combines hands-on quality engineering with technical automation leadership across API and data-pipeline testing.",
+
         mustHaves: [
             "Playwright",
             "TypeScript",
             "ETL / ELT Testing",
             "API Testing"
         ],
+
         responsibilities: [
             "Design and maintain automation frameworks for API and ETL/data-pipeline testing.",
             "Build automated test coverage for microservices and ETL pipelines.",
@@ -1023,6 +1238,7 @@ const jobsData = [
             "Integrate data-pipeline and API tests into CI/CD workflows.",
             "Investigate test failures and data discrepancies while collaborating with Data Engineering."
         ],
+
         toolsRelevant: [
             "REST APIs",
             "SQL",
@@ -1036,6 +1252,7 @@ const jobsData = [
             "Zephyr",
             "Automation Frameworks"
         ],
+
         toolsNice: [
             "Pact / PactFlow",
             "Airflow",
@@ -1046,7 +1263,7 @@ const jobsData = [
             "High-Compliance Data Environments",
             "SDET Mentoring / Technical Leadership"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Anne Dawson",
@@ -1055,7 +1272,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Experience & Technical Conversation",
                 setup: "",
-                expect: "A conversation focused on your professional experience, automation projects, and practical quality-engineering challenges involving APIs, data pipelines, and backend systems. Be prepared to discuss how you have tested data-intensive systems and how you approach quality across ETL/ELT pipelines, APIs, and interconnected services.",
+
+                expect:
+                    "A conversation focused on your professional experience, automation projects, and practical quality-engineering challenges involving APIs, data pipelines, and backend systems. Be prepared to discuss how you have tested data-intensive systems and how you approach quality across ETL/ELT pipelines, APIs, and interconnected services.",
+
                 prepare: [
                     "Playwright & TypeScript: Be ready to discuss automation frameworks, reusable architecture, maintainability, and test design.",
                     "ETL / ELT Testing: Review source-to-target validation, transformation testing, reconciliation, schema changes, and data-quality checks.",
@@ -1064,9 +1284,11 @@ const jobsData = [
                     "Automation Strategy: Prepare examples of frameworks or testing approaches you have built, improved, or helped scale.",
                     "Practical Experience: Bring concrete examples of complex defects, automation challenges, and measurable improvements."
                 ],
-                recommendations: "Anne values punctuality, professionalism, structured communication, and concrete examples. Organize your answers clearly, explain your approach step by step, and focus on the results of your work.",
-                internalNote: ""
+
+                recommendations:
+                    "Anne values punctuality, professionalism, structured communication, and concrete examples. Organize your answers clearly, explain your approach step by step, and focus on the results of your work."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
@@ -1074,7 +1296,10 @@ const jobsData = [
                 platform: "TBD",
                 format: "JavaScript Coding + Automated Test Design",
                 setup: "",
-                expect: "The assessment may include practical JavaScript exercises and automated testing tasks. You may be asked to manipulate data using JavaScript and to write automated test cases based on functional requirements. The focus is on your ability to understand existing code, translate requirements into tests, write clear JavaScript, and validate expected behavior.",
+
+                expect:
+                    "The assessment may include practical JavaScript exercises and automated testing tasks. You may be asked to manipulate data using JavaScript and to write automated test cases based on functional requirements. The focus is on your ability to understand existing code, translate requirements into tests, write clear JavaScript, and validate expected behavior.",
+
                 prepare: [
                     "JavaScript Fundamentals: Review arrays, objects, functions, conditions, and common data-processing patterns.",
                     "Array Methods: Be comfortable using map(), filter(), and reduce().",
@@ -1084,9 +1309,11 @@ const jobsData = [
                     "Existing Code: Practice reading an existing implementation before deciding what should be tested.",
                     "Node / npm: Be comfortable installing dependencies and running test suites using commands such as npm test."
                 ],
-                recommendations: "Read the requirements carefully before coding. For testing exercises, identify each expected behavior first and make sure every requirement has corresponding test coverage. For JavaScript exercises, favor simple and readable solutions using the requested functions rather than unnecessarily complex implementations. Run the test suite frequently and use failing tests to identify issues before moving on.",
-                internalNote: ""
+
+                recommendations:
+                    "Read the requirements carefully before coding. For testing exercises, identify each expected behavior first and make sure every requirement has corresponding test coverage. For JavaScript exercises, favor simple and readable solutions using the requested functions rather than unnecessarily complex implementations. Run the test suite frequently and use failing tests to identify issues before moving on."
             },
+
             {
                 name: "Engineering Manager",
                 hasPrep: true,
@@ -1094,7 +1321,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Product & Technical Conversation",
                 setup: "",
-                expect: "The Engineering Manager will introduce the product or team and discuss your professional experience, data-quality background, automation approach, and how you would contribute within an engineering team. Expect a conversational interview focused on practical experience rather than a formal coding exercise.",
+
+                expect:
+                    "The Engineering Manager will introduce the product or team and discuss your professional experience, data-quality background, automation approach, and how you would contribute within an engineering team. Expect a conversational interview focused on practical experience rather than a formal coding exercise.",
+
                 prepare: [
                     "Data Quality Experience: Prepare examples involving ETL/ELT pipelines, data validation, reconciliation, and data-quality issues.",
                     "API & Backend Testing: Be ready to discuss API automation, integrations, and service-level testing.",
@@ -1103,8 +1333,9 @@ const jobsData = [
                     "Engineering Collaboration: Be ready to explain how you have worked with Data Engineers, Developers, Product, and QA.",
                     "Ownership: Prepare examples where you independently identified a problem and drove it through resolution."
                 ],
-                recommendations: "Use concrete examples and explain both the technical problem and the impact of your work. Demonstrate that you can operate as an embedded engineering partner rather than treating QA as a final testing step.",
-                internalNote: ""
+
+                recommendations:
+                    "Use concrete examples and explain both the technical problem and the impact of your work. Demonstrate that you can operate as an embedded engineering partner rather than treating QA as a final testing step."
             }
         ]
     },
@@ -1115,11 +1346,15 @@ const jobsData = [
         seniority: "Mid / Senior",
         manager: "Anne Dawson",
         department: "QA",
-        about: "Mobile QA/SDET role focused on quality engineering across iOS and Android applications supporting payroll, onboarding, accounting integrations, and workforce workflows.",
+
+        about:
+            "Mobile QA/SDET role focused on quality engineering across iOS and Android applications supporting payroll, onboarding, accounting integrations, and workforce workflows.",
+
         mustHaves: [
             "Playwright",
             "Experience with a mobile automation tool that supports iOS and Android"
         ],
+
         responsibilities: [
             "Test applications across iOS and Android.",
             "Build mobile automation coverage.",
@@ -1128,6 +1363,7 @@ const jobsData = [
             "Troubleshoot mobile defects.",
             "Support continuous testing and release readiness."
         ],
+
         toolsRelevant: [
             "Maestro",
             "Detox",
@@ -1140,6 +1376,7 @@ const jobsData = [
             "Postman / Newman",
             "CI/CD"
         ],
+
         toolsNice: [
             "Payroll / Financial Systems",
             "Distributed Systems",
@@ -1148,7 +1385,7 @@ const jobsData = [
             "AI-assisted Testing",
             "Observability"
         ],
-        recruiterNote: "",
+
         stages: [
             {
                 name: "Skill Panel",
@@ -1159,9 +1396,9 @@ const jobsData = [
                 setup: "",
                 expect: "Prep TBD",
                 prepare: [],
-                recommendations: "",
-                internalNote: ""
+                recommendations: ""
             },
+
             {
                 name: "Anne Dawson",
                 hasPrep: true,
@@ -1169,7 +1406,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Conversational interview with the Head of QA",
                 setup: "",
-                expect: "A conversation focused on mobile testing projects, automation, application reliability, and iOS/Android quality challenges.",
+
+                expect:
+                    "A conversation focused on mobile testing projects, automation, application reliability, and iOS/Android quality challenges.",
+
                 prepare: [
                     "Mobile Testing & Automation: Playwright and mobile frameworks used across iOS/Android.",
                     "Testing Strategy: Functional, regression, exploratory, and E2E.",
@@ -1177,9 +1417,11 @@ const jobsData = [
                     "Automation & CI/CD",
                     "Practical Experience: Mobile projects, defects, and process improvements."
                 ],
-                recommendations: "Use concrete project examples, explain your problem-solving approach, and communicate professionally and structurally.",
-                internalNote: ""
+
+                recommendations:
+                    "Use concrete project examples, explain your problem-solving approach, and communicate professionally and structurally."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
@@ -1187,7 +1429,10 @@ const jobsData = [
                 platform: "TBD",
                 format: "Practical mobile automation assessment using the candidate’s preferred testing tool",
                 setup: "",
-                expect: "A practical assessment focused on mobile automation across iOS and Android using the framework the candidate is most comfortable with.",
+
+                expect:
+                    "A practical assessment focused on mobile automation across iOS and Android using the framework the candidate is most comfortable with.",
+
                 prepare: [
                     "Mobile Automation: Candidate’s preferred framework.",
                     "iOS & Android Testing",
@@ -1195,9 +1440,11 @@ const jobsData = [
                     "Troubleshooting: Synchronization, failures, and device compatibility.",
                     "Code Quality"
                 ],
-                recommendations: "Use the framework you know best. Clarify requirements, explain reasoning, prioritize a working solution, and demonstrate how you handle iOS and Android differences.",
-                internalNote: "Appium is preferred but not mandatory. Candidates may use another mobile automation framework they are experienced with."
+
+                recommendations:
+                    "Use the framework you know best. Clarify requirements, explain reasoning, prioritize a working solution, and demonstrate how you handle iOS and Android differences."
             },
+
             {
                 name: "Omar Sheikh",
                 hasPrep: true,
@@ -1205,7 +1452,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Product & Technical Conversation",
                 setup: "",
-                expect: "A conversation focused on professional experience and how you would contribute to the product team. Omar may discuss projects, mobile quality challenges, and product needs.",
+
+                expect:
+                    "A conversation focused on professional experience and how you would contribute to the product team. Omar may discuss projects, mobile quality challenges, and product needs.",
+
                 prepare: [
                     "Mobile testing and automation experience.",
                     "Relevant iOS and Android projects.",
@@ -1213,8 +1463,9 @@ const jobsData = [
                     "Testing strategy and reliability.",
                     "Collaboration with Engineering, QA, and Product."
                 ],
-                recommendations: "Use specific examples and prepare questions about the product, mobile testing challenges, and team expectations.",
-                internalNote: ""
+
+                recommendations:
+                    "Use specific examples and prepare questions about the product, mobile testing challenges, and team expectations."
             }
         ]
     },
@@ -1225,13 +1476,17 @@ const jobsData = [
         seniority: "Manager",
         manager: "Anne Dawson",
         department: "QA",
-        about: "Hands-on QA leadership role focused on building and scaling Cast & Crew’s Quality Engineering strategy, automation frameworks, and shift-left practices while continuing to contribute technically.",
+
+        about:
+            "Hands-on QA leadership role focused on building and scaling Cast & Crew’s Quality Engineering strategy, automation frameworks, and shift-left practices while continuing to contribute technically.",
+
         mustHaves: [
             "Playwright",
             "TypeScript / JavaScript",
             "Experience building or helping build QA teams from the ground up",
             "Continued hands-on technical involvement"
         ],
+
         responsibilities: [
             "Lead and mentor QA engineers while remaining hands-on.",
             "Design and evolve automation frameworks.",
@@ -1240,6 +1495,7 @@ const jobsData = [
             "Guide testing strategy and automation architecture.",
             "Collaborate with Engineering, Product, DevOps, Platform, and Security."
         ],
+
         toolsRelevant: [
             "API Testing",
             "REST / GraphQL",
@@ -1249,6 +1505,7 @@ const jobsData = [
             "Automation Frameworks",
             "Quality Metrics"
         ],
+
         toolsNice: [
             "Cypress",
             "Appium",
@@ -1260,7 +1517,10 @@ const jobsData = [
             "Visual Regression Testing",
             "FinTech / Payroll / Regulated Environments"
         ],
-        recruiterNote: "This is not a purely people-management role. The candidate must be able to build and lead teams while remaining technically involved in automation and quality engineering.",
+
+        recruiterNote:
+            "This is not a purely people-management role. The candidate must be able to build and lead teams while remaining technically involved in automation and quality engineering.",
+
         stages: [
             {
                 name: "Anne Dawson",
@@ -1269,7 +1529,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Leadership & Technical Conversation",
                 setup: "",
-                expect: "A conversation focused on leadership, technical background, team building, automation strategy, and organizing QA operations.",
+
+                expect:
+                    "A conversation focused on leadership, technical background, team building, automation strategy, and organizing QA operations.",
+
                 prepare: [
                     "Team Building & Leadership",
                     "Automation Strategy",
@@ -1277,9 +1540,11 @@ const jobsData = [
                     "QA Strategy, CI/CD, Metrics, and Shift-Left",
                     "Examples of balancing management with hands-on engineering"
                 ],
-                recommendations: "Use concrete examples demonstrating both leadership and technical contributions. Be prepared to explain how you would build a QA team from scratch and establish scalable automation practices.",
-                internalNote: ""
+
+                recommendations:
+                    "Use concrete examples demonstrating both leadership and technical contributions. Be prepared to explain how you would build a QA team from scratch and establish scalable automation practices."
             },
+
             {
                 name: "Live Coding",
                 hasPrep: true,
@@ -1287,7 +1552,10 @@ const jobsData = [
                 platform: "CodeInterview.io",
                 format: "Practical Playwright live coding with a QA Lead or QA Manager",
                 setup: "",
-                expect: "A practical Playwright assessment combining UI automation and API assertion scenarios.",
+
+                expect:
+                    "A practical Playwright assessment combining UI automation and API assertion scenarios.",
+
                 prepare: [
                     "Playwright & TypeScript/JavaScript",
                     "UI Automation",
@@ -1295,9 +1563,11 @@ const jobsData = [
                     "Test Architecture",
                     "Troubleshooting"
                 ],
-                recommendations: "Explain your reasoning, prioritize a working solution, write maintainable code, and be prepared to justify technical decisions.",
-                internalNote: ""
+
+                recommendations:
+                    "Explain your reasoning, prioritize a working solution, write maintainable code, and be prepared to justify technical decisions."
             },
+
             {
                 name: "Roman Smolgovsky",
                 hasPrep: true,
@@ -1305,7 +1575,10 @@ const jobsData = [
                 platform: "Microsoft Teams",
                 format: "Product Vision & Engineering Strategy Conversation",
                 setup: "",
-                expect: "A strategic and technical conversation focused on product vision, complex software ecosystems, and how Quality Engineering can support developers and improve delivery.",
+
+                expect:
+                    "A strategic and technical conversation focused on product vision, complex software ecosystems, and how Quality Engineering can support developers and improve delivery.",
+
                 prepare: [
                     "Product & Business Understanding",
                     "Software Ecosystems",
@@ -1313,8 +1586,9 @@ const jobsData = [
                     "Automation & Quality Strategy",
                     "Cross-Functional Leadership"
                 ],
-                recommendations: "Roman values practical knowledge, independence, and direct communication. Demonstrate how QA leadership supports the broader engineering ecosystem rather than operating as an isolated testing function.",
-                internalNote: ""
+
+                recommendations:
+                    "Roman values practical knowledge, independence, and direct communication. Demonstrate how QA leadership supports the broader engineering ecosystem rather than operating as an isolated testing function."
             }
         ]
     }
@@ -1322,22 +1596,43 @@ const jobsData = [
 
 
 // ============================================================
-// LÓGICA DE INTERFAZ Y RENDERIZADO
+// DOM REFERENCES
 // ============================================================
 
-const jobsGrid = document.getElementById("jobsGrid");
-const searchInput = document.getElementById("jobSearchInput");
-const filterBtns = document.querySelectorAll("#jobFiltersContainer .filter-btn");
+const jobsGrid =
+    document.getElementById("jobsGrid");
 
-const dirSection = document.getElementById("jobsDirectorySection");
-const detailSection = document.getElementById("jobDetailSection");
-const detailContent = document.getElementById("jobDetailContent");
+const searchInput =
+    document.getElementById("jobSearchInput");
 
-const modal = document.getElementById("prepModal");
+const filterBtns =
+    document.querySelectorAll(
+        "#jobFiltersContainer .filter-btn"
+    );
+
+const dirSection =
+    document.getElementById(
+        "jobsDirectorySection"
+    );
+
+const detailSection =
+    document.getElementById(
+        "jobDetailSection"
+    );
+
+const detailContent =
+    document.getElementById(
+        "jobDetailContent"
+    );
+
+const modal =
+    document.getElementById(
+        "prepModal"
+    );
 
 
 // ============================================================
-// RENDER JOB CARDS
+// JOB CARDS
 // ============================================================
 
 function renderJobsGrid(data) {
@@ -1356,13 +1651,16 @@ function renderJobsGrid(data) {
                 No jobs found matching your criteria.
             </p>
         `;
+
         return;
     }
 
     data.forEach(job => {
-        const card = document.createElement("div");
+        const card =
+            document.createElement("div");
 
-        card.className = "job-card";
+        card.className =
+            "job-card";
 
         card.innerHTML = `
             <h3>
@@ -1370,12 +1668,18 @@ function renderJobsGrid(data) {
             </h3>
 
             <p class="job-meta">
-                <strong>Seniority:</strong>
+                <strong>
+                    Seniority:
+                </strong>
+
                 ${job.seniority}
 
                 <br>
 
-                <strong>Manager:</strong>
+                <strong>
+                    Manager:
+                </strong>
+
                 ${job.manager}
             </p>
 
@@ -1385,19 +1689,25 @@ function renderJobsGrid(data) {
 
             <button
                 class="primary-btn"
-                onclick="showJobDetail('${job.id}')"
+                onclick="
+                    showJobDetail(
+                        '${job.id}'
+                    )
+                "
             >
                 View Details & Process &rarr;
             </button>
         `;
 
-        jobsGrid.appendChild(card);
+        jobsGrid.appendChild(
+            card
+        );
     });
 }
 
 
 // ============================================================
-// SEARCH AND FILTERS
+// SEARCH & FILTERS
 // ============================================================
 
 if (searchInput) {
@@ -1407,19 +1717,26 @@ if (searchInput) {
     );
 }
 
+
 if (filterBtns) {
     filterBtns.forEach(btn => {
         btn.addEventListener(
             "click",
             () => {
-                filterBtns.forEach(b =>
-                    b.classList.remove("active")
+                filterBtns.forEach(
+                    item =>
+                        item.classList.remove(
+                            "active"
+                        )
                 );
 
-                btn.classList.add("active");
+                btn.classList.add(
+                    "active"
+                );
 
                 if (searchInput) {
-                    searchInput.value = "";
+                    searchInput.value =
+                        "";
                 }
 
                 applyFilters();
@@ -1430,9 +1747,11 @@ if (filterBtns) {
 
 
 function applyFilters() {
-    const term = searchInput
-        ? searchInput.value.toLowerCase()
-        : "";
+    const term =
+        searchInput
+            ? searchInput.value
+                .toLowerCase()
+            : "";
 
     const activeButton =
         document.querySelector(
@@ -1441,7 +1760,9 @@ function applyFilters() {
 
     const activeFilter =
         activeButton
-            ? activeButton.getAttribute("data-filter")
+            ? activeButton.getAttribute(
+                "data-filter"
+            )
             : "All";
 
     const filtered =
@@ -1459,28 +1780,45 @@ function applyFilters() {
                 .join(" ")
                 .toLowerCase();
 
+
             const matchesTerm =
-                searchableText.includes(term);
+                searchableText.includes(
+                    term
+                );
 
-            let matchesFilter = true;
 
-            if (activeFilter !== "All") {
+            let matchesFilter =
+                true;
 
-                if (activeFilter === "QA") {
+
+            if (
+                activeFilter !==
+                "All"
+            ) {
+
+                if (
+                    activeFilter ===
+                    "QA"
+                ) {
                     matchesFilter =
-                        job.department === "QA";
+                        job.department ===
+                        "QA";
                 }
 
                 else if (
-                    activeFilter === "Developers"
+                    activeFilter ===
+                    "Developers"
                 ) {
                     matchesFilter =
-                        job.department === "Engineering";
+                        job.department ===
+                        "Engineering";
                 }
 
                 else if (
-                    activeFilter === "Fullstack"
+                    activeFilter ===
+                    "Fullstack"
                 ) {
+
                     const fullstackText =
                         `${job.title} ${job.about}`
                             .toLowerCase();
@@ -1501,348 +1839,370 @@ function applyFilters() {
             );
         });
 
-    renderJobsGrid(filtered);
+
+    renderJobsGrid(
+        filtered
+    );
 }
 
 
 // ============================================================
-// SHOW JOB DETAIL
+// JOB DETAIL
 // ============================================================
 
-window.showJobDetail = function(jobId) {
+window.showJobDetail =
+    function(jobId) {
 
-    const job =
-        jobsData.find(
-            j => j.id === jobId
-        );
-
-    if (!job) return;
-
-
-    const mustHavesTags =
-        job.mustHaves
-            .map(
+        const job =
+            jobsData.find(
                 item =>
-                    `<span class="tag">${item}</span>`
-            )
-            .join("");
+                    item.id === jobId
+            );
+
+        if (!job) return;
 
 
-    let timelineHtml =
-        `<div class="timeline-container">`;
+        const mustHavesTags =
+            job.mustHaves
+                .map(
+                    item =>
+                        `<span class="tag">${item}</span>`
+                )
+                .join("");
 
 
-    job.stages.forEach(
-        (stage, index) => {
-
-            const stepNum =
-                String(index + 1)
-                    .padStart(2, "0");
+        let timelineHtml =
+            `<div class="timeline-container">`;
 
 
-            const btnHtml =
-                stage.hasPrep
+        job.stages.forEach(
+            (stage, index) => {
 
-                    ? `
-                        <button
-                            class="prep-btn"
-                            onclick="
-                                openPrepModal(
-                                    '${job.id}',
-                                    ${index}
-                                )
-                            "
-                        >
-                            View Prep &rarr;
-                        </button>
-                    `
-
-                    : `
-                        <span
-                            class="prep-btn disabled"
-                        >
-                            ${
-                                stage.expect ||
-                                "Prep TBD"
-                            }
-                        </span>
-                    `;
+                const stepNum =
+                    String(index + 1)
+                        .padStart(
+                            2,
+                            "0"
+                        );
 
 
-            timelineHtml += `
-                <div class="timeline-step">
-
-                    <span class="step-number">
-                        ${stepNum}
-                    </span>
-
-                    <p class="step-name">
-                        ${stage.name}
-                    </p>
-
-                    ${
-                        stage.subtitle
-                            ? `
-                                <p class="step-meta">
-                                    ${stage.subtitle}
-                                </p>
-                            `
-                            : ""
-                    }
-
-                    ${
-                        stage.duration ||
-                        stage.platform
-                            ? `
-                                <p class="step-meta">
-
-                                    ${
-                                        stage.duration
-                                            ? stage.duration
-                                            : ""
-                                    }
-
-                                    ${
-                                        stage.duration &&
-                                        stage.platform
-                                            ? " &middot; "
-                                            : ""
-                                    }
-
-                                    ${
-                                        stage.platform
-                                            ? stage.platform
-                                            : ""
-                                    }
-
-                                </p>
-                            `
-                            : ""
-                    }
-
-                    ${
-                        stage.format
-                            ? `
-                                <p class="step-meta">
-                                    <strong>
-                                        ${stage.format}
-                                    </strong>
-                                </p>
-                            `
-                            : ""
-                    }
-
-                    ${btnHtml}
-
-                </div>
-            `;
+                const buttonHtml =
+                    stage.hasPrep
+                        ? `
+                            <button
+                                class="prep-btn"
+                                onclick="
+                                    openPrepModal(
+                                        '${job.id}',
+                                        ${index}
+                                    )
+                                "
+                            >
+                                View Prep &rarr;
+                            </button>
+                        `
+                        : `
+                            <span
+                                class="prep-btn disabled"
+                            >
+                                ${
+                                    stage.expect ||
+                                    "Prep TBD"
+                                }
+                            </span>
+                        `;
 
 
-            if (
-                index <
-                job.stages.length - 1
-            ) {
                 timelineHtml += `
-                    <div class="timeline-arrow">
-                        &rarr;
+                    <div
+                        class="timeline-step"
+                    >
+
+                        <span
+                            class="step-number"
+                        >
+                            ${stepNum}
+                        </span>
+
+                        <p
+                            class="step-name"
+                        >
+                            ${stage.name}
+                        </p>
+
+                        ${
+                            stage.subtitle
+                                ? `
+                                    <p
+                                        class="step-meta"
+                                    >
+                                        ${stage.subtitle}
+                                    </p>
+                                `
+                                : ""
+                        }
+
+                        ${
+                            stage.duration ||
+                            stage.platform
+                                ? `
+                                    <p
+                                        class="step-meta"
+                                    >
+
+                                        ${
+                                            stage.duration ||
+                                            ""
+                                        }
+
+                                        ${
+                                            stage.duration &&
+                                            stage.platform
+                                                ? " &middot; "
+                                                : ""
+                                        }
+
+                                        ${
+                                            stage.platform ||
+                                            ""
+                                        }
+
+                                    </p>
+                                `
+                                : ""
+                        }
+
+                        ${
+                            stage.format
+                                ? `
+                                    <p
+                                        class="step-meta"
+                                    >
+                                        <strong>
+                                            ${stage.format}
+                                        </strong>
+                                    </p>
+                                `
+                                : ""
+                        }
+
+                        ${buttonHtml}
+
                     </div>
                 `;
-            }
-        }
-    );
 
 
-    timelineHtml +=
-        `</div>`;
+                if (
+                    index <
+                    job.stages.length - 1
+                ) {
 
-
-    detailContent.innerHTML = `
-        <div class="job-header">
-
-            <h2>
-                ${job.title}
-            </h2>
-
-            <div class="job-header-meta">
-
-                <span>
-                    <strong>
-                        Seniority:
-                    </strong>
-
-                    ${job.seniority}
-                </span>
-
-                <span>
-                    <strong>
-                        Hiring Manager:
-                    </strong>
-
-                    ${job.manager}
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="detail-section">
-
-            <h3>
-                About the Role
-            </h3>
-
-            <p>
-                ${job.about}
-            </p>
-
-        </div>
-
-
-        <div class="detail-section">
-
-            <h3>
-                Must-Haves (Verified)
-            </h3>
-
-            <div
-                class="tags-container"
-                style="
-                    justify-content:
-                    flex-start;
-                "
-            >
-                ${mustHavesTags}
-            </div>
-
-        </div>
-
-
-        <div class="detail-section">
-
-            <h3>
-                Responsibilities
-            </h3>
-
-            <ul>
-                ${
-                    job.responsibilities
-                        .map(
-                            item =>
-                                `<li>${item}</li>`
-                        )
-                        .join("")
+                    timelineHtml += `
+                        <div
+                            class="timeline-arrow"
+                        >
+                            &rarr;
+                        </div>
+                    `;
                 }
-            </ul>
+            }
+        );
 
-        </div>
+
+        timelineHtml +=
+            `</div>`;
 
 
-        <div class="detail-section">
+        detailContent.innerHTML = `
+            <div class="job-header">
 
-            <h3>
-                Additional Tools & Knowledge
-            </h3>
+                <h2>
+                    ${job.title}
+                </h2>
 
-            <p>
-                <strong>
-                    Relevant:
-                </strong>
+                <div
+                    class="job-header-meta"
+                >
 
-                ${job.toolsRelevant.join(", ")}
-            </p>
+                    <span>
+                        <strong>
+                            Seniority:
+                        </strong>
+
+                        ${job.seniority}
+                    </span>
+
+                    <span>
+                        <strong>
+                            Hiring Manager:
+                        </strong>
+
+                        ${job.manager}
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="detail-section">
+
+                <h3>
+                    About the Role
+                </h3>
+
+                <p>
+                    ${job.about}
+                </p>
+
+            </div>
+
+
+            <div class="detail-section">
+
+                <h3>
+                    Must-Haves (Verified)
+                </h3>
+
+                <div
+                    class="tags-container"
+                    style="
+                        justify-content:
+                        flex-start;
+                    "
+                >
+                    ${mustHavesTags}
+                </div>
+
+            </div>
+
+
+            <div class="detail-section">
+
+                <h3>
+                    Responsibilities
+                </h3>
+
+                <ul>
+                    ${
+                        job.responsibilities
+                            .map(
+                                item =>
+                                    `<li>${item}</li>`
+                            )
+                            .join("")
+                    }
+                </ul>
+
+            </div>
+
+
+            <div class="detail-section">
+
+                <h3>
+                    Additional Tools & Knowledge
+                </h3>
+
+                <p>
+                    <strong>
+                        Relevant:
+                    </strong>
+
+                    ${
+                        job.toolsRelevant
+                            .join(", ")
+                    }
+                </p>
+
+                ${
+                    job.toolsNice &&
+                    job.toolsNice.length > 0
+                        ? `
+                            <p>
+                                <strong>
+                                    Nice to Have:
+                                </strong>
+
+                                ${
+                                    job.toolsNice
+                                        .join(", ")
+                                }
+                            </p>
+                        `
+                        : ""
+                }
+
+            </div>
+
 
             ${
-                job.toolsNice &&
-                job.toolsNice.length > 0
-
+                job.recruiterNote
                     ? `
-                        <p>
-                            <strong>
-                                Nice to Have:
-                            </strong>
+                        <div
+                            class="internal-note"
+                        >
 
-                            ${
-                                job.toolsNice.join(
-                                    ", "
-                                )
-                            }
-                        </p>
+                            <h4>
+                                Recruiter Note
+                            </h4>
+
+                            <p>
+                                ${job.recruiterNote}
+                            </p>
+
+                        </div>
                     `
-
                     : ""
             }
 
-        </div>
 
-
-        ${
-            job.recruiterNote
-
-                ? `
-                    <div class="internal-note">
-
-                        <h4>
-                            Recruiter Note
-                        </h4>
-
-                        <p>
-                            ${job.recruiterNote}
-                        </p>
-
-                    </div>
-                `
-
-                : ""
-        }
-
-
-        <div
-            class="detail-section"
-            style="
-                background-color:
-                    transparent;
-                box-shadow:
-                    none;
-                padding:
-                    0;
-                border-top:
-                    none;
-            "
-        >
-
-            <h3
+            <div
+                class="detail-section"
                 style="
-                    margin-top:
-                    30px;
+                    background-color:
+                        transparent;
+                    box-shadow:
+                        none;
+                    padding:
+                        0;
+                    border-top:
+                        none;
                 "
             >
-                Interview Process
-            </h3>
 
-            ${timelineHtml}
+                <h3
+                    style="
+                        margin-top:
+                        30px;
+                    "
+                >
+                    Interview Process
+                </h3>
 
-        </div>
-    `;
+                ${timelineHtml}
+
+            </div>
+        `;
 
 
-    dirSection.classList.add(
-        "hidden"
-    );
+        dirSection.classList.add(
+            "hidden"
+        );
 
-    detailSection.classList.remove(
-        "hidden"
-    );
+        detailSection.classList.remove(
+            "hidden"
+        );
 
-    window.scrollTo(
-        0,
-        0
-    );
-};
+
+        window.scrollTo(
+            0,
+            0
+        );
+    };
 
 
 // ============================================================
-// BACK TO JOBS
+// BACK TO JOB DIRECTORY
 // ============================================================
 
 window.hideJobDetail =
@@ -1856,6 +2216,7 @@ window.hideJobDetail =
             "hidden"
         );
 
+
         window.scrollTo(
             0,
             0
@@ -1864,11 +2225,14 @@ window.hideJobDetail =
 
 
 // ============================================================
-// INTERVIEW PREP MODAL
+// PREP MODAL
 // ============================================================
 
-let currentJobForCopy = null;
-let currentStageForCopy = null;
+let currentJobForCopy =
+    null;
+
+let currentStageForCopy =
+    null;
 
 
 window.openPrepModal =
@@ -1879,7 +2243,8 @@ window.openPrepModal =
 
         const job =
             jobsData.find(
-                j => j.id === jobId
+                item =>
+                    item.id === jobId
             );
 
         if (!job) return;
@@ -1900,9 +2265,11 @@ window.openPrepModal =
             stage;
 
 
-        document.getElementById(
-            "modalPrepTitle"
-        ).textContent =
+        document
+            .getElementById(
+                "modalPrepTitle"
+            )
+            .textContent =
             `${job.title} — ${stage.name}`;
 
 
@@ -1910,6 +2277,7 @@ window.openPrepModal =
             document.getElementById(
                 "modalPrepDuration"
             );
+
 
         if (stage.duration) {
 
@@ -1920,9 +2288,11 @@ window.openPrepModal =
             durationRow
                 .querySelector("span")
                 .textContent =
-                    stage.duration;
+                stage.duration;
 
-        } else {
+        }
+
+        else {
 
             durationRow.classList.add(
                 "hidden"
@@ -1935,6 +2305,7 @@ window.openPrepModal =
                 "modalPrepPlatform"
             );
 
+
         if (stage.platform) {
 
             platformRow.classList.remove(
@@ -1944,9 +2315,11 @@ window.openPrepModal =
             platformRow
                 .querySelector("span")
                 .textContent =
-                    stage.platform;
+                stage.platform;
 
-        } else {
+        }
+
+        else {
 
             platformRow.classList.add(
                 "hidden"
@@ -1959,6 +2332,7 @@ window.openPrepModal =
                 "modalPrepFormat"
             );
 
+
         if (stage.format) {
 
             formatRow.classList.remove(
@@ -1968,9 +2342,11 @@ window.openPrepModal =
             formatRow
                 .querySelector("span")
                 .textContent =
-                    stage.format;
+                stage.format;
 
-        } else {
+        }
+
+        else {
 
             formatRow.classList.add(
                 "hidden"
@@ -1984,7 +2360,9 @@ window.openPrepModal =
         if (stage.setup) {
 
             bodyHtml += `
-                <div class="danger-box">
+                <div
+                    class="danger-box"
+                >
 
                     <h4>
                         ⚠️ Required Setup
@@ -2053,36 +2431,11 @@ window.openPrepModal =
         }
 
 
-        if (
-            stage.internalNote
-        ) {
-
-            bodyHtml += `
-                <div
-                    class="internal-note"
-                    style="
-                        margin-top:
-                        30px;
-                    "
-                >
-
-                    <h4>
-                        Internal Recruiter Note —
-                        Do Not Send
-                    </h4>
-
-                    <p>
-                        ${stage.internalNote}
-                    </p>
-
-                </div>
-            `;
-        }
-
-
-        document.getElementById(
-            "modalPrepBody"
-        ).innerHTML =
+        document
+            .getElementById(
+                "modalPrepBody"
+            )
+            .innerHTML =
             bodyHtml;
 
 
@@ -2091,6 +2444,10 @@ window.openPrepModal =
         );
     };
 
+
+// ============================================================
+// CLOSE PREP MODAL
+// ============================================================
 
 window.closePrepModal =
     function() {
@@ -2176,6 +2533,7 @@ if (copyPrepBtn) {
 
 
                 if (stage.duration) {
+
                     html += `
                         <li>
                             <strong>
@@ -2189,6 +2547,7 @@ if (copyPrepBtn) {
 
 
                 if (stage.platform) {
+
                     html += `
                         <li>
                             <strong>
@@ -2202,6 +2561,7 @@ if (copyPrepBtn) {
 
 
                 if (stage.format) {
+
                     html += `
                         <li>
                             <strong>
@@ -2287,7 +2647,8 @@ if (copyPrepBtn) {
                 );
 
 
-                html += `</ul>`;
+                html +=
+                    `</ul>`;
             }
 
 
@@ -2364,46 +2725,47 @@ if (copyPrepBtn) {
                     window.ClipboardItem
                 ) {
 
-                    const data =
-                        [
-                            new ClipboardItem({
-                                "text/html":
-                                    new Blob(
-                                        [html],
-                                        {
-                                            type:
-                                                "text/html"
-                                        }
-                                    ),
+                    const data = [
+                        new ClipboardItem({
+                            "text/html":
+                                new Blob(
+                                    [html],
+                                    {
+                                        type:
+                                            "text/html"
+                                    }
+                                ),
 
-                                "text/plain":
-                                    new Blob(
-                                        [plainText],
-                                        {
-                                            type:
-                                                "text/plain"
-                                        }
-                                    )
-                            })
-                        ];
+                            "text/plain":
+                                new Blob(
+                                    [plainText],
+                                    {
+                                        type:
+                                            "text/plain"
+                                    }
+                                )
+                        })
+                    ];
 
 
-                    await navigator.clipboard.write(
-                        data
-                    );
-
+                    await navigator
+                        .clipboard
+                        .write(
+                            data
+                        );
                 }
 
                 else {
 
-                    await navigator.clipboard.writeText(
-                        plainText
-                    );
+                    await navigator
+                        .clipboard
+                        .writeText(
+                            plainText
+                        );
                 }
 
 
                 showToast();
-
             }
 
             catch (error) {
@@ -2413,8 +2775,10 @@ if (copyPrepBtn) {
                         "textarea"
                     );
 
+
                 tempTextArea.value =
                     plainText;
+
 
                 tempTextArea.style.position =
                     "fixed";
@@ -2422,21 +2786,25 @@ if (copyPrepBtn) {
                 tempTextArea.style.opacity =
                     "0";
 
+
                 document.body.appendChild(
                     tempTextArea
                 );
 
-                tempTextArea.focus();
 
+                tempTextArea.focus();
                 tempTextArea.select();
+
 
                 document.execCommand(
                     "copy"
                 );
 
+
                 document.body.removeChild(
                     tempTextArea
                 );
+
 
                 showToast();
             }
@@ -2446,7 +2814,7 @@ if (copyPrepBtn) {
 
 
 // ============================================================
-// TOAST
+// COPY CONFIRMATION TOAST
 // ============================================================
 
 function showToast() {
@@ -2476,7 +2844,7 @@ function showToast() {
 
 
 // ============================================================
-// CLOSE MODAL BEHAVIORS
+// MODAL CLOSE BEHAVIOR
 // ============================================================
 
 if (modal) {
@@ -2486,7 +2854,8 @@ if (modal) {
         event => {
 
             if (
-                event.target === modal
+                event.target ===
+                modal
             ) {
                 closePrepModal();
             }
@@ -2500,7 +2869,8 @@ document.addEventListener(
     event => {
 
         if (
-            event.key === "Escape" &&
+            event.key ===
+                "Escape" &&
             modal &&
             modal.classList.contains(
                 "active"
@@ -2513,10 +2883,11 @@ document.addEventListener(
 
 
 // ============================================================
-// INITIALIZE
+// INITIALIZATION
 // ============================================================
 
 if (jobsGrid) {
+
     renderJobsGrid(
         jobsData
     );
