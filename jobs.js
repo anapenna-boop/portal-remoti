@@ -314,6 +314,7 @@ const jobsData = [
             "Unit & Integration Testing"
         ],
         toolsNice: ["Tableau / BI Tools", "Jest", "Vitest", "BigQuery / Redshift"],
+        recruiterNote: "",
         stages: [
             {
                 name: "Live Coding",
@@ -354,7 +355,7 @@ const jobsData = [
         manager: "Roja Kamireddy",
         department: "Engineering",
         about: "Full-stack role within the OAT Onboarding team, focused on crew-facing onboarding flows, document packages, and company-level configuration tools.",
-        mustHaves: ["React", "Node.js", "PostgreSQL", ".NET — Intermediate Knowledge"],
+        mustHaves: ["React", "Node.js", "PostgreSQL", ".Net - intermediate knowledge"],
         responsibilities: [
             "Build and maintain onboarding workflows end-to-end.",
             "Develop dynamic document packages.",
@@ -365,7 +366,7 @@ const jobsData = [
         ],
         toolsRelevant: ["TypeScript", "REST APIs", "SQL", "React Hooks", "State Management", "AdonisJS"],
         toolsNice: ["MobX", "CI/CD", "Automated Testing", "HR Tech / Payroll", "Document Workflows", "Multi-Tenant SaaS", "E-signature / Document Generation"],
-        recruiterNote: "The verified priorities are React, Node.js, PostgreSQL, and .NET. Screen for a genuine full-stack profile rather than frontend-only.",
+        recruiterNote: "The verified priorities are React, Node.js, and PostgreSQL and .NET. Screen for a genuine full-stack profile rather than frontend-only.",
         stages: [
             {
                 name: "Live Coding",
@@ -525,6 +526,7 @@ const jobsData = [
         ],
         toolsRelevant: ["C", "SQL", "Legacy Systems", "Database Migrations", "Git", "Shell Scripting", "GNU Toolchain", "Debugging"],
         toolsNice: ["Linux", "AWS / S3", "Python", "Perl", "Financial Systems", "React / Angular", "C#", "Automated Testing"],
+        recruiterNote: "",
         stages: [
             {
                 name: "Shrikrushna Garad",
@@ -598,6 +600,7 @@ const jobsData = [
         ],
         toolsRelevant: ["E2E Testing", "API Testing", "SQL", "CI/CD", "React Applications", "Database Validation", "Debugging"],
         toolsNice: ["Selenium → Playwright Migration", "Kafka / Microservices", "Zephyr", "Quality Metrics", "Regulated Environments", "Claude Code / AI-assisted Testing"],
+        recruiterNote: "",
         stages: [
             {
                 name: "Skill Panel",
@@ -692,6 +695,7 @@ const jobsData = [
         ],
         toolsRelevant: ["REST APIs", "GraphQL", "SQL", "API Automation", "Contract Testing", "Microservices", "CI/CD", "Integration Testing", "Root Cause Analysis"],
         toolsNice: ["Kafka / Event-Driven Systems", "Asynchronous Testing", "Quality Metrics", "Financial / Payroll Systems", "Compliance Environments"],
+        recruiterNote: "",
         processNote: "Skill Panel has not been confirmed for this process at this time.",
         stages: [
             {
@@ -766,6 +770,7 @@ const jobsData = [
         ],
         toolsRelevant: ["REST APIs", "SQL", "Microservices", "Contract Testing", "Data Validation", "Data Reconciliation", "Schema Validation", "Data Quality", "CI/CD", "Zephyr", "Automation Frameworks"],
         toolsNice: ["Pact / PactFlow", "Airflow", "dbt", "Databricks", "Snowflake", "Cloud Data Platforms", "High-Compliance Data Environments", "SDET Mentoring / Technical Leadership"],
+        recruiterNote: "",
         stages: [
             {
                 name: "Anne Dawson",
@@ -843,6 +848,7 @@ const jobsData = [
         ],
         toolsRelevant: ["Maestro", "Detox", "Appium", "Jest", "React Native Testing Library", "BrowserStack", "REST APIs", "GraphQL", "Postman / Newman", "CI/CD"],
         toolsNice: ["Payroll / Financial Systems", "Distributed Systems", "Performance Testing", "Mobile Reliability", "AI-assisted Testing", "Observability"],
+        recruiterNote: "",
         processNote: "Skill Panel has not been confirmed for this process at this time.",
         stages: [
             {
@@ -979,15 +985,13 @@ const jobsData = [
 // LÓGICA DE INTERFAZ Y RENDERIZADO
 // ============================================================
 
-const jobsGrid = document.getElementById("jobsGrid");
-const searchInput = document.getElementById("jobSearchInput");
-const filterBtns = document.querySelectorAll("#jobFiltersContainer .filter-btn");
-
-const dirSection = document.getElementById("jobsDirectorySection");
-const detailSection = document.getElementById("jobDetailSection");
-const detailContent = document.getElementById("jobDetailContent");
-
-const modal = document.getElementById("prepModal");
+const jobsGrid = document.getElementById('jobsGrid');
+const searchInput = document.getElementById('jobSearchInput');
+const filterBtns = document.querySelectorAll('#jobFiltersContainer .filter-btn');
+const dirSection = document.getElementById('jobsDirectorySection');
+const detailSection = document.getElementById('jobDetailSection');
+const detailContent = document.getElementById('jobDetailContent');
+const modal = document.getElementById('prepModal');
 
 
 // ============================================================
@@ -997,7 +1001,7 @@ const modal = document.getElementById("prepModal");
 function renderJobsGrid(data) {
     if (!jobsGrid) return;
 
-    jobsGrid.innerHTML = "";
+    jobsGrid.innerHTML = '';
 
     if (data.length === 0) {
         jobsGrid.innerHTML = `
@@ -1010,33 +1014,23 @@ function renderJobsGrid(data) {
                 No jobs found matching your criteria.
             </p>
         `;
-
         return;
     }
 
     data.forEach(job => {
-        const card = document.createElement("div");
-
-        card.className = "job-card";
+        const card = document.createElement('div');
+        card.className = 'job-card';
 
         card.innerHTML = `
-            <h3>
-                ${job.title}
-            </h3>
+            <h3>${job.title}</h3>
 
             <p class="job-meta">
-                <strong>Seniority:</strong>
-                ${job.seniority}
-
+                <strong>Seniority:</strong> ${job.seniority}
                 <br>
-
-                <strong>Manager:</strong>
-                ${job.manager}
+                <strong>Manager:</strong> ${job.manager}
             </p>
 
-            <p>
-                ${job.about}
-            </p>
+            <p>${job.about}</p>
 
             <button
                 class="primary-btn"
@@ -1056,22 +1050,30 @@ function renderJobsGrid(data) {
 // ============================================================
 
 if (searchInput) {
-    searchInput.addEventListener("input", applyFilters);
+    searchInput.addEventListener(
+        'input',
+        applyFilters
+    );
 }
 
 if (filterBtns) {
     filterBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            filterBtns.forEach(b => b.classList.remove("active"));
+        btn.addEventListener(
+            'click',
+            () => {
+                filterBtns.forEach(
+                    b => b.classList.remove('active')
+                );
 
-            btn.classList.add("active");
+                btn.classList.add('active');
 
-            if (searchInput) {
-                searchInput.value = "";
+                if (searchInput) {
+                    searchInput.value = '';
+                }
+
+                applyFilters();
             }
-
-            applyFilters();
-        });
+        );
     });
 }
 
@@ -1079,17 +1081,17 @@ if (filterBtns) {
 function applyFilters() {
     const term = searchInput
         ? searchInput.value.toLowerCase()
-        : "";
+        : '';
 
     const activeButton =
         document.querySelector(
-            "#jobFiltersContainer .filter-btn.active"
+            '#jobFiltersContainer .filter-btn.active'
         );
 
     const activeFilter =
         activeButton
-            ? activeButton.getAttribute("data-filter")
-            : "All";
+            ? activeButton.getAttribute('data-filter')
+            : 'All';
 
     const filtered =
         jobsData.filter(job => {
@@ -1103,7 +1105,7 @@ function applyFilters() {
                 ...job.toolsRelevant,
                 ...job.toolsNice
             ]
-                .join(" ")
+                .join(' ')
                 .toLowerCase();
 
             const matchesTerm =
@@ -1111,30 +1113,30 @@ function applyFilters() {
 
             let matchesFilter = true;
 
-            if (activeFilter !== "All") {
+            if (activeFilter !== 'All') {
 
-                if (activeFilter === "QA") {
+                if (activeFilter === 'QA') {
                     matchesFilter =
-                        job.department === "QA";
+                        job.department === 'QA';
                 }
 
                 else if (
-                    activeFilter === "Developers"
+                    activeFilter === 'Developers'
                 ) {
                     matchesFilter =
-                        job.department === "Engineering";
+                        job.department === 'Engineering';
                 }
 
                 else if (
-                    activeFilter === "Fullstack"
+                    activeFilter === 'Fullstack'
                 ) {
                     const fullstackText =
                         `${job.title} ${job.about}`
                             .toLowerCase();
 
                     matchesFilter =
-                        fullstackText.includes("full stack") ||
-                        fullstackText.includes("full-stack");
+                        fullstackText.includes('full stack') ||
+                        fullstackText.includes('full-stack');
                 }
             }
 
@@ -1168,7 +1170,7 @@ window.showJobDetail = function(jobId) {
                 item =>
                     `<span class="tag">${item}</span>`
             )
-            .join("");
+            .join('');
 
 
     let timelineHtml =
@@ -1180,7 +1182,7 @@ window.showJobDetail = function(jobId) {
 
             const stepNum =
                 String(index + 1)
-                    .padStart(2, "0");
+                    .padStart(2, '0');
 
 
             const btnHtml =
@@ -1204,7 +1206,7 @@ window.showJobDetail = function(jobId) {
                         >
                             ${
                                 stage.expect ||
-                                "Prep TBD"
+                                'Prep TBD'
                             }
                         </span>
                     `;
@@ -1228,7 +1230,7 @@ window.showJobDetail = function(jobId) {
                                     ${stage.subtitle}
                                 </p>
                             `
-                            : ""
+                            : ''
                     }
 
                     ${
@@ -1240,25 +1242,25 @@ window.showJobDetail = function(jobId) {
                                     ${
                                         stage.duration
                                             ? stage.duration
-                                            : ""
+                                            : ''
                                     }
 
                                     ${
                                         stage.duration &&
                                         stage.platform
-                                            ? " &middot; "
-                                            : ""
+                                            ? ' &middot; '
+                                            : ''
                                     }
 
                                     ${
                                         stage.platform
                                             ? stage.platform
-                                            : ""
+                                            : ''
                                     }
 
                                 </p>
                             `
-                            : ""
+                            : ''
                     }
 
                     ${
@@ -1270,7 +1272,7 @@ window.showJobDetail = function(jobId) {
                                     </strong>
                                 </p>
                             `
-                            : ""
+                            : ''
                     }
 
                     ${btnHtml}
@@ -1324,6 +1326,15 @@ window.showJobDetail = function(jobId) {
 
             </div>
 
+            <div style="margin-top: 20px;">
+                <button
+                    class="copy-btn"
+                    onclick="copyJobDescription('${job.id}')"
+                >
+                    Copy Job Description
+                </button>
+            </div>
+
         </div>
 
 
@@ -1372,7 +1383,7 @@ window.showJobDetail = function(jobId) {
                             item =>
                                 `<li>${item}</li>`
                         )
-                        .join("")
+                        .join('')
                 }
             </ul>
 
@@ -1390,7 +1401,7 @@ window.showJobDetail = function(jobId) {
                     Relevant:
                 </strong>
 
-                ${job.toolsRelevant.join(", ")}
+                ${job.toolsRelevant.join(', ')}
             </p>
 
             ${
@@ -1402,10 +1413,10 @@ window.showJobDetail = function(jobId) {
                                 Nice to Have:
                             </strong>
 
-                            ${job.toolsNice.join(", ")}
+                            ${job.toolsNice.join(', ')}
                         </p>
                     `
-                    : ""
+                    : ''
             }
 
         </div>
@@ -1426,7 +1437,7 @@ window.showJobDetail = function(jobId) {
 
                     </div>
                 `
-                : ""
+                : ''
         }
 
 
@@ -1473,17 +1484,25 @@ window.showJobDetail = function(jobId) {
                             ${job.processNote}
                         </p>
                     `
-                    : ""
+                    : ''
             }
 
         </div>
     `;
 
 
-    dirSection.classList.add("hidden");
-    detailSection.classList.remove("hidden");
+    dirSection.classList.add(
+        'hidden'
+    );
 
-    window.scrollTo(0, 0);
+    detailSection.classList.remove(
+        'hidden'
+    );
+
+    window.scrollTo(
+        0,
+        0
+    );
 };
 
 
@@ -1493,221 +1512,566 @@ window.showJobDetail = function(jobId) {
 
 window.hideJobDetail = function() {
 
-    detailSection.classList.add("hidden");
-    dirSection.classList.remove("hidden");
+    detailSection.classList.add(
+        'hidden'
+    );
 
-    window.scrollTo(0, 0);
+    dirSection.classList.remove(
+        'hidden'
+    );
+
+    window.scrollTo(
+        0,
+        0
+    );
 };
 
 
 // ============================================================
-// INTERVIEW PREP MODAL
+// COPY JOB DESCRIPTION
 // ============================================================
 
-let currentJobForCopy = null;
-let currentStageForCopy = null;
+window.copyJobDescription =
+    function(jobId) {
+
+        const job =
+            jobsData.find(
+                j => j.id === jobId
+            );
+
+        if (!job) return;
 
 
-window.openPrepModal = function(
-    jobId,
-    stageIndex
-) {
-
-    const job =
-        jobsData.find(
-            j => j.id === jobId
-        );
-
-    if (!job) return;
-
-
-    const stage =
-        job.stages[
-            stageIndex
-        ];
-
-    if (!stage) return;
-
-
-    currentJobForCopy = job;
-    currentStageForCopy = stage;
-
-
-    document.getElementById(
-        "modalPrepTitle"
-    ).textContent =
-        `${job.title} — ${stage.name}`;
-
-
-    const durationRow =
-        document.getElementById(
-            "modalPrepDuration"
-        );
-
-    if (stage.duration) {
-
-        durationRow.classList.remove(
-            "hidden"
-        );
-
-        durationRow
-            .querySelector("span")
-            .textContent =
-                stage.duration;
-
-    } else {
-
-        durationRow.classList.add(
-            "hidden"
-        );
-    }
-
-
-    const platformRow =
-        document.getElementById(
-            "modalPrepPlatform"
-        );
-
-    if (stage.platform) {
-
-        platformRow.classList.remove(
-            "hidden"
-        );
-
-        platformRow
-            .querySelector("span")
-            .textContent =
-                stage.platform;
-
-    } else {
-
-        platformRow.classList.add(
-            "hidden"
-        );
-    }
-
-
-    const formatRow =
-        document.getElementById(
-            "modalPrepFormat"
-        );
-
-    if (stage.format) {
-
-        formatRow.classList.remove(
-            "hidden"
-        );
-
-        formatRow
-            .querySelector("span")
-            .textContent =
-                stage.format;
-
-    } else {
-
-        formatRow.classList.add(
-            "hidden"
-        );
-    }
-
-
-    let bodyHtml = "";
-
-
-    if (stage.setup) {
-
-        bodyHtml += `
-            <div class="danger-box">
-
-                <h4>
-                    ⚠️ Required Setup
-                </h4>
-
-                <p>
-                    ${stage.setup}
-                </p>
-
-            </div>
+        let html = `
+            <div
+                style="
+                    font-family:
+                        Arial,
+                        sans-serif;
+                    color:
+                        #333;
+                    line-height:
+                        1.6;
+                "
+            >
         `;
-    }
 
 
-    if (stage.expect) {
+        html += `
+            <h2
+                style="
+                    color:
+                        #052446;
+                    border-bottom:
+                        2px solid #E6F1FF;
+                    padding-bottom:
+                        8px;
+                "
+            >
+                ${job.title}
+            </h2>
+        `;
 
-        bodyHtml += `
-            <h4>
-                What to Expect
-            </h4>
+
+        html += `
+            <h3
+                style="
+                    color:
+                        #3543D7;
+                "
+            >
+                About the Role
+            </h3>
 
             <p>
-                ${stage.expect}
+                ${job.about}
             </p>
         `;
-    }
 
 
-    if (
-        stage.prepare &&
-        stage.prepare.length > 0
-    ) {
-
-        bodyHtml += `
-            <h4>
-                How to Prepare
-            </h4>
+        html += `
+            <h3
+                style="
+                    color:
+                        #3543D7;
+                "
+            >
+                Requirements
+            </h3>
 
             <ul>
                 ${
-                    stage.prepare
+                    job.mustHaves
                         .map(
                             item =>
                                 `<li>${item}</li>`
                         )
-                        .join("")
+                        .join('')
                 }
             </ul>
         `;
-    }
 
 
-    if (
-        stage.recommendations
+        html += `
+            <h3
+                style="
+                    color:
+                        #3543D7;
+                "
+            >
+                Responsibilities
+            </h3>
+
+            <ul>
+                ${
+                    job.responsibilities
+                        .map(
+                            item =>
+                                `<li>${item}</li>`
+                        )
+                        .join('')
+                }
+            </ul>
+        `;
+
+
+        if (
+            job.toolsRelevant &&
+            job.toolsRelevant.length > 0
+        ) {
+
+            html += `
+                <h3
+                    style="
+                        color:
+                            #3543D7;
+                    "
+                >
+                    Additional Tools & Knowledge
+                </h3>
+
+                <p>
+                    ${job.toolsRelevant.join(', ')}
+                </p>
+            `;
+        }
+
+
+        if (
+            job.toolsNice &&
+            job.toolsNice.length > 0
+        ) {
+
+            html += `
+                <h3
+                    style="
+                        color:
+                            #3543D7;
+                    "
+                >
+                    Nice to Have
+                </h3>
+
+                <ul>
+                    ${
+                        job.toolsNice
+                            .map(
+                                item =>
+                                    `<li>${item}</li>`
+                            )
+                            .join('')
+                    }
+                </ul>
+            `;
+        }
+
+
+        html +=
+            `</div>`;
+
+
+        copyFormattedContent(
+            html,
+            'Job description copied successfully!'
+        );
+    };
+
+
+// ============================================================
+// PREP MODAL
+// ============================================================
+
+let currentJobForCopy =
+    null;
+
+let currentStageForCopy =
+    null;
+
+
+window.openPrepModal =
+    function(
+        jobId,
+        stageIndex
     ) {
 
-        bodyHtml += `
-            <h4>
-                Key Recommendations
-            </h4>
+        const job =
+            jobsData.find(
+                j => j.id === jobId
+            );
 
-            <p>
-                ${stage.recommendations}
-            </p>
-        `;
-    }
+        if (!job) return;
 
 
-    document.getElementById(
-        "modalPrepBody"
-    ).innerHTML =
-        bodyHtml;
+        const stage =
+            job.stages[
+                stageIndex
+            ];
+
+        if (!stage) return;
 
 
-    modal.classList.add(
-        "active"
-    );
-};
+        currentJobForCopy =
+            job;
+
+        currentStageForCopy =
+            stage;
+
+
+        document
+            .getElementById(
+                'modalPrepTitle'
+            )
+            .textContent =
+            `${job.title} — ${stage.name}`;
+
+
+        const durationRow =
+            document.getElementById(
+                'modalPrepDuration'
+            );
+
+
+        if (stage.duration) {
+
+            durationRow.classList.remove(
+                'hidden'
+            );
+
+            durationRow
+                .querySelector('span')
+                .textContent =
+                stage.duration;
+
+        }
+
+        else {
+
+            durationRow.classList.add(
+                'hidden'
+            );
+        }
+
+
+        const platformRow =
+            document.getElementById(
+                'modalPrepPlatform'
+            );
+
+
+        if (stage.platform) {
+
+            platformRow.classList.remove(
+                'hidden'
+            );
+
+            platformRow
+                .querySelector('span')
+                .textContent =
+                stage.platform;
+
+        }
+
+        else {
+
+            platformRow.classList.add(
+                'hidden'
+            );
+        }
+
+
+        const formatRow =
+            document.getElementById(
+                'modalPrepFormat'
+            );
+
+
+        if (stage.format) {
+
+            formatRow.classList.remove(
+                'hidden'
+            );
+
+            formatRow
+                .querySelector('span')
+                .textContent =
+                stage.format;
+
+        }
+
+        else {
+
+            formatRow.classList.add(
+                'hidden'
+            );
+        }
+
+
+        let bodyHtml =
+            '';
+
+
+        if (stage.setup) {
+
+            bodyHtml += `
+                <div
+                    class="danger-box"
+                >
+
+                    <h4>
+                        ⚠️ Required Setup
+                    </h4>
+
+                    <p>
+                        ${stage.setup}
+                    </p>
+
+                </div>
+            `;
+        }
+
+
+        if (stage.expect) {
+
+            bodyHtml += `
+                <h4>
+                    What to Expect
+                </h4>
+
+                <p>
+                    ${stage.expect}
+                </p>
+            `;
+        }
+
+
+        if (
+            stage.prepare &&
+            stage.prepare.length > 0
+        ) {
+
+            bodyHtml += `
+                <h4>
+                    How to Prepare
+                </h4>
+
+                <ul>
+                    ${
+                        stage.prepare
+                            .map(
+                                item =>
+                                    `<li>${item}</li>`
+                            )
+                            .join('')
+                    }
+                </ul>
+            `;
+        }
+
+
+        if (
+            stage.recommendations
+        ) {
+
+            bodyHtml += `
+                <h4>
+                    Key Recommendations
+                </h4>
+
+                <p>
+                    ${stage.recommendations}
+                </p>
+            `;
+        }
+
+
+        document
+            .getElementById(
+                'modalPrepBody'
+            )
+            .innerHTML =
+            bodyHtml;
+
+
+        modal.classList.add(
+            'active'
+        );
+    };
 
 
 // ============================================================
 // CLOSE PREP MODAL
 // ============================================================
 
-window.closePrepModal = function() {
+window.closePrepModal =
+    function() {
 
-    modal.classList.remove(
-        "active"
+        modal.classList.remove(
+            'active'
+        );
+    };
+
+
+// ============================================================
+// HELPER — HTML TO PLAIN TEXT
+// ============================================================
+
+function htmlToPlainText(html) {
+
+    const temp =
+        document.createElement(
+            'div'
+        );
+
+    temp.innerHTML =
+        html;
+
+    return (
+        temp.innerText ||
+        temp.textContent ||
+        ''
     );
-};
+}
+
+
+// ============================================================
+// HELPER — COPY FORMATTED CONTENT
+// ============================================================
+
+async function copyFormattedContent(
+    html,
+    successMessage
+) {
+
+    const plainText =
+        htmlToPlainText(
+            html
+        );
+
+
+    try {
+
+        if (
+            navigator.clipboard &&
+            window.ClipboardItem
+        ) {
+
+            const data = [
+                new ClipboardItem({
+                    'text/html':
+                        new Blob(
+                            [html],
+                            {
+                                type:
+                                    'text/html'
+                            }
+                        ),
+
+                    'text/plain':
+                        new Blob(
+                            [plainText],
+                            {
+                                type:
+                                    'text/plain'
+                            }
+                        )
+                })
+            ];
+
+
+            await navigator
+                .clipboard
+                .write(
+                    data
+                );
+        }
+
+        else if (
+            navigator.clipboard
+        ) {
+
+            await navigator
+                .clipboard
+                .writeText(
+                    plainText
+                );
+        }
+
+        else {
+
+            throw new Error(
+                'Clipboard API unavailable'
+            );
+        }
+
+
+        showToast(
+            successMessage
+        );
+    }
+
+    catch (error) {
+
+        const tempTextArea =
+            document.createElement(
+                'textarea'
+            );
+
+
+        tempTextArea.value =
+            plainText;
+
+
+        tempTextArea.style.position =
+            'fixed';
+
+        tempTextArea.style.opacity =
+            '0';
+
+
+        document.body.appendChild(
+            tempTextArea
+        );
+
+
+        tempTextArea.focus();
+        tempTextArea.select();
+
+
+        document.execCommand(
+            'copy'
+        );
+
+
+        document.body.removeChild(
+            tempTextArea
+        );
+
+
+        showToast(
+            successMessage
+        );
+    }
+}
 
 
 // ============================================================
@@ -1716,15 +2080,15 @@ window.closePrepModal = function() {
 
 const copyPrepBtn =
     document.getElementById(
-        "copyPrepBtn"
+        'copyPrepBtn'
     );
 
 
 if (copyPrepBtn) {
 
     copyPrepBtn.addEventListener(
-        "click",
-        async () => {
+        'click',
+        () => {
 
             if (
                 !currentJobForCopy ||
@@ -1899,7 +2263,8 @@ if (copyPrepBtn) {
                 );
 
 
-                html += `</ul>`;
+                html +=
+                    `</ul>`;
             }
 
 
@@ -1924,156 +2289,47 @@ if (copyPrepBtn) {
             }
 
 
-            html += `</div>`;
+            html +=
+                `</div>`;
 
 
-            const plainText =
-                html
-                    .replace(
-                        /<br\s*\/?>/gi,
-                        "\n"
-                    )
-                    .replace(
-                        /<\/li>/gi,
-                        "\n"
-                    )
-                    .replace(
-                        /<\/p>/gi,
-                        "\n\n"
-                    )
-                    .replace(
-                        /<\/h[1-6]>/gi,
-                        "\n"
-                    )
-                    .replace(
-                        /<[^>]*>/g,
-                        ""
-                    )
-                    .replace(
-                        /&middot;/g,
-                        "·"
-                    )
-                    .replace(
-                        /&rarr;/g,
-                        "→"
-                    )
-                    .replace(
-                        /&amp;/g,
-                        "&"
-                    )
-                    .replace(
-                        /\n{3,}/g,
-                        "\n\n"
-                    )
-                    .trim();
-
-
-            try {
-
-                if (
-                    navigator.clipboard &&
-                    window.ClipboardItem
-                ) {
-
-                    const data = [
-                        new ClipboardItem({
-                            "text/html":
-                                new Blob(
-                                    [html],
-                                    {
-                                        type:
-                                            "text/html"
-                                    }
-                                ),
-
-                            "text/plain":
-                                new Blob(
-                                    [plainText],
-                                    {
-                                        type:
-                                            "text/plain"
-                                    }
-                                )
-                        })
-                    ];
-
-
-                    await navigator.clipboard.write(
-                        data
-                    );
-
-                } else {
-
-                    await navigator.clipboard.writeText(
-                        plainText
-                    );
-                }
-
-
-                showToast();
-
-            } catch (error) {
-
-                const tempTextArea =
-                    document.createElement(
-                        "textarea"
-                    );
-
-                tempTextArea.value =
-                    plainText;
-
-                tempTextArea.style.position =
-                    "fixed";
-
-                tempTextArea.style.opacity =
-                    "0";
-
-                document.body.appendChild(
-                    tempTextArea
-                );
-
-                tempTextArea.focus();
-
-                tempTextArea.select();
-
-                document.execCommand(
-                    "copy"
-                );
-
-                document.body.removeChild(
-                    tempTextArea
-                );
-
-                showToast();
-            }
+            copyFormattedContent(
+                html,
+                'Prep copied successfully!'
+            );
         }
     );
 }
 
 
 // ============================================================
-// COPY CONFIRMATION TOAST
+// TOAST
 // ============================================================
 
-function showToast() {
+function showToast(message) {
 
     const toast =
         document.getElementById(
-            "toast"
+            'toast'
         );
 
     if (!toast) return;
 
 
+    toast.textContent =
+        message ||
+        'Copied successfully!';
+
+
     toast.classList.add(
-        "show"
+        'show'
     );
 
 
     setTimeout(
         () => {
             toast.classList.remove(
-                "show"
+                'show'
             );
         },
         3000
@@ -2082,17 +2338,18 @@ function showToast() {
 
 
 // ============================================================
-// MODAL CLOSE BEHAVIOR
+// CLOSE MODAL BEHAVIORS
 // ============================================================
 
 if (modal) {
 
     modal.addEventListener(
-        "click",
+        'click',
         event => {
 
             if (
-                event.target === modal
+                event.target ===
+                modal
             ) {
                 closePrepModal();
             }
@@ -2102,14 +2359,15 @@ if (modal) {
 
 
 document.addEventListener(
-    "keydown",
+    'keydown',
     event => {
 
         if (
-            event.key === "Escape" &&
+            event.key ===
+                'Escape' &&
             modal &&
             modal.classList.contains(
-                "active"
+                'active'
             )
         ) {
             closePrepModal();
@@ -2123,6 +2381,7 @@ document.addEventListener(
 // ============================================================
 
 if (jobsGrid) {
+
     renderJobsGrid(
         jobsData
     );
