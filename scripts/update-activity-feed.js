@@ -190,8 +190,11 @@ function compareJobs(previousJobs, currentJobs) {
     }
 
     const prepAdded = [];
+    const prepUpdated = [];
     const questionRoles = [];
+    const questionUpdatedRoles = [];
     const processRoles = [];
+    const jobInfoRoles = [];
 
     currentJobs.forEach(currentJob => {
         const previousJob = previousById.get(currentJob.id);
@@ -212,6 +215,40 @@ function compareJobs(previousJobs, currentJobs) {
                     role: currentJob.title,
                     stage: stage.name
                 });
+                return;
+            }
+
+            if (
+                stage.hasPrep === true &&
+                oldStage &&
+                oldStage.hasPrep === true
+            ) {
+                const oldPrep = JSON.stringify({
+                    duration: oldStage.duration || "",
+                    platform: oldStage.platform || "",
+                    format: oldStage.format || "",
+                    setup: oldStage.setup || "",
+                    expect: oldStage.expect || "",
+                    prepare: oldStage.prepare || [],
+                    recommendations: oldStage.recommendations || ""
+                });
+
+                const newPrep = JSON.stringify({
+                    duration: stage.duration || "",
+                    platform: stage.platform || "",
+                    format: stage.format || "",
+                    setup: stage.setup || "",
+                    expect: stage.expect || "",
+                    prepare: stage.prepare || [],
+                    recommendations: stage.recommendations || ""
+                });
+
+                if (oldPrep !== newPrep) {
+                    prepUpdated.push({
+                        role: currentJob.title,
+                        stage: stage.name
+                    });
+                }
             }
         });
 
@@ -225,6 +262,13 @@ function compareJobs(previousJobs, currentJobs) {
 
         if (oldQuestionCount === 0 && newQuestionCount > 0) {
             questionRoles.push(currentJob.title);
+        } else if (
+            oldQuestionCount > 0 &&
+            newQuestionCount > 0 &&
+            JSON.stringify(previousJob.suggestedQuestions) !==
+                JSON.stringify(currentJob.suggestedQuestions)
+        ) {
+            questionUpdatedRoles.push(currentJob.title);
         }
 
         const oldProcess = JSON.stringify(
@@ -235,8 +279,41 @@ function compareJobs(previousJobs, currentJobs) {
             (currentJob.stages || []).map(stage => stage.name)
         );
 
-        if (oldProcess !== newProcess) {
+        if (
+            oldProcess !== newProcess ||
+            (previousJob.processNote || "") !== (currentJob.processNote || "")
+        ) {
             processRoles.push(currentJob.title);
+        }
+
+        const oldJobInfo = JSON.stringify({
+            title: previousJob.title,
+            seniority: previousJob.seniority,
+            manager: previousJob.manager,
+            department: previousJob.department,
+            about: previousJob.about,
+            mustHaves: previousJob.mustHaves || [],
+            responsibilities: previousJob.responsibilities || [],
+            toolsRelevant: previousJob.toolsRelevant || [],
+            toolsNice: previousJob.toolsNice || [],
+            recruiterNote: previousJob.recruiterNote || ""
+        });
+
+        const newJobInfo = JSON.stringify({
+            title: currentJob.title,
+            seniority: currentJob.seniority,
+            manager: currentJob.manager,
+            department: currentJob.department,
+            about: currentJob.about,
+            mustHaves: currentJob.mustHaves || [],
+            responsibilities: currentJob.responsibilities || [],
+            toolsRelevant: currentJob.toolsRelevant || [],
+            toolsNice: currentJob.toolsNice || [],
+            recruiterNote: currentJob.recruiterNote || ""
+        });
+
+        if (oldJobInfo !== newJobInfo) {
+            jobInfoRoles.push(currentJob.title);
         }
     });
 
@@ -256,6 +333,22 @@ function compareJobs(previousJobs, currentJobs) {
         });
     }
 
+    if (prepUpdated.length === 1) {
+        events.push({
+            category: "Interview Prep",
+            title: `Interview prep updated for ${prepUpdated[0].role}`,
+            description: `${prepUpdated[0].stage} preparation guidance was refreshed.`
+        });
+    } else if (prepUpdated.length > 1) {
+        events.push({
+            category: "Interview Prep",
+            title: `${prepUpdated.length} interview preps were updated`,
+            description: formatList(
+                prepUpdated.map(item => `${item.role} — ${item.stage}`)
+            )
+        });
+    }
+
     if (questionRoles.length === 1) {
         events.push({
             category: "Recruiting Resources",
@@ -267,6 +360,34 @@ function compareJobs(previousJobs, currentJobs) {
             category: "Recruiting Resources",
             title: `Suggested screening questions added for ${questionRoles.length} technical roles`,
             description: formatList(questionRoles)
+        });
+    }
+
+    if (questionUpdatedRoles.length === 1) {
+        events.push({
+            category: "Recruiting Resources",
+            title: `Suggested screening questions updated for ${questionUpdatedRoles[0]}`,
+            description: "The internal screening guide was refreshed."
+        });
+    } else if (questionUpdatedRoles.length > 1) {
+        events.push({
+            category: "Recruiting Resources",
+            title: `Suggested screening questions updated for ${questionUpdatedRoles.length} roles`,
+            description: formatList(questionUpdatedRoles)
+        });
+    }
+
+    if (jobInfoRoles.length === 1) {
+        events.push({
+            category: "Jobs",
+            title: `Job information updated for ${jobInfoRoles[0]}`,
+            description: "Role details in the Jobs Directory were refreshed."
+        });
+    } else if (jobInfoRoles.length > 1) {
+        events.push({
+            category: "Jobs",
+            title: `Job information updated for ${jobInfoRoles.length} roles`,
+            description: formatList(jobInfoRoles)
         });
     }
 
