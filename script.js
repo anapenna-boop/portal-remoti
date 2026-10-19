@@ -1,35 +1,5 @@
-// BASE DE DATOS DE MANAGERS
+// BASE DE DATOS DE MANAGERS (ORDENADA ALFABÉTICAMENTE A-Z)
 const managersData = [
-    {
-        id: 1,
-        name: "Roman Smolgovsky",
-        title: "Principal Architect - DARXchange",
-        location: "San Francisco Bay Area",
-        roles: "Java Developer, .NET Engineer, BI & Data Integration Developer",
-        linkedin: "https://www.linkedin.com/in/romansmolgovsky/",
-        tags: ["Direct", "Practical", "Technical", "Adaptable", "Engineering"],
-        style: "Direct, practical, and focused on genuine technical understanding. Has a strong accent, so the candidate must have strong English listening comprehension.",
-        values: ["Strong English (C1)", "Adaptability and practical technical knowledge", "Clear and concise communication", "Ability to explain complex concepts simply"],
-        interview: "Direct technical questions and practical scenarios. Prioritizes actual technical capability over years of experience.",
-        dos: ["Answer questions directly.", "Explain technical decisions using concrete examples.", "Demonstrate adaptability and practical knowledge."],
-        watchOuts: ["Overcomplicating simple answers.", "Talking around questions.", "Relying on years of experience instead of demonstrating knowledge."],
-        internalNote: ""
-    },
-    {
-        id: 2,
-        name: "Quynh Vo",
-        title: "Senior Software Engineering Manager / Tech Lead",
-        location: "Los Angeles Metropolitan Area",
-        roles: ".NET Developer, UI Developer, React Developer",
-        linkedin: "https://www.linkedin.com/in/quynh-vo-mba-a5033225/",
-        tags: ["Direct", "Practical", "Technical", "Concise", "Engineering"],
-        style: "Very direct, practical, and technically focused. Has a strong accent, so the candidate must have strong English listening comprehension.",
-        values: ["Strong English proficiency", "Concrete technical experience", "Practical problem-solving", "Confidence backed by experience", "Receptiveness to direct feedback"],
-        interview: "Direct technical questions focused on real projects and personal contributions. Live coding may be included, depending on the process.",
-        dos: ["Prepare specific examples from previous projects.", "Explain individual contributions and technical decisions.", "Be concise and receptive to feedback."],
-        watchOuts: ["Generic or excessively long answers.", "Describing projects without explaining personal contributions.", "Taking direct feedback personally."],
-        internalNote: ""
-    },
     {
         id: 3,
         name: "Anne Dawson",
@@ -43,66 +13,6 @@ const managersData = [
         interview: "Structured conversations focused on professional experience, previous projects, and practical quality engineering challenges.",
         dos: ["Be punctual and maintain a professional tone.", "Give structured answers with concrete examples.", "Explain your approach and highlight measurable results."],
         watchOuts: ["Rambling or unfocused answers.", "Excessively informal communication.", "Examples without clear outcomes."],
-        internalNote: ""
-    },
-    {
-        id: 4,
-        name: "David Bigelow",
-        title: "Senior Director of Software Engineering",
-        location: "Los Angeles",
-        roles: "Data Engineer",
-        linkedin: "https://www.linkedin.com/in/davidbigelow25/",
-        tags: ["Serious", "Concise", "Execution-Focused", "Direct", "Engineering"],
-        style: "Serious, strict, concise, and execution-focused.",
-        values: ["Speed and accuracy", "Clear communication", "Strong technical execution", "Efficiency"],
-        interview: "Concise technical conversations focused on the candidate’s ability to perform the work effectively.",
-        dos: ["Answer questions directly.", "Demonstrate competence through practical examples.", "Explain how you deliver accurate results efficiently."],
-        watchOuts: ["Unnecessarily long answers.", "Excessive context.", "Lack of precision."],
-        internalNote: ""
-    },
-    {
-        id: 5,
-        name: "Roja Kamireddy",
-        title: "Senior Software Engineering Manager",
-        location: "Irvine / Burbank",
-        roles: "Full Stack Node/React, .NET Engineers",
-        linkedin: "https://www.linkedin.com/in/roja-kamireddy-34649a10/",
-        tags: ["Open", "Flexible", "Independent", "Clear Communicator", "Engineering"],
-        style: "Open, flexible, and focused on clear communication and independent problem-solving.",
-        values: ["C1 English", "Clear communication", "Independence and ownership", "Problem-solving ability", "Flexibility"],
-        interview: "Conversational interviews focused on technical experience, practical decision-making, and the ability to work independently.",
-        dos: ["Communicate ideas clearly and naturally.", "Demonstrate independent problem-solving.", "Prepare examples of ownership and technical decisions."],
-        watchOuts: ["Vague or unnecessarily complicated explanations.", "Difficulty demonstrating independent problem-solving.", "Requiring constant guidance."],
-        internalNote: ""
-    },
-    {
-        id: 6,
-        name: "Elena Sardarian",
-        title: "VP of Finance & Accounting",
-        location: "Redondo Beach",
-        roles: "Senior Accountant",
-        linkedin: "https://www.linkedin.com/in/elena-sardarian/",
-        tags: ["Methodical", "Structured", "Approachable", "Context-Oriented", "Finance"],
-        style: "Methodical, structured, approachable, and context-oriented.",
-        values: ["Professional presentation", "Punctuality", "Structured thinking", "Clear context", "Interpersonal connection"],
-        interview: "Conversational and structured. Prefers candidates who explain the big picture before moving into specific details.",
-        dos: ["Provide context before discussing technical details.", "Structure answers from general to specific.", "Be punctual and professional.", "Build rapport naturally."],
-        watchOuts: ["Jumping into details without providing context.", "Disorganized answers.", "Unprofessional presentation."],
-        internalNote: ""
-    },
-    {
-        id: 7,
-        name: "Christopher Snyder",
-        title: "Senior Vice President of Engineering",
-        location: "La Mesa, California (Pacific Time)",
-        roles: "",
-        linkedin: "https://www.linkedin.com/in/christopherpaulsnyder/",
-        tags: ["Conversational", "Approachable", "Results-Oriented", "Relationship-Oriented", "Engineering"],
-        style: "Approachable, conversational, and results-oriented.",
-        values: ["Professionalism and respect", "Results", "Adaptability", "Interpersonal awareness"],
-        interview: "Friendly and conversational, with room for humor and small talk, while maintaining professional expectations.",
-        dos: ["Build rapport and engage naturally.", "Demonstrate results through practical examples.", "Communicate professionally and respectfully."],
-        watchOuts: ["Disrespectful behavior.", "Careless mistakes.", "Excessively rigid or robotic communication."],
         internalNote: ""
     },
     {
@@ -121,48 +31,63 @@ const managersData = [
         internalNote: ""
     },
     {
-        id: 9,
-        name: "Sunil Kadari",
-        title: "Head of DevOps",
-        location: "",
+        id: 7,
+        name: "Christopher Snyder",
+        title: "Senior Vice President of Engineering",
+        location: "La Mesa, California (Pacific Time)",
         roles: "",
-        linkedin: "",
-        tags: ["Fast", "Direct", "Practical", "Concise", "Engineering"],
-        style: "Fast, direct, and practical. Has a strong accent, so the candidate must have strong English listening comprehension.",
-        values: ["Strong English proficiency", "Concise communication", "Efficiency"],
-        interview: "Practical and direct, with a preference for getting straight to the point.",
-        dos: ["Keep answers short and relevant.", "Communicate technical knowledge clearly.", "Focus on practical experience."],
-        watchOuts: ["Excessively detailed explanations.", "Unnecessarily long answers."],
-        internalNote: "Responses may sometimes be delayed."
-    },
-    {
-        id: 10,
-        name: "Maggie Reddy",
-        title: "Hiring Manager",
-        location: "",
-        roles: "Full-Stack Engineer - Start+",
-        linkedin: "",
-        tags: ["Open", "Approachable", "Relationship-Oriented", "Team Fit", "Engineering"],
-        style: "Open, approachable, and relationship-oriented.",
-        values: ["C1 English", "Team fit", "Confidence in professional experience", "Positive interpersonal relationships"],
-        interview: "Open and conversational, with an emphasis on professional experience and team fit.",
-        dos: ["Be personable and confident.", "Explain previous experience clearly.", "Demonstrate your ability to connect and collaborate with a team."],
-        watchOuts: ["Difficulty explaining or demonstrating previous experience.", "Limited engagement during the conversation."],
+        linkedin: "https://www.linkedin.com/in/christopherpaulsnyder/",
+        tags: ["Conversational", "Approachable", "Results-Oriented", "Relationship-Oriented", "Engineering"],
+        style: "Approachable, conversational, and results-oriented.",
+        values: ["Professionalism and respect", "Results", "Adaptability", "Interpersonal awareness"],
+        interview: "Friendly and conversational, with room for humor and small talk, while maintaining professional expectations.",
+        dos: ["Build rapport and engage naturally.", "Demonstrate results through practical examples.", "Communicate professionally and respectfully."],
+        watchOuts: ["Disrespectful behavior.", "Careless mistakes.", "Excessively rigid or robotic communication."],
         internalNote: ""
     },
     {
-        id: 11,
-        name: "Sonali Karandikar",
-        title: "Application Security Manager",
+        id: 4,
+        name: "David Bigelow",
+        title: "Senior Director of Software Engineering",
+        location: "Los Angeles",
+        roles: "Data Engineer",
+        linkedin: "https://www.linkedin.com/in/davidbigelow25/",
+        tags: ["Serious", "Concise", "Execution-Focused", "Direct", "Engineering"],
+        style: "Serious, strict, concise, and execution-focused.",
+        values: ["Speed and accuracy", "Clear communication", "Strong technical execution", "Efficiency"],
+        interview: "Concise technical conversations focused on the candidate’s ability to perform the work effectively.",
+        dos: ["Answer questions directly.", "Demonstrate competence through practical examples.", "Explain how you deliver accurate results efficiently."],
+        watchOuts: ["Unnecessarily long answers.", "Excessive context.", "Lack of precision."],
+        internalNote: ""
+    },
+    {
+        id: 6,
+        name: "Elena Sardarian",
+        title: "VP of Finance & Accounting",
+        location: "Redondo Beach",
+        roles: "Senior Accountant",
+        linkedin: "https://www.linkedin.com/in/elena-sardarian/",
+        tags: ["Methodical", "Structured", "Approachable", "Context-Oriented", "Finance"],
+        style: "Methodical, structured, approachable, and context-oriented.",
+        values: ["Professional presentation", "Punctuality", "Structured thinking", "Clear context", "Interpersonal connection"],
+        interview: "Conversational and structured. Prefers candidates who explain the big picture before moving into specific details.",
+        dos: ["Provide context before discussing technical details.", "Structure answers from general to specific.", "Be punctual and professional.", "Build rapport naturally."],
+        watchOuts: ["Jumping into details without providing context.", "Disorganized answers.", "Unprofessional presentation."],
+        internalNote: ""
+    },
+    {
+        id: 14,
+        name: "Jan Sevilla",
+        title: "Manager, Platform Team",
         location: "",
-        roles: "",
+        roles: "Platform Team",
         linkedin: "",
-        tags: ["Technical", "Business-Oriented", "Open", "Senior-Level", "Engineering"],
-        style: "Open, technically rigorous, and business-oriented.",
-        values: ["Senior-level technical expertise", "Broad technical understanding", "Business awareness", "Clear goals", "Technical depth", "Responsiveness"],
-        interview: "Technical conversations focused on depth of knowledge, business understanding, and the ability to consider different perspectives.",
-        dos: ["Demonstrate both technical depth and broad understanding.", "Connect technical decisions to business objectives.", "Communicate clearly and respond promptly.", "Be open to different perspectives."],
-        watchOuts: ["Superficial technical explanations.", "Difficulty connecting technical decisions to business needs.", "Inflexibility when discussing alternative approaches."],
+        tags: ["Fast", "Practical", "Technical", "Experience-Based", "Engineering"],
+        style: "Fast, practical, and technically focused.",
+        values: ["Practical technical experience", "Efficiency", "Clear communication"],
+        interview: "Conversational and experience-based, with an emphasis on real projects and practical technical knowledge rather than formal technical testing.",
+        dos: ["Prepare examples of relevant projects.", "Explain your individual contributions.", "Communicate clearly and practically."],
+        watchOuts: ["Relying exclusively on theoretical knowledge.", "Failing to demonstrate hands-on experience."],
         internalNote: ""
     },
     {
@@ -181,6 +106,51 @@ const managersData = [
         internalNote: ""
     },
     {
+        id: 10,
+        name: "Maggie Reddy",
+        title: "Hiring Manager",
+        location: "",
+        roles: "Full-Stack Engineer - Start+",
+        linkedin: "",
+        tags: ["Open", "Approachable", "Relationship-Oriented", "Team Fit", "Engineering"],
+        style: "Open, approachable, and relationship-oriented. Has accented English; candidates must have strong listening comprehension.",
+        values: ["Good conversational English (strong comprehension for accented English)", "Team fit", "Confidence in professional experience", "Positive interpersonal relationships"],
+        interview: "Open and conversational, with an emphasis on professional experience and team fit.",
+        dos: ["Be personable and confident.", "Explain previous experience clearly.", "Demonstrate your ability to connect and collaborate with a team."],
+        watchOuts: ["Difficulty explaining or demonstrating previous experience.", "Limited engagement during the conversation."],
+        internalNote: ""
+    },
+    {
+        id: 17,
+        name: "Nick Rediehs",
+        title: "Hiring Manager",
+        location: "",
+        roles: "",
+        linkedin: "",
+        tags: ["Open", "Conversational", "Detail-Oriented", "Skills-Focused", "Engineering"],
+        style: "Open, approachable, and conversational.",
+        values: ["Relevant technical skills", "Attention to detail", "Diverse professional backgrounds"],
+        interview: "Open and conversational. Receptive to candidates with different professional backgrounds, provided they demonstrate the required skills.",
+        dos: ["Demonstrate relevant technical capabilities.", "Highlight transferable skills and practical experience.", "Provide detailed examples of previous work.", "Communicate naturally."],
+        watchOuts: ["Lack of attention to detail.", "Difficulty demonstrating the skills required for the role."],
+        internalNote: ""
+    },
+    {
+        id: 2,
+        name: "Quynh Vo",
+        title: "Senior Software Engineering Manager / Tech Lead",
+        location: "Los Angeles Metropolitan Area",
+        roles: ".NET Developer, UI Developer, React Developer",
+        linkedin: "https://www.linkedin.com/in/quynh-vo-mba-a5033225/",
+        tags: ["Direct", "Practical", "Technical", "Concise", "Engineering"],
+        style: "Very direct, practical, and technically focused. Has accented English; candidates must have strong listening comprehension.",
+        values: ["Good conversational English (strong comprehension for accented English)", "Concrete technical experience", "Practical problem-solving", "Confidence backed by experience", "Receptiveness to direct feedback"],
+        interview: "Direct technical questions focused on real projects and personal contributions. Live coding may be included, depending on the process.",
+        dos: ["Prepare specific examples from previous projects.", "Explain individual contributions and technical decisions.", "Be concise and receptive to feedback."],
+        watchOuts: ["Generic or excessively long answers.", "Describing projects without explaining personal contributions.", "Taking direct feedback personally."],
+        internalNote: ""
+    },
+    {
         id: 13,
         name: "Reza Radmanesh",
         title: "AI Team Lead / Manager",
@@ -188,26 +158,41 @@ const managersData = [
         roles: "AI Engineers",
         linkedin: "",
         tags: ["Highly Technical", "Direct", "Demanding", "Precise", "AI"],
-        style: "Extremely direct and technically demanding.",
-        values: ["C1 English", "Strong technical understanding", "Confidence", "Concrete examples", "Intellectual honesty"],
+        style: "Extremely direct and technically demanding. Has accented English; candidates must have strong listening comprehension.",
+        values: ["Good conversational English (strong comprehension for accented English)", "Strong technical understanding", "Confidence", "Concrete examples", "Intellectual honesty"],
         interview: "Direct technical conversations focused on genuine technical depth, practical experience, and the ability to explain concepts clearly.",
         dos: ["Use concrete examples.", "Be technically precise.", "Demonstrate confidence backed by experience.", "Be transparent when you don’t know something."],
         watchOuts: ["Abstract answers without practical examples.", "Bluffing or exaggerating technical knowledge.", "Unnecessary explanations."],
         internalNote: ""
     },
     {
-        id: 14,
-        name: "Jan Sevilla",
-        title: "Manager, Platform Team",
-        location: "",
-        roles: "Platform Team",
-        linkedin: "",
-        tags: ["Fast", "Practical", "Technical", "Experience-Based", "Engineering"],
-        style: "Fast, practical, and technically focused.",
-        values: ["Practical technical experience", "Efficiency", "Clear communication"],
-        interview: "Conversational and experience-based, with an emphasis on real projects and practical technical knowledge rather than formal technical testing.",
-        dos: ["Prepare examples of relevant projects.", "Explain your individual contributions.", "Communicate clearly and practically."],
-        watchOuts: ["Relying exclusively on theoretical knowledge.", "Failing to demonstrate hands-on experience."],
+        id: 5,
+        name: "Roja Kamireddy",
+        title: "Senior Software Engineering Manager",
+        location: "Irvine / Burbank",
+        roles: "Full Stack Node/React, .NET Engineers",
+        linkedin: "https://www.linkedin.com/in/roja-kamireddy-34649a10/",
+        tags: ["Open", "Flexible", "Independent", "Clear Communicator", "Engineering"],
+        style: "Open, flexible, and focused on clear communication and independent problem-solving. Has accented English; candidates must have strong listening comprehension.",
+        values: ["Good conversational English (strong comprehension for accented English)", "Clear communication", "Independence and ownership", "Problem-solving ability", "Flexibility"],
+        interview: "Conversational interviews focused on technical experience, practical decision-making, and the ability to work independently.",
+        dos: ["Communicate ideas clearly and naturally.", "Demonstrate independent problem-solving.", "Prepare examples of ownership and technical decisions."],
+        watchOuts: ["Vague or unnecessarily complicated explanations.", "Difficulty demonstrating independent problem-solving.", "Requiring constant guidance."],
+        internalNote: ""
+    },
+    {
+        id: 1,
+        name: "Roman Smolgovsky",
+        title: "Principal Architect - DARXchange",
+        location: "San Francisco Bay Area",
+        roles: "Java Developer, .NET Engineer, BI & Data Integration Developer",
+        linkedin: "https://www.linkedin.com/in/romansmolgovsky/",
+        tags: ["Direct", "Practical", "Technical", "Adaptable", "Engineering"],
+        style: "Direct, practical, and focused on genuine technical understanding. Has accented English; candidates must have strong listening comprehension.",
+        values: ["Good conversational English (strong comprehension for accented English)", "Adaptability and practical technical knowledge", "Clear and concise communication", "Ability to explain complex concepts simply"],
+        interview: "Direct technical questions and practical scenarios. Prioritizes actual technical capability over years of experience.",
+        dos: ["Answer questions directly.", "Explain technical decisions using concrete examples.", "Demonstrate adaptability and practical knowledge."],
+        watchOuts: ["Overcomplicating simple answers.", "Talking around questions.", "Relying on years of experience instead of demonstrating knowledge."],
         internalNote: ""
     },
     {
@@ -241,30 +226,44 @@ const managersData = [
         internalNote: "Responses may sometimes be delayed."
     },
     {
-        id: 17,
-        name: "Nick Rediehs",
-        title: "Hiring Manager",
+        id: 11,
+        name: "Sonali Karandikar",
+        title: "Application Security Manager",
         location: "",
         roles: "",
         linkedin: "",
-        tags: ["Open", "Conversational", "Detail-Oriented", "Skills-Focused", "Engineering"],
-        style: "Open, approachable, and conversational.",
-        values: ["Relevant technical skills", "Attention to detail", "Diverse professional backgrounds"],
-        interview: "Open and conversational. Receptive to candidates with different professional backgrounds, provided they demonstrate the required skills.",
-        dos: ["Demonstrate relevant technical capabilities.", "Highlight transferable skills and practical experience.", "Provide detailed examples of previous work.", "Communicate naturally."],
-        watchOuts: ["Lack of attention to detail.", "Difficulty demonstrating the skills required for the role."],
+        tags: ["Technical", "Business-Oriented", "Open", "Senior-Level", "Engineering"],
+        style: "Open, technically rigorous, and business-oriented.",
+        values: ["Senior-level technical expertise", "Broad technical understanding", "Business awareness", "Clear goals", "Technical depth", "Responsiveness"],
+        interview: "Technical conversations focused on depth of knowledge, business understanding, and the ability to consider different perspectives.",
+        dos: ["Demonstrate both technical depth and broad understanding.", "Connect technical decisions to business objectives.", "Communicate clearly and respond promptly.", "Be open to different perspectives."],
+        watchOuts: ["Superficial technical explanations.", "Difficulty connecting technical decisions to business needs.", "Inflexibility when discussing alternative approaches."],
         internalNote: ""
+    },
+    {
+        id: 9,
+        name: "Sunil Kadari",
+        title: "Head of DevOps",
+        location: "",
+        roles: "",
+        linkedin: "",
+        tags: ["Fast", "Direct", "Practical", "Concise", "Engineering"],
+        style: "Fast, direct, and practical. Has accented English; candidates must have strong listening comprehension.",
+        values: ["Good conversational English (strong comprehension for accented English)", "Concise communication", "Efficiency"],
+        interview: "Practical and direct, with a preference for getting straight to the point.",
+        dos: ["Keep answers short and relevant.", "Communicate technical knowledge clearly.", "Focus on practical experience."],
+        watchOuts: ["Excessively detailed explanations.", "Unnecessarily long answers."],
+        internalNote: "Responses may sometimes be delayed."
     }
 ];
 
-// LÓGICA DE LA APLICACIÓN
+// LÓGICA DE INTERFAZ Y BÚSQUEDA
 const managersGrid = document.getElementById('managersGrid');
 const searchInput = document.getElementById('searchInput');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const modal = document.getElementById('managerModal');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
-// RENDERIZADO DE TARJETAS SIN TAGS EXTERNOS
 function renderManagers(data) {
     managersGrid.innerHTML = '';
     
@@ -288,7 +287,7 @@ function renderManagers(data) {
     });
 }
 
-// BÚSQUEDA
+// BÚSQUEDA DINÁMICA
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     
