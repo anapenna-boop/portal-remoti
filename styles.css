@@ -290,7 +290,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
 .exec-title { color: var(--tech-blue); font-weight: 600; margin-bottom: 15px; font-size: 15px; }
 
 /* ---------------------------------------------------- */
-/* DIAGRAMA CIRCULAR: PRODUCTION LIFECYCLE              */
+/* DIAGRAMA CIRCULAR: PRODUCTION LIFECYCLE (UNIFICADO)  */
 /* ---------------------------------------------------- */
 .lifecycle-wrapper {
     background-color: #F8FBFF;
@@ -337,6 +337,12 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     padding: 24px;
     box-sizing: border-box;
     z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lifecycle-center-hub:hover {
+    transform: translate(-50%, -50%) scale(1.03);
+    box-shadow: 0 16px 40px rgba(53, 67, 215, 0.22);
 }
 
 .lifecycle-center-hub .hub-badge {
@@ -363,7 +369,7 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     color: #556980;
 }
 
-/* NODOS ORBITALES (5 Fases) */
+/* NODOS ORBITALES (5 FASES) */
 .lifecycle-node {
     position: absolute;
     width: 200px;
@@ -375,11 +381,11 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     text-align: center;
     box-sizing: border-box;
     z-index: 5;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lifecycle-node:hover {
-    transform: scale(1.04);
+    box-shadow: 0 16px 36px rgba(5, 36, 70, 0.16);
 }
 
 .node-phase-tag {
@@ -411,12 +417,21 @@ h1, h2, h3, h4, p, ul { margin: 0; }
     color: #666;
 }
 
-/* Posiciones Geométricas en Anillo (Desktop) */
-.node-pos-1 { top: 10px; left: 50%; transform: translateX(-50%); }
-.node-pos-2 { top: 210px; right: 20px; }
-.node-pos-3 { bottom: 45px; right: 80px; }
-.node-pos-4 { bottom: 45px; left: 80px; }
-.node-pos-5 { top: 210px; left: 20px; }
+/* POSICIONES Y MOVIMIENTO HOMOGÉNEO EN HOVER */
+.node-pos-1 { top: 15px; left: 50%; transform: translateX(-50%); }
+.node-pos-1:hover { transform: translateX(-50%) translateY(-6px) scale(1.04); }
+
+.node-pos-2 { top: 210px; right: 20px; transform: none; }
+.node-pos-2:hover { transform: translateY(-6px) scale(1.04); }
+
+.node-pos-3 { bottom: 45px; right: 80px; transform: none; }
+.node-pos-3:hover { transform: translateY(-6px) scale(1.04); }
+
+.node-pos-4 { bottom: 45px; left: 80px; transform: none; }
+.node-pos-4:hover { transform: translateY(-6px) scale(1.04); }
+
+.node-pos-5 { top: 210px; left: 20px; transform: none; }
+.node-pos-5:hover { transform: translateY(-6px) scale(1.04); }
 
 /* RECUADROS DESTACADOS */
 .highlight-box { background-color: var(--baby-blue); border-left: 4px solid var(--tech-blue); padding: 20px; margin: 15px 0; border-radius: 6px; }
@@ -495,7 +510,7 @@ summary:hover { background-color: var(--baby-blue); }
 
 .job-header { background-color: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.03); border-top: 4px solid var(--tech-blue); margin-bottom: 30px; }
 .job-header h2 { font-size: 32px; color: var(--petrol-blue); margin-bottom: 10px; }
-.job-header-meta { display: flex; flex-wrap: gap: 20px; font-size: 15px; color: #555; }
+.job-header-meta { display: flex; flex-wrap: wrap; gap: 20px; font-size: 15px; color: #555; }
 .job-header-meta span strong { color: var(--petrol-blue); }
 
 .detail-section { background-color: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(5, 36, 70, 0.03); margin-bottom: 30px; }
@@ -533,59 +548,4 @@ summary:hover { background-color: var(--baby-blue); }
 .modal-body-split { display: flex; gap: 40px; padding: 30px 40px; }
 .modal-column { flex: 1; }
 .modal-body h4, .modal-column h4 { font-size: 18px; color: var(--petrol-blue); margin-top: 25px; margin-bottom: 10px; border-bottom: 2px solid var(--baby-blue); padding-bottom: 5px; display: inline-block; }
-.modal-body h4:first-child, .modal-column h4:first-child { margin-top: 0; }
-.modal-body p, .modal-body ul li, .modal-column p, .modal-column ul li { font-size: 15px; line-height: 1.6; color: var(--petrol-blue); margin-bottom: 10px; }
-.modal-body ul, .modal-column ul { padding-left: 20px; }
-
-.modal-left { flex: 0 0 200px; text-align: center; }
-.modal-left img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid var(--baby-blue); margin-bottom: 15px; }
-.modal-right { flex: 1; }
-.modal-right h3 { font-size: 28px; color: var(--petrol-blue); margin-bottom: 5px; }
-.modal-right h4 { margin-top: 25px; margin-bottom: 10px; color: var(--petrol-blue); font-size: 18px; border-bottom: 2px solid var(--baby-blue); padding-bottom: 5px; display: inline-block; }
-
-.modal-footer { padding: 20px 40px; border-top: 1px solid var(--baby-blue); background-color: var(--gray-bg); display: flex; justify-content: flex-end; }
-.copy-btn { background-color: var(--tech-blue); color: var(--white); border: none; padding: 12px 24px; border-radius: 6px; font-weight: 700; font-size: 15px; cursor: pointer; transition: background-color 0.3s ease; }
-.copy-btn:hover { background-color: var(--petrol-blue); }
-
-#toast { visibility: hidden; min-width: 250px; background-color: #2E7D32; color: white; text-align: center; border-radius: 8px; padding: 16px; position: fixed; z-index: 10000; left: 50%; bottom: 30px; font-size: 16px; font-weight: bold; transform: translateX(-50%); box-shadow: 0px 4px 10px rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.3s, visibility 0.3s; }
-#toast.show { visibility: visible; opacity: 1; }
-
-/* RESPONSIVE: ADAPTACIÓN PARA CELULARES */
-@media (max-width: 768px) {
-    .action-grid { grid-template-columns: 1fr; }
-    .card-container.two-columns { grid-template-columns: 1fr; }
-    .combined-card { flex-direction: column; }
-    .combined-divider { width: 100%; height: 2px; margin: 0; }
-    .beyond-grid .compact-card { width: 100%; }
-    
-    .lifecycle-stage-container {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .lifecycle-svg-ring { display: none; }
-    .lifecycle-center-hub {
-        position: static;
-        transform: none;
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        order: -1;
-    }
-    .lifecycle-node {
-        position: static;
-        transform: none !important;
-        width: 100%;
-        max-width: 320px;
-    }
-    
-    .timeline-container { flex-direction: column; overflow-x: visible; }
-    .timeline-step { min-width: 100%; flex: 1; }
-    .timeline-arrow { transform: rotate(90deg); justify-content: center; margin: 10px 0; }
-    .modal-header-area, .modal-body, .modal-footer, .modal-body-split { padding: 20px; flex-direction: column; gap: 0;}
-    .modal-left { flex: none; }
-}
+.modal-body h4:first-child, .modal-column h4:first-child { margin-top:
